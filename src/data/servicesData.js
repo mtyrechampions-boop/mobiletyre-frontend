@@ -35,7 +35,7 @@
   },
   {
     id: 'trailer-tyre-fitting',
-    title: "Mobile Tyre Fitting",
+    title: "Trailer Tyre Fitting",
     image: "/images/sr6nfj1ypli5n81lf20b.avif",
     category: "Specialist",
     description: "New tyres fitted at your home, workplace, or roadside. We fit, balance, and dispose of your old tyres all in a single visit.",
@@ -155,5 +155,22 @@
     ],
     rating: 4.8,
     reviews: 320
+  },
+  {
+    id: 'mobile-tyre-fitting',
+    title: "Mobile Tyre Fitting",
+    image: "/images/Mobile Trailer Tyre Fitting.avif",
+    category: "Standard",
+    description: "Professional tyre replacement — we come to you. No waiting rooms, no wasted hours, just fast and professional service wherever your vehicle happens to be.",
+    cta: "Book a Service",
+    secondaryCta: "Learn More",
+    features: [
+      "Professional Fitting",
+      "Wheel Balancing",
+      "At Your Location",
+      "Tyre Disposal"
+    ],
+    rating: 4.9,
+    reviews: 1420
   }
 ];
