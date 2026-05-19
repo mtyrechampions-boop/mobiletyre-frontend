@@ -8,7 +8,7 @@ const AddressField = ({ onAddressSelect, error }) => {
   const [inputValue, setInputValue] = useState('');
   const autocompleteRef = useRef(null);
 
-  const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+  const apiKey = typeof process !== 'undefined' ? (process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || process.env.VITE_GOOGLE_MAPS_API_KEY) : null;
 
   const { isLoaded, loadError } = useJsApiLoader({
     googleMapsApiKey: apiKey || '',

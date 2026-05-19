@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+'use client';
+
+import Link from 'next/link';
 import { Phone, ArrowRight, Shield, Clock, Users, Wrench, MapPin, CheckCircle, Zap, Award, HeartHandshake } from 'lucide-react';
 
 /* ─── Data ──────────────────────────────────────────────────────────────── */
@@ -267,7 +268,7 @@ const AboutPage = () => {
                 Call 0207 101 3856
               </a>
               <Link 
-                to="/contact"
+                href="/contact"
                 className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white px-8 md:px-10 py-3 md:py-4 rounded-xl font-black text-base md:text-lg hover:bg-[#0B1528] hover:border-transparent transition-all shadow-xl active:scale-95"
               >
                 Book Appointment

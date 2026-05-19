@@ -4,8 +4,7 @@
  * Uses Google Places API for premium address lookup
  */
 
-// Get Strapi API URL from environment variable
-const STRAPI_API_URL = import.meta.env.VITE_STRAPI_API_URL || 'https://enduring-morning-cf86e59201.strapiapp.com/api';
+const STRAPI_API_URL = (typeof process !== 'undefined' ? (process.env.NEXT_PUBLIC_STRAPI_API_URL || process.env.VITE_STRAPI_API_URL) : null) || 'https://enduring-morning-cf86e59201.strapiapp.com/api';
 
 /**
  * Validation Helper Functions

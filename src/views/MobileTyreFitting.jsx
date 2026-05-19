@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Phone, CheckCircle, Truck, Zap, ShieldCheck, Clock, MapPin, Wrench, ChevronDown, Gauge, Users, Award, Cog } from 'lucide-react';
 

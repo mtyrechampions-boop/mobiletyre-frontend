@@ -1,7 +1,9 @@
+'use client';
+
 import React, { useEffect } from 'react';
 import TyreFinder from '../components/TyreFinder';
 import { ArrowRight, ShieldCheck, Zap, HelpCircle, Star, Phone } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const TyreFinderPage = () => {
     useEffect(() => {
@@ -142,7 +144,7 @@ const TyreFinderPage = () => {
                     
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
                         <Link 
-                            to="/about" 
+                            href="/about" 
                             className="w-full sm:w-auto px-12 py-5 bg-[#FB7E10] text-white rounded-2xl font-bold tracking-widest text-sm hover:bg-orange-600 transition-all shadow-xl shadow-orange-900/20 active:scale-95 text-center"
                         >
                             Learn About Us

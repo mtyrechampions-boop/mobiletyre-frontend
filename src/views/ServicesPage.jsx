@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import Services from '../components/Services';
 import { Phone, Star, ShieldCheck, Wrench, Clock, ArrowRight, CheckCircle } from 'lucide-react';
 
@@ -98,7 +100,7 @@ const ServicesPage = () => {
               <Phone size={24} fill="currentColor" /> 0207 101 3856
             </a>
             <Link
-              to="/contact"
+              href="/contact"
               className="inline-flex items-center gap-2 text-white font-black uppercase tracking-widest text-sm border-2 border-white px-8 py-5 rounded-2xl hover:bg-white hover:text-[#FB7E10] transition-all"
             >
               Get a Quote <ArrowRight size={18} />
@@ -205,9 +207,9 @@ const ServicesPage = () => {
             <div className="space-y-4">
               <h3 className="font-black text-lg">Pricing & notes</h3>
               <p className="text-gray-600">Small fees may apply for disposal depending on tyre size and quantity. For fleet and commercial collections we offer contract rates and documentation for audit purposes.</p>
-              <a href="/contact" className="inline-flex items-center gap-3 bg-[#FB7E10] text-white px-6 py-3 rounded-2xl font-black uppercase tracking-widest hover:bg-orange-600 transition-all shadow-lg">
+              <Link href="/contact" className="inline-flex items-center gap-3 bg-[#FB7E10] text-white px-6 py-3 rounded-2xl font-black uppercase tracking-widest hover:bg-orange-600 transition-all shadow-lg">
                 Enquire About Recycling
-              </a>
+              </Link>
             </div>
           </div>
         </div>

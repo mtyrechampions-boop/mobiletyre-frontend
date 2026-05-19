@@ -1,12 +1,14 @@
+'use client';
+
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import { Search, MapPin } from 'lucide-react';
 import { validateUKPostcode } from '../api/appointmentService';
 
 const QuickAvailabilityForm = () => {
   const [postcode, setPostcode] = useState('');
   const [error, setError] = useState('');
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,7 +23,7 @@ const QuickAvailabilityForm = () => {
     }
 
     // Navigate to booking page with postcode
-    navigate(`/booking?postcode=${encodeURIComponent(postcode.trim().toUpperCase())}`);
+    router.push(`/booking?postcode=${encodeURIComponent(postcode.trim().toUpperCase())}`);
   };
 
   return (

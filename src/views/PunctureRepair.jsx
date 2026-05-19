@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Phone, CheckCircle, Wrench, ShieldCheck, Clock, AlertTriangle, ChevronDown, Zap, AlertCircle, Gauge } from 'lucide-react';
 

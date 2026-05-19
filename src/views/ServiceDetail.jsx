@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'next/navigation';
+import Link from 'next/link';
 import { servicesData } from '../data/servicesData';
 import { Phone, CheckCircle, ShieldCheck, Clock, MapPin, Star, Zap, Wrench, ArrowRight } from 'lucide-react';
 
@@ -12,7 +15,7 @@ const ServiceDetail = () => {
             <div className="flex flex-col items-center justify-center min-h-[60vh] px-4 text-center">
                 <h2 className="text-3xl font-black text-slate-800 mb-4 uppercase">Service Not Found</h2>
                 <p className="text-slate-500 mb-8">The service you're looking for or isn't available right now.</p>
-                <Link to="/" className="bg-[#FB7E10] text-white px-8 py-3 rounded-xl font-bold uppercase tracking-widest text-sm">
+                <Link href="/" className="bg-[#FB7E10] text-white px-8 py-3 rounded-xl font-bold uppercase tracking-widest text-sm">
                     Return Home
                 </Link>
             </div>

@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Phone, CheckCircle, AlertTriangle, Zap, ShieldCheck, Clock, MapPin, Wrench, ChevronDown, PhoneCall, Truck, AlertOctagon } from 'lucide-react';
 

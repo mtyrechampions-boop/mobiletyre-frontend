@@ -1,6 +1,8 @@
+'use client';
+
 import React, { useState, useRef, useEffect } from 'react';
 import { Car, Ruler, ChevronDown, AlertCircle } from 'lucide-react';
-import { useLocation } from 'react-router-dom';;
+import { useSearchParams } from 'next/navigation';;
 
 const TyreFinder = () => {
     const [activeTab, setActiveTab] = useState('size');
@@ -10,7 +12,7 @@ const TyreFinder = () => {
     const [error, setError] = useState('');
     const [sortBy, setSortBy] = useState('relevance');
     const tyreResultsRef = useRef(null);
-    const pathname = useLocation();
+    const searchParams = useSearchParams();
 
     // Form States
     const [width, setWidth] = useState('');
@@ -74,8 +76,7 @@ const TyreFinder = () => {
 
     // Parse URL parameters for pre-selecting tyre size
     useEffect(() => {
-        const params = new URLSearchParams(location.search);
-        const sizeParam = params.get('size');
+        const sizeParam = searchParams.get('size');
         
         if (sizeParam) {
             // Expected format: "205/55 R16" or "205/55R16"
@@ -96,7 +97,7 @@ const TyreFinder = () => {
                 }
             }
         }
-    }, [location.search]);
+    }, [searchParams]);
 
     const handleRegSearch = async (e) => {
         e.preventDefault();

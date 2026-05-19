@@ -1,5 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+'use client';
+
+import Link from 'next/link';
 import { Home, ArrowLeft } from 'lucide-react';
 
 const NotFoundPage = () => {
@@ -17,7 +18,7 @@ const NotFoundPage = () => {
 
       <div className="flex flex-col sm:flex-row gap-4 items-center">
         <Link 
-          to="/" 
+          href="/" 
           className="flex items-center gap-2 bg-[#FB7E10] text-white px-8 py-4 rounded-2xl font-black uppercase text-sm tracking-widest hover:bg-orange-600 transition-all active:scale-95 shadow-xl shadow-orange-500/20"
         >
           <Home size={18} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const Footer = () => {
     return (
@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8 xl:gap-12 justify-items-center items-start">
                     {/* Column 1: About */}
                     <div className="space-y-6 flex flex-col items-center">
-                        <Link to="/" className="flex items-center h-16 md:h-20">
+                        <Link href="/" className="flex items-center h-16 md:h-20">
                             <img src="/images/MTC logo 3.png" alt="Mobile Tyre Champions" className="h-full w-auto max-w-full object-contain" />
                         </Link>
                         <p className="text-gray-400 text-sm font-medium leading-relaxed max-w-xs mx-auto">
@@ -70,7 +70,7 @@ const Footer = () => {
                                 { name: 'Mobile Trailer Tyre Fitting', path: '/services/trailer-tyre-fitting' }
                             ].map((service) => (
                                 <Link key={service.path}
-                                    to={service.path}
+                                    href={service.path}
                                     className="text-gray-400 hover:text-[#FB7E10] transition-all text-sm font-medium hover:scale-105 duration-200"
                                 >
                                     {service.name}
@@ -92,7 +92,7 @@ const Footer = () => {
                                 { name: 'Contact', path: '/contact' }
                             ].map((link) => (
                                 <Link key={link.name}
-                                    to={link.path}
+                                    href={link.path}
                                     className="hover:text-[#FB7E10] transition-all hover:scale-105 duration-200"
                                 >
                                     {link.name}
@@ -146,7 +146,7 @@ const Footer = () => {
                             '235/55 R17', '235/60 R18', '225/65 R17', '215/65 R16', '235/50 R18'
                         ].map((size) => (
                             <Link key={size}
-                                to={`/find-tyres?size=${size.replace(/\s+/g, '')}`}
+                                href={`/find-tyres?size=${size.replace(/\s+/g, '')}`}
                                 className="text-[10px] font-bold text-gray-500 hover:text-[#FB7E10] hover:bg-white/5 border border-white/5 px-2.5 py-1.5 rounded-md transition-all duration-200 uppercase tracking-tighter"
                             >
                                 {size}
@@ -162,9 +162,9 @@ const Footer = () => {
                             © 2025 Mobile Tyre Champions. All rights reserved.
                         </p>
                         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[11px] font-bold uppercase tracking-wider text-gray-500">
-                            <Link to="/privacy" className="hover:text-[#FB7E10] transition-colors">Privacy Policy</Link>
-                            <Link to="/terms" className="hover:text-[#FB7E10] transition-colors">Terms & Conditions</Link>
-                            <Link to="/cookies" className="hover:text-[#FB7E10] transition-colors">Cookie Policy</Link>
+                            <Link href="/privacy" className="hover:text-[#FB7E10] transition-colors">Privacy Policy</Link>
+                            <Link href="/terms" className="hover:text-[#FB7E10] transition-colors">Terms & Conditions</Link>
+                            <Link href="/cookies" className="hover:text-[#FB7E10] transition-colors">Cookie Policy</Link>
                         </div>
                     </div>
                 </div>

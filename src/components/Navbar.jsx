@@ -1,15 +1,18 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import {
   Phone, Menu, X, ChevronDown,
   Home, Info, Search, Truck, Settings, MapPin, MessageSquare
 } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -18,7 +21,7 @@ const Navbar = () => {
   }, []);
 
   // Close menu when route changes
-  useEffect(() => { setIsMenuOpen(false); }, [location]);
+  useEffect(() => { setIsMenuOpen(false); }, [pathname]);
 
   const links = [
     { label: 'Home', to: '/', icon: <Home size={20} /> },
@@ -39,7 +42,7 @@ const Navbar = () => {
     { label: 'Contact', to: '/contact', icon: <MessageSquare size={20} /> },
   ];
 
-  const isActive = (to) => location.pathname === to;
+  const isActive = (to) => pathname === to;
 
   return (
     <div className="sticky top-0 left-0 w-full z-[100]">
@@ -51,7 +54,7 @@ const Navbar = () => {
       >
         {/* Logo (Left Part) */}
         <div className="flex justify-start items-center">
-          <Link to="/" className="flex items-center h-full">
+          <Link href="/" className="flex items-center h-full">
             <div className="flex items-center justify-center h-14 md:h-20 hover:scale-110 transition-all duration-500">
               <img
                 src="/images/MTC logo 2.png"
@@ -77,7 +80,7 @@ const Navbar = () => {
         <div className="hidden lg:flex flex-[3] items-center justify-center gap-4 xl:gap-8 text-[12px] xl:text-[13px] font-bold text-white tracking-widest px-2">
           {links.map(({ label, to, isNew, dropdown }) => (
             <div key={label} className="relative group">
-              <Link to={to}
+              <Link href={to}
                 onClick={(e) => { if (to === '#') e.preventDefault(); }}
                 className={`relative py-2 transition-all flex items-center gap-1.5 whitespace-nowrap ${isActive(to) ? 'text-[#0B1528]' : 'hover:text-[#0B1528]'
                   } group-hover:translate-y-[-1px]`}
@@ -92,7 +95,7 @@ const Navbar = () => {
               {dropdown && (
                 <div className="absolute top-full left-[-20px] mt-4 w-72 bg-white backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.2)] border border-[#0B1528]/5 rounded-2xl py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 translate-y-4 group-hover:translate-y-0 z-50">
                   {dropdown.map((subItem) => (
-                    <Link key={subItem.to} to={subItem.to} className="block px-6 py-3 text-[13px] text-slate-600 hover:text-[#FB7E10] hover:bg-slate-50 transition-all font-semibold whitespace-nowrap">{subItem.label}</Link>
+                    <Link key={subItem.to} href={subItem.to} className="block px-6 py-3 text-[13px] text-slate-600 hover:text-[#FB7E10] hover:bg-slate-50 transition-all font-semibold whitespace-nowrap">{subItem.label}</Link>
                   ))}
                 </div>
               )}
@@ -145,7 +148,7 @@ const Navbar = () => {
           <div className="flex-grow overflow-y-auto p-4 space-y-2">
             {links.map(({ label, to, icon, isNew, dropdown }) => (
               <div key={label} className="w-full">
-                <Link to={to}
+                <Link href={to}
                   onClick={(e) => { if (to === '#') e.preventDefault(); }}
                   className={`flex items-center justify-between w-full p-4 rounded-2xl transition-all ${isActive(to)
                     ? 'text-[#FB7E10] bg-orange-50/50 shadow-inner'
@@ -170,7 +173,7 @@ const Navbar = () => {
                   <div className="grid grid-cols-1 gap-2 mt-2 px-2 pb-2">
                     {dropdown.map(subItem => (
                       <Link key={subItem.to}
-                        to={subItem.to}
+                        href={subItem.to}
                         className={`flex items-center gap-3 py-3 px-4 rounded-xl text-xs font-bold transition-all ${isActive(subItem.to)
                           ? 'text-[#FB7E10] bg-orange-50'
                           : 'text-slate-500 bg-slate-50/50 hover:bg-slate-50'

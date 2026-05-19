@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { MapPin, Phone, ArrowRight, Shield, Clock, Zap, Star, Search, Navigation } from 'lucide-react';
 
 const locations = [
@@ -157,7 +159,7 @@ const LocationsPage = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                      {filteredLocations.map((loc, index) => (
                         <Link
-                           to={`/contact?location=${loc.name}`}
+                           href={`/contact?location=${loc.name}`}
                            key={index}
                            className="group relative bg-white border border-slate-200 rounded-[2rem] p-0 hover:border-[#FB7E10] transition-all duration-500 overflow-hidden flex flex-col shadow-sm hover:shadow-2xl hover:-translate-y-2 cursor-pointer outline-none focus:ring-4 focus:ring-orange-100"
                         >
@@ -358,7 +360,7 @@ const LocationsPage = () => {
                   <a href="tel:02071013856" className="inline-flex items-center justify-center gap-4 bg-[#FB7E10] text-white px-12 py-6 rounded-2xl font-black uppercase tracking-widest text-lg md:text-xl hover:bg-orange-600 hover:scale-105 transition-all shadow-xl active:scale-95 shadow-orange-900/40">
                      <Phone size={24} fill="white" /> 0207 101 3856
                   </a>
-                  <Link to="/contact" className="inline-flex items-center justify-center gap-4 bg-white text-[#0B1528] px-12 py-6 rounded-2xl font-black uppercase tracking-widest text-lg md:text-xl hover:bg-[#FB7E10] hover:text-white transition-all shadow-xl active:scale-95">
+                  <Link href="/contact" className="inline-flex items-center justify-center gap-4 bg-white text-[#0B1528] px-12 py-6 rounded-2xl font-black uppercase tracking-widest text-lg md:text-xl hover:bg-[#FB7E10] hover:text-white transition-all shadow-xl active:scale-95">
                      Request Area Check
                   </Link>
                </div>

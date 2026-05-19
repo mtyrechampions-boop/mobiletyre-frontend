@@ -1,34 +1,18 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { Phone, Calendar, MapPin, ChevronDown, CheckCircle, AlertCircle, Loader } from 'lucide-react';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import L from 'leaflet';
+import dynamic from 'next/dynamic';
 import { submitAppointment, validateUKPhoneNumber } from '../api/appointmentService';
 
-// Fix Leaflet default icon issues
-import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
-import markerIcon from 'leaflet/dist/images/marker-icon.png';
-import markerShadow from 'leaflet/dist/images/marker-shadow.png';
-
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: markerIcon2x,
-  iconUrl: markerIcon,
-  shadowUrl: markerShadow,
-});
-
-// Component to handle map center updates
-const ChangeView = ({ center }) => {
-  const map = useMap();
-  map.setView(center, 14);
-  return null;
-};
+// Dynamically import LeafletMap component with ssr disabled
+const LeafletMap = dynamic(() => import('../components/LeafletMap'), { ssr: false });
 
 const BookingPage = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const queryParams = new URLSearchParams(location.search);
-  const initialPostcode = queryParams.get('postcode') || '';
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const initialPostcode = searchParams.get('postcode') || '';
 
   const [formData, setFormData] = useState({
     fullName: '',
@@ -136,23 +120,7 @@ const BookingPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-start">
           {/* Left: Leaflet Map */}
           <div className="bg-gray-100 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl md:shadow-2xl border-4 border-white h-[300px] md:h-[500px] lg:h-[650px] lg:sticky lg:top-24 z-10">
-            <MapContainer 
-              center={mapCenter} 
-              zoom={14} 
-              scrollWheelZoom={false}
-              style={{ height: '100%', width: '100%' }}
-            >
-              <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-              <Marker position={mapCenter}>
-                <Popup>
-                  Postcode: {formData.postcode}
-                </Popup>
-              </Marker>
-              <ChangeView center={mapCenter} />
-            </MapContainer>
+            <LeafletMap mapCenter={mapCenter} postcode={formData.postcode} />
             
             {isGeocoding && (
               <div className="absolute inset-0 bg-white/50 backdrop-blur-sm flex items-center justify-center z-[1000]">
@@ -166,14 +134,14 @@ const BookingPage = () => {
             {success ? (
               <div className="text-center py-8 md:py-12 space-y-6">
                 <div className="w-16 h-16 md:w-20 md:h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle size={40} md:size={48} />
+                  <CheckCircle size={40} className="md:w-12 md:h-12" />
                 </div>
                 <h2 className="text-2xl md:text-3xl font-black text-gray-900 uppercase">Booking Confirmed!</h2>
                 <p className="text-gray-600 font-medium text-base md:text-lg">
                   Thank you, {formData.fullName}. Our team will call you at {formData.phoneNumber} shortly to confirm your service.
                 </p>
                 <button
-                  onClick={() => navigate('/')}
+                  onClick={() => router.push('/')}
                   className="bg-[#0B1528] text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-slate-900 transition-all"
                 >
                   Back to Homepage
@@ -346,7 +314,7 @@ const BookingPage = () => {
                     href="tel:02071013856"
                     className="w-full bg-[#FB7E10] hover:bg-orange-600 text-white py-4 md:py-5 rounded-2xl font-black uppercase tracking-tight shadow-lg transition-all active:scale-[0.98] flex items-center justify-center gap-3 text-base md:text-lg text-center"
                   >
-                    <Phone size={20} md:size={22} fill="currentColor" />
+                    <Phone size={20} className="md:w-[22px] md:h-[22px]" fill="currentColor" />
                     Call Now for Express Service
                   </a>
                   

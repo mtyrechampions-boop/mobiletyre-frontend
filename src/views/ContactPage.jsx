@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'next/navigation';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Zap, Shield, Award } from 'lucide-react';
 
 const ContactPage = () => {
@@ -14,7 +16,7 @@ const ContactPage = () => {
         message: '',
     });
 
-    const [searchParams] = useSearchParams();
+    const searchParams = useSearchParams();
 
     useEffect(() => {
         const location = searchParams.get('location');
