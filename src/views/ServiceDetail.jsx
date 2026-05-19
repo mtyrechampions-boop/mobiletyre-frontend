@@ -6,8 +6,9 @@ import Link from 'next/link';
 import { servicesData } from '../data/servicesData';
 import { Phone, CheckCircle, ShieldCheck, Clock, MapPin, Star, Zap, Wrench, ArrowRight } from 'lucide-react';
 
-const ServiceDetail = () => {
-    const { id } = useParams();
+const ServiceDetail = ({ id: propId }) => {
+    const params = useParams();
+    const id = propId || params?.id;
     const service = servicesData.find(s => s.id === id);
 
     if (!service) {
