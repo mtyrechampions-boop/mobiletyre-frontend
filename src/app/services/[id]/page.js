@@ -6,6 +6,7 @@ export const metadata = {
   description: 'Fast, reliable mobile tyre services available 24/7 across Surrey and Hampshire.',
 };
 
-export default function Page({ params }) {
-  return <ServiceDetail id={params?.id} />;
+export default async function Page({ params }) {
+  const resolvedParams = await params;
+  return <ServiceDetail id={resolvedParams?.id} />;
 }
