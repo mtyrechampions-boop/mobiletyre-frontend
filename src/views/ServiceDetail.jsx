@@ -34,7 +34,7 @@ const ServiceDetail = ({ id: propId }) => {
                     <img
                         src={service.image}
                         alt={service.title}
-                        className={`w-full h-full ${service.fit === 'contain' ? 'object-contain bg-white' : 'object-cover object-right-top md:object-cover md:object-center'}`}
+                        className={`w-full h-full ${service.fit === 'contain' ? 'object-contain bg-white' : 'object-cover object-center'}`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/60 to-black/20" />
                 </div>
@@ -63,7 +63,7 @@ const ServiceDetail = ({ id: propId }) => {
                     <div className="flex flex-col items-center justify-center gap-4">
                         <a
                             href="tel:02071013856"
-                            className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#FB7E10] text-white px-12 py-5 rounded-xl font-black text-lg md:text-xl uppercase tracking-widest hover:bg-orange-600 transition-all shadow-2xl hover:-translate-y-1 active:translate-y-0"
+                                className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#FB7E10] text-white px-6 sm:px-12 py-3 sm:py-5 rounded-xl font-black text-base sm:text-lg md:text-xl uppercase tracking-widest hover:bg-orange-600 transition-all shadow-2xl hover:-translate-y-1 active:translate-y-0"
                         >
                             <Phone size={24} fill="white" className="stroke-none animate-bounce" />
                             Call Now: 0207 101 3856
@@ -178,16 +178,16 @@ const ServiceDetail = ({ id: propId }) => {
                     </div>
 
                     {/* Right: Sticky Sidebar CTA */}
-                    <div className="lg:w-1/3 w-full sticky top-32">
+                    <div className="lg:w-1/3 w-full lg:sticky lg:top-32">
                         <div className="bg-[#0B1528] rounded-3xl p-8 lg:p-10 text-white relative shadow-2xl overflow-hidden">
                            <div className="relative z-10 space-y-6 text-center">
                                 <h3 className="text-3xl font-black uppercase tracking-tight leading-tight">
                                     Need {service.title} <span className="text-[#FB7E10]">Now?</span>
                                 </h3>
-                                
-                                <p className="text-gray-400 font-medium text-sm">
-                                    Speak directly to our technicians. No middle-men, no call centers. Instant dispatch available.
-                                </p>
+                                <a 
+                                    href="tel:02071013856"
+                                    className="w-full sm:w-auto bg-[#FB7E10] text-white py-4 sm:py-5 rounded-xl font-black uppercase tracking-widest text-base hover:bg-orange-600 transition-all shadow-xl active:scale-95"
+                                >
 
                                 <div className="pt-4">
                                     <a 
@@ -218,7 +218,7 @@ const ServiceDetail = ({ id: propId }) => {
                         
                         <a 
                             href="tel:02071013856"
-                            className="w-full sm:w-auto bg-[#FB7E10] text-white px-6 sm:px-10 md:px-16 py-4 md:py-6 rounded-2xl font-black uppercase tracking-widest text-sm sm:text-base md:text-xl hover:bg-white hover:text-slate-900 transition-all shadow-[0_0_30px_rgba(251,126,16,0.3)] active:scale-95 flex items-center justify-center gap-3 sm:gap-4 group"
+                            className="w-full sm:w-auto bg-[#FB7E10] text-white px-4 sm:px-10 md:px-16 py-3 md:py-6 rounded-2xl font-black uppercase tracking-widest text-sm sm:text-base md:text-xl hover:bg-white hover:text-slate-900 transition-all shadow-[0_0_30px_rgba(251,126,16,0.3)] active:scale-95 flex items-center justify-center gap-3 sm:gap-4 group"
                         >
                             <Phone size={20} className="sm:hidden animate-pulse" fill="currentColor" />
                             <span className="whitespace-nowrap">Get Back On The Road</span> 
