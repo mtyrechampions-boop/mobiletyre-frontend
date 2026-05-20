@@ -112,6 +112,41 @@ const AboutPage = () => {
         </div>
       </section>
 
+      {/* ── ENVIRONMENT COMMITMENT ─────────────────────────────────────── */}
+      <section className="bg-white py-6 md:py-10 px-4 sm:px-10 lg:px-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="md:w-2/3">
+              <div className="flex items-start gap-6">
+                <div className="mt-1">
+                  <div className="w-1.5 h-12 bg-[#FB7E10] rounded-full" />
+                </div>
+
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-black tracking-tight text-black">Our Commitment to the Environment</h2>
+                  <div className="w-20 h-1.5 bg-[#FB7E10] mt-4 rounded-full" />
+                  <div className="text-gray-600 mt-4 space-y-4">
+                    <p>
+                      Old tyres are a significant environmental challenge. We never leave old tyres at the roadside or dispose of them irresponsibly. Every tyre we remove is taken away for proper recycling through our registered waste disposal partners. Used tyres are processed into rubber crumb for use in playgrounds, sports surfaces, and road construction.
+                    </p>
+                    <p>
+                      We're also actively transitioning our van fleet toward lower-emission vehicles because we believe a mobile service should minimise its footprint as well as your inconvenience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="md:w-1/3">
+              <div className="rounded-2xl overflow-hidden bg-[#F1F3F6] p-4 shadow-md">
+                <img src="/images/precision.avif" alt="Tyre recycling" className="w-full h-48 object-cover rounded-lg" />
+                <div className="mt-4 text-sm text-gray-600">We partner with registered waste disposal partners to recycle tyres into rubber crumb used in playgrounds, sports surfaces and road construction.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* ── OUR STORY ─────────────────────────────────────────────────────── */}
       <section className="bg-white py-6 md:py-8 px-4 sm:px-10 lg:px-20">
@@ -141,10 +176,11 @@ const AboutPage = () => {
             </div>
 
             <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-              Mobile Tyre Champions was built on a simple belief — no driver should be stranded. Our mobile operation means no waiting in garages, no lengthy delays. You stay where you are, and we come to you with the same equipment and expertise as a workshop.
+              Mobile Tyre Champions was founded by people who understood that the traditional garage model isn't built for how modern life actually works. You discover a flat tyre at 7am, just before the school run. You notice your tyres are wearing thin on a Sunday evening. You blow a tyre on a dual carriageway at midnight. None of these moments are convenient. None of them fit neatly into a 9-to-5 booking slot.
               </p>
             <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-              Based at Grosvenor Road, Aldershot, Postcode GU11 3HY, we serve customers across the UK with a large stock of expert technicians and fully equipped mobile vans — delivering convenience, safety, and transparency with every job.
+              We set out to build a mobile tyre service that genuinely works for drivers one that's fast, honest, professionally equipped, and available when people actually need it
+
              </p>
 
             {/* service bullets */}
@@ -159,16 +195,69 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+      {/* ── WHAT WE STAND FOR (CARDS) ─────────────────────────────────────── */}
+      <section className="bg-white py-6 md:py-10 px-4 sm:px-10 lg:px-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-8 text-left">
+            <div className="flex items-start gap-6">
+              <div className="mt-1">
+                <div className="w-1.5 h-12 bg-[#FB7E10] rounded-full" />
+              </div>
+              <div>
+                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-black">What We Stand For</h2>
+                <div className="w-20 h-1.5 bg-[#FB7E10] mt-4 rounded-full" />
+                <p className="text-gray-600 mt-4 max-w-2xl"></p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Card 1 - dark */}
+            <div className="relative rounded-2xl p-6 md:p-8 bg-[#0B1528] text-white shadow-[0_10px_30px_rgba(2,6,23,0.4)] overflow-hidden">
+              <div className="absolute bottom-4 right-4 opacity-5 pointer-events-none">
+                <Wrench className="w-28 h-28" />
+              </div>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-white/5 mb-4">
+                <CheckCircle className="w-6 h-6 text-[#FB7E10]" />
+              </div>
+              <h3 className="text-lg font-black uppercase mb-2">Honesty Above Everything</h3>
+              <p className="text-gray-300">We will never tell you that you need a new tyre when a repair will do the job safely. We will never quote one price and charge another. We give clear information so you can make the right decision for your budget.</p>
+            </div>
+
+            {/* Card 2 - light */}
+            <div className="relative rounded-2xl p-6 md:p-8 bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-all overflow-hidden">
+              <div className="absolute bottom-4 right-4 opacity-5 pointer-events-none">
+                <Wrench className="w-28 h-28" />
+              </div>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-[#FB7E10]/10 mb-4">
+                <Shield className="w-6 h-6 text-[#FB7E10]" />
+              </div>
+              <h3 className="text-lg font-black uppercase mb-2">Quality That Doesn't Cut Corners</h3>
+              <p className="text-gray-700">Every tyre we fit is balanced using professional equipment. Every wheel nut is torqued to manufacturer specification. Every repair is carried out to British Standard BS AU 159. We treat every customer's vehicle the way we'd want ours treated.</p>
+            </div>
+
+            {/* Card 3 - light */}
+            <div className="relative rounded-2xl p-6 md:p-8 bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-all overflow-hidden">
+              <div className="absolute bottom-4 right-4 opacity-5 pointer-events-none">
+                <Wrench className="w-28 h-28" />
+              </div>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-[#FB7E10]/10 mb-4">
+                <Clock className="w-6 h-6 text-[#FB7E10]" />
+              </div>
+              <h3 className="text-lg font-black uppercase mb-2">Availability When It Matters</h3>
+              <p className="text-gray-700">Tyre emergencies don't happen on schedule. We operate 24 hours a day, 7 days a week, 365 days a year because we believe a reliable tyre service has to be there when the road throws something unexpected at you.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ── WHY CHOOSE US ─────────────────────────────────────────────────── */}
       <section id="why-us" className="bg-[#F1F3F6] py-6 md:py-8 px-4 sm:px-10 lg:px-20">
         <div className="max-w-7xl mx-auto">
           {/* heading */}
           <div className="mb-12 md:mb-16 text-center md:text-left flex flex-col items-center md:items-start">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight text-black md:max-w-xl">
-              Why Thousands Choose<br />
-              <span className="text-[#FB7E10]">Mobile Tyre Champions</span>
-            </h2>
+            <div className="font-black text-black text-4xl sm:text-5xl md:text-6xl leading-tight">Why Thousands Choose</div>
+            <div className="font-black text-[#FB7E10] text-4xl sm:text-5xl md:text-7xl leading-tight tracking-tight -mt-1">Mobile Tyre Champions</div>
             <div className="w-16 h-1.5 bg-[#FB7E10] mt-4" />
           </div>
 
