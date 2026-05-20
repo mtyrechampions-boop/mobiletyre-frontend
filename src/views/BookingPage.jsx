@@ -17,6 +17,7 @@ const BookingPage = () => {
   const [formData, setFormData] = useState({
     fullName: '',
     phoneNumber: '',
+    email: '',
     vehicleReg: '',
     postcode: initialPostcode,
     tyreWidth: '',
@@ -69,6 +70,10 @@ const BookingPage = () => {
     if (!formData.fullName.trim()) return setError('Name is required');
     if (!formData.phoneNumber.trim()) return setError('Phone number is required');
     if (!validateUKPhoneNumber(formData.phoneNumber)) return setError('Invalid UK phone number');
+    // Email required and basic validation
+    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email.trim()) return setError('Email is required');
+    if (!emailRe.test(formData.email.trim())) return setError('Please enter a valid email address');
     if (!formData.vehicleReg.trim()) return setError('Vehicle registration is required');
     if (!formData.tyreWidth || !formData.profile || !formData.rim || !formData.speed) {
       return setError('Please provide all tyre details');
@@ -83,6 +88,7 @@ const BookingPage = () => {
       const appointmentData = {
         fullName: formData.fullName,
         phoneNumber: formData.phoneNumber,
+        email: formData.email,
         serviceType: 'Mobile Tyre Fitting',
         tyreSize: `${formData.tyreWidth}/${formData.profile} R${formData.rim} ${formData.speed}`,
         timingSlot: formData.timingSlot,
@@ -177,6 +183,17 @@ const BookingPage = () => {
                       className="w-full bg-white border-2 border-gray-100 rounded-xl px-4 py-3.5 focus:border-[#FB7E10] focus:ring-0 transition-all font-semibold outline-none shadow-sm"
                     />
                   </div>
+                </div>
+
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full bg-white border-2 border-gray-100 rounded-xl px-4 py-3.5 focus:border-[#FB7E10] focus:ring-0 transition-all font-semibold outline-none shadow-sm"
+                  />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -184,6 +184,9 @@ export const submitAppointment = async (appointmentData) => {
 
       // Location Notes
       locationNotes: (appointmentData.locationNotes || '').trim()
+      ,
+      // Optional email field
+      email: (appointmentData.email || '').trim()
     }
   };
 

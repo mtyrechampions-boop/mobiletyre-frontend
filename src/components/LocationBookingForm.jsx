@@ -20,6 +20,7 @@ const LocationBookingForm = () => {
     serviceType: servicesData[0]?.title || '',
     tyreSize: '',
     timingSlot: 'As Soon As Possible',
+    import { Mail } from 'lucide-react';
     locationNotes: '',
   });
 
@@ -32,6 +33,7 @@ const LocationBookingForm = () => {
     setFormData(prev => ({
       ...prev,
       postcode: data.postcode,
+        email: '',
       address: data.fullAddress,
       town: data.city,
       latitude: data.latitude,
@@ -115,6 +117,16 @@ const LocationBookingForm = () => {
       setSuccess(true);
       
       setFormData({
+        // Email validation (required)
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!formData.email.trim()) {
+          setError('Email address is required');
+          return false;
+        }
+        if (!emailRegex.test(formData.email.trim())) {
+          setError('Please enter a valid email address');
+          return false;
+        }
         fullName: '',
         phoneNumber: '',
         postcode: '',
@@ -138,6 +150,7 @@ const LocationBookingForm = () => {
     } finally {
       setLoading(false);
     }
+            email: '',
   };
 
   return (
