@@ -26,9 +26,9 @@ const ServiceDetail = ({ id: propId }) => {
     const isEmergency = service.priority || service.category === 'Emergency';
 
     return (
-        <div className="bg-slate-50 min-h-screen">
+        <div className="bg-slate-50 min-h-screen pb-28 pt-0">
             {/* ── HERO SECTION ───────────────────────── */}
-            <section className="relative min-h-[60vh] md:min-h-[70vh] flex flex-col justify-end items-center overflow-hidden border-b-[10px] border-[#FB7E10] pt-28">
+            <section className="relative min-h-[50vh] md:min-h-[70vh] flex flex-col justify-end items-center overflow-hidden border-b-[10px] border-[#FB7E10] pt-0 md:pt-8">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <img
@@ -76,7 +76,7 @@ const ServiceDetail = ({ id: propId }) => {
             </section>
 
             {/* ── MOBILE QUICK SUMMARY BAR ─────────────────────────────────────── */}
-            <section className="bg-white border-b border-gray-100 py-4 px-4 sticky top-[64px] z-40 shadow-sm md:hidden">
+            <section className="bg-white border-b border-gray-100 py-4 px-4 sticky top-20 z-40 shadow-sm md:hidden">
                 <div className="flex justify-between items-center max-w-md mx-auto text-xs font-bold uppercase tracking-widest text-[#0B1528]">
                     <div className="flex flex-col items-center gap-1">
                         <Clock size={16} className="text-[#FB7E10]" />
@@ -179,16 +179,11 @@ const ServiceDetail = ({ id: propId }) => {
 
                     {/* Right: Sticky Sidebar CTA */}
                     <div className="lg:w-1/3 w-full lg:sticky lg:top-32">
-                        <div className="bg-[#0B1528] rounded-3xl p-8 lg:p-10 text-white relative shadow-2xl overflow-hidden">
+                        <div className="bg-[#0B1528] rounded-3xl p-8 lg:p-10 text-white relative shadow-2xl overflow-hidden mt-6 lg:mt-0 z-10">
                            <div className="relative z-10 space-y-6 text-center">
                                 <h3 className="text-3xl font-black uppercase tracking-tight leading-tight">
                                     Need {service.title} <span className="text-[#FB7E10]">Now?</span>
                                 </h3>
-                                <a 
-                                    href="tel:02071013856"
-                                    className="w-full sm:w-auto bg-[#FB7E10] text-white py-4 sm:py-5 rounded-xl font-black uppercase tracking-widest text-base hover:bg-orange-600 transition-all shadow-xl active:scale-95"
-                                >
-
                                 <div className="pt-4">
                                     <a 
                                         href="tel:02071013856"

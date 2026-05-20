@@ -19,8 +19,10 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
       </head>
-      <body className="min-h-screen bg-slate-50 antialiased">
+      <body className="min-h-screen bg-slate-50 antialiased pt-20 md:pt-24">
         <ScrollToTop />
         <TyrePartners />
         <Navbar />

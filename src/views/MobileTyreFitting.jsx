@@ -324,7 +324,7 @@ const MobileTyreFitting = () => {
 
                     {/* Right: Sticky CTA Box */}
                     <div className="lg:col-span-1">
-                        <div className="fixed lg:sticky top-8 right-4 lg:right-auto w-[calc(100%-2rem)] lg:w-full bg-gradient-to-br from-slate-900 to-slate-800 p-10 rounded-3xl border border-white/10 shadow-2xl space-y-8 max-w-sm lg:max-w-none z-40">
+                        <div className="static lg:sticky lg:top-32 lg:right-auto w-full max-w-sm lg:max-w-none mx-auto lg:mx-0 bg-gradient-to-br from-slate-900 to-slate-800 p-10 rounded-3xl border border-white/10 shadow-2xl space-y-8 z-40">
                             <div>
                                 <p className="text-slate-400 font-bold text-sm uppercase tracking-widest mb-2">Quick Service</p>
                                 <p className="text-white text-3xl font-black leading-none">
