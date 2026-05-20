@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import Process from '@/components/Process';
+import WhyChoose from '@/components/WhyChoose';
 import HowToReadTyre from '@/components/HowToReadTyre';
 import Services from '@/components/Services';
 import HowItWorks from '@/components/HowItWorks';
@@ -17,6 +18,7 @@ export default function Page() {
     <>
       <Hero />
       <Features />
+      <WhyChoose />
       <Process />
       <HowToReadTyre />
       <Services />
