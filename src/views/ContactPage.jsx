@@ -175,7 +175,7 @@ const ContactPage = () => {
                                 </div>
                                 <div className="space-y-1 sm:space-y-0.5 min-w-0 w-full">
                                     <span className="block text-gray-400 text-[10px] font-black uppercase tracking-widest leading-none">Support Email</span>
-                                    <span className="block text-base sm:text-xl font-black text-black leading-tight lowercase break-all sm:break-normal group-hover:text-[#FB7E10] group-active:text-[#FB7E10] active:text-[#FB7E10] transition-colors">info@mobiletyrechampions.com</span>
+                                    <span className="block text-base sm:text-xl lg:text-base xl:text-lg font-black text-black leading-tight lowercase break-all group-hover:text-[#FB7E10] group-active:text-[#FB7E10] active:text-[#FB7E10] transition-colors">info@mobiletyrechampions.com</span>
                                 </div>
                             </a>
                         </div>

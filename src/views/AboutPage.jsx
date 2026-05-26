@@ -139,7 +139,7 @@ const AboutPage = () => {
 
             <div className="md:w-1/3">
               <div className="rounded-2xl overflow-hidden bg-[#F1F3F6] p-4 shadow-md">
-                <img src="/images/precision.avif" alt="Tyre recycling" className="w-full h-48 object-cover rounded-lg" />
+                <img src="/images/mobile tyre champions contribution to environment.avif" alt="Tyre recycling" className="w-full h-48 object-cover rounded-lg" />
                 <div className="mt-4 text-sm text-gray-600">We partner with registered waste disposal partners to recycle tyres into rubber crumb used in playgrounds, sports surfaces and road construction.</div>
               </div>
             </div>
@@ -155,7 +155,7 @@ const AboutPage = () => {
           <div className="w-full md:w-1/2 relative">
             <div className="rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
               <img
-                src="/images/hero image.avif"
+                src="/images/high spppppppppppp (42) (1).avif"
                 alt="Our Story"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 onError={(e) => { e.target.src = '/images/fitting-step.png'; }}

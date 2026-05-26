@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Quote, Zap, ArrowRight, ShieldCheck, CreditCard, CheckCircle } from 'lucide-react';
+import Link from 'next/link';
 
 const Process = () => {
   return (
@@ -88,9 +89,9 @@ const Process = () => {
           </div>
 
           <div className="pt-4 md:pt-8 flex justify-center">
-            <a href="tel:02071013856" className="inline-flex items-center justify-center gap-4 bg-[#FB7E10] text-white px-8 md:px-12 py-4 md:py-5 rounded-2xl font-bold tracking-widest text-sm hover:bg-orange-600 transition-all shadow-xl shadow-orange-900/10 active:scale-95">
-              GET TYRES NOW <ArrowRight size={18} />
-            </a>
+            <Link href="/find-tyres" className="inline-flex items-center justify-center gap-4 bg-[#FB7E10] text-white px-8 md:px-12 py-4 md:py-5 rounded-2xl font-bold tracking-widest text-sm hover:bg-orange-600 transition-all shadow-xl shadow-orange-900/10 active:scale-95">
+              FIND YOUR TYRE SIZE <ArrowRight size={18} />
+            </Link>
           </div>
         </div>
       </div>

@@ -1,48 +1,492 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
-  <url>
-    <loc>https://www.mobiletyrechampions.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <!-- Main Pages -->
-  <url>
-    <loc>https://www.mobiletyrechampions.com/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.mobiletyrechampions.com/find-tyres</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.mobiletyrechampions.com/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.mobiletyrechampions.com/services</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.mobiletyrechampions.com/locations</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-  <!-- Specific Services -->
-  <url>
-    <loc>https://www.mobiletyrechampions.com/services/locking-wheel-nut-removal</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.mobiletyrechampions.com/services/trailer-tyre-fitting</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+
+<url>
+  <loc>https://mobiletyrechampions.com/</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/about</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/services/locking-wheel-nut-removal</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/services/trailer-tyre-fitting</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/services/van-tyres</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/services</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/locations</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/services/premium-tyre-service</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/services/puncture-repair</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/services/24-7-tyre-service</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/services/precision-wheel-balancing</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/services/emergency-tyre-fitting</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/services/tyre-recycling</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/services/mobile-tyre-fitting</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=205/55R16</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=225/45R17</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=195/65R15</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=225/40R18</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=185/65R15</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=215/55R17</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=225/50R17</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=235/45R18</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=175/65R14</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=205/45R17</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=245/40R18</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=255/35R19</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=195/55R16</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=215/60R16</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=235/40R18</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=185/60R15</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=215/50R17</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=225/55R17</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=205/60R16</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=225/45R18</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=255/40R19</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=275/35R19</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=235/35R19</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=255/35R18</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=245/45R18</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=215/45R17</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=205/50R17</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=195/60R15</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=175/70R14</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=185/55R15</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=255/30R20</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=285/30R20</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=275/40R20</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=315/35R20</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=295/35R21</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=235/55R17</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=235/60R18</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=225/65R17</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=215/65R16</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/find-tyres?size=235/50R18</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Aldershot</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Alton</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Ascot</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Ash</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Ash%20Vale</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Bagshot</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Basingstoke</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Bordon</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Bracknell</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Camberley</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Church%20Crookham</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Cranleigh</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Crowthorne</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Farnborough</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Farnham</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Fleet</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Frimley</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Godalming</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Guildford</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Hankley%20Common</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Haslemere</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Hindhead</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Hook</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Lightwater</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Liphook</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Liss</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=London</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Midhurst</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Petersfield</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Petworth</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Sandhurst</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Southall</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Southampton</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Tongham</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Uxbridge</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Virginia%20Water</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Winchester</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Windlesham</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Woking</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mobiletyrechampions.com/contact?location=Yateley</loc>
+  <lastmod>2026-05-26T12:07:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>

@@ -128,7 +128,7 @@
     image: "/images/tyre recycling.avif",
     category: "Standard",
     description: "Responsible on-site collection and certified recycling of scrap tyres. We separate reusable tyres, recycle end-of-life rubber, and provide commercial disposal receipts.",
-    cta: "Enquire",
+    cta: "Book a Service",
     secondaryCta: "Learn More",
     features: [
       "Certified disposal partners",
@@ -142,10 +142,10 @@
   {
     id: 'van-tyres',
     title: "Van Tyres & Light Commercial",
-    image: "/images/tmf2ku38t4uvma6ayydt.avif",
+    image: "/images/high spppppppppppp (41).avif",
     category: "Specialist",
     description: "We carry a wide range of commercial vehicle tyres and can serve business fleets as well as individual van owners.",
-    cta: "Book Van Service",
+    cta: "Book a Service",
     secondaryCta: "Learn More",
     features: [
       "Load-rated tyre options",
