@@ -107,7 +107,7 @@ const MobileTyreFitting = () => {
             <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-end items-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/images/Mobile Trailer Tyre Fitting.avif"
+                        src="/images/high spppppppppppp (39).avif"
                         alt="Mobile Tyre Fitting Service"
                         className="w-full h-full object-cover scale-105"
                     />
