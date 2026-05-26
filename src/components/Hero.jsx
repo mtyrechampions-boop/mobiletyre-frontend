@@ -21,13 +21,13 @@ const Hero = () => {
       <div className="absolute inset-0 z-0 bg-[#1a1a1a]">
         <div className="sticky top-0 w-full h-[100dvh] flex justify-center items-center md:hidden">
           <img
-            src="/images/mobile-tyre-champions-van1.jpeg"
+            src="/images/mobile-tyre-champions-van1.webp"
             alt="Mobile Tyre Champions van mobile"
             className="w-full h-full object-cover object-center"
           />
         </div>
         <img
-          src="/images/mobile-tyre-champions-van1.jpeg"
+          src="/images/mobile-tyre-champions-van1.webp"
           alt="Mobile Tyre Champions van"
           className="hidden md:block w-full h-full object-cover md:object-center"
         />

@@ -37,7 +37,7 @@ const HowItWorks = () => {
     <section className="bg-gradient-to-br from-[#0B1528] via-[#0D1D3A] to-[#0B1528] py-20 md:py-28 px-4 md:px-10 relative overflow-hidden">
       {/* Blue Textured Background */}
       <div className="absolute inset-0 opacity-30 pointer-events-none mix-blend-overlay">
-        <img src="/images/cta-bg.png" alt="texture" className="w-full h-full object-cover" />
+        <img src="/images/cta-bg.webp" alt="texture" className="w-full h-full object-cover" />
       </div>
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}></div>
       

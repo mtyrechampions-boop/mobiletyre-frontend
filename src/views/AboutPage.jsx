@@ -67,7 +67,7 @@ const AboutPage = () => {
         {/* bg image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/fitting-step.png"
+            src="/images/fitting-step.webp"
             alt="Mobile Tyre Champions technician at work"
             className="w-full h-full object-cover opacity-40 scale-110"
           />
@@ -158,7 +158,7 @@ const AboutPage = () => {
                 src="/images/high spppppppppppp (42) (1).avif"
                 alt="Our Story"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                onError={(e) => { e.target.src = '/images/fitting-step.png'; }}
+                onError={(e) => { e.target.src = '/images/fitting-step.webp'; }}
               />
             </div>
             {/* floating badge */}
@@ -337,7 +337,7 @@ const AboutPage = () => {
           {/* bg image */}
           <div className="absolute top-0 right-0 w-full md:w-1/2 h-full opacity-30 md:opacity-40 pointer-events-none">
             <img
-              src="/images/cta-bg.png"
+              src="/images/cta-bg.webp"
               alt="Tire tread background"
               className="w-full h-full object-cover grayscale brightness-200"
             />

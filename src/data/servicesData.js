@@ -2,7 +2,7 @@
   {
     id: 'premium-tyre-service',
     title: "Premium Tyre Service",
-    image: "/images/Premium Tyre Service.gif",
+    image: "/images/Premium Tyre Service.webp",
     category: "Standard",
     description: "We find the right tyre for your vehicle and budget, then fit and balance it at your location. Bridgestone, Continental, Goodyear — all available.",
     cta: "Book a Service",
@@ -71,7 +71,7 @@
   {
     id: 'precision-wheel-balancing',
     title: "Wheel Balancing",
-    image: "/images/Untitled-design-7-2.png",
+    image: "/images/Untitled-design-7-2.webp",
     fit: "contain",
     category: "Standard",
     description: "Feeling vibrations through the steering wheel? Unbalanced wheels cause uneven tyre wear and reduce fuel efficiency. We balance wheels on-site using precision equipment.",

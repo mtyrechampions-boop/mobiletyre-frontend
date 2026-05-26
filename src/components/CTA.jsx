@@ -8,7 +8,7 @@ const CTA = () => {
         {/* Background Tread Pattern */}
         <div className="absolute top-0 right-0 w-full md:w-1/2 h-full opacity-30 md:opacity-40 pointer-events-none">
           <img
-            src="/images/cta-bg.png"
+            src="/images/cta-bg.webp"
             alt="Tire Tread"
             className="w-full h-full object-cover grayscale brightness-200"
           />
