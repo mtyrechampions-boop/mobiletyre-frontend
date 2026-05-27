@@ -3,6 +3,7 @@
     id: 'premium-tyre-service',
     title: "Premium Tyre Service",
     image: "/images/Premium Tyre Service.webp",
+    mobileImage: "/images/PREMIUM TYRE SERVICE.avif",
     category: "Standard",
     description: "We find the right tyre for your vehicle and budget, then fit and balance it at your location. Bridgestone, Continental, Goodyear — all available.",
     cta: "Book a Service",

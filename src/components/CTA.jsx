@@ -10,6 +10,7 @@ const CTA = () => {
           <img
             src="/images/cta-bg.webp"
             alt="Tire Tread"
+            loading="lazy"
             className="w-full h-full object-cover grayscale brightness-200"
           />
           <div className="absolute inset-x-0 inset-y-0 bg-gradient-to-t md:bg-gradient-to-l from-transparent to-black"></div>

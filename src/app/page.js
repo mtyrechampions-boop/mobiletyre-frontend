@@ -9,8 +9,8 @@ import FAQ from '@/components/FAQ';
 import CTA from '@/components/CTA';
 
 export const metadata = {
-  title: 'Mobile Tyre Champions | 24/7 Emergency Mobile Tyre Fitting',
-  description: 'Stranded? Professional mobile tyre fitting delivered to your location in 30-60 minutes. Available 24/7 across Surrey & Hampshire. Call 0207 101 3856.',
+  title: 'Mobile Tyre Fitting Near Me | Mobile Tyre Service UK',
+  description: 'Looking for mobile tyre fitting near me? Mobile Tyre Champions offers Mobile Tyre Service UK solutions, including fast mobile tyre repair and roadside support.',
 };
 
 export default function Page() {

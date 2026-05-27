@@ -1,8 +1,8 @@
 import LockingWheelNutRemoval from '@/views/LockingWheelNutRemoval';
 
 export const metadata = {
-  title: 'Locking Wheel Nut Removal | Mobile Nut Extraction Service',
-  description: 'Lost or damaged your locking wheel nut key? Our expert mobile technicians remove any locking wheel nut without damaging your alloys. 24/7 service.',
+  title: 'Locking Wheel Nut Removal | Mobile Removal Service',
+  description: 'Need to remove locking wheel nut? Connect with us today for a professional mobile locking wheel nut removal service to remove locking wheel nut quickly and safely.',
 };
 
 export default function Page() {

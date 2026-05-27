@@ -85,6 +85,7 @@ const Features = () => {
                   <img
                     src={logo.src}
                     alt={logo.name}
+                    loading="lazy"
                     className={`max-h-full max-w-full object-contain transition-all duration-500 hover:scale-110 ${logo.name?.includes('Kia') ? 'brightness-0' : ''}`}
                   />
                 </div>

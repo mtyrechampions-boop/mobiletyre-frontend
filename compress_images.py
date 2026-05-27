@@ -1,7 +1,9 @@
 import os
 from PIL import Image
 
-images_dir = r"c:\Users\TYAGI\OneDrive\Desktop\mtc\mobiletyre-frontend\public\images"
+# Dynamically locate the public/images folder relative to the script location
+base_dir = os.path.dirname(os.path.abspath(__file__))
+images_dir = os.path.join(base_dir, "public", "images")
 
 def convert_to_webp(filename, quality=80):
     src_path = os.path.join(images_dir, filename)

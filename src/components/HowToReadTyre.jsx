@@ -83,6 +83,7 @@ const HowToReadTyre = () => {
               <img
                 src="/images/emergency mobile tyre  (1).webp"
                 alt="Tyre sidewall markings guide showing section width, aspect ratio, radial construction, and wheel diameter"
+                loading="lazy"
                 className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700 pointer-events-none"
               />
             </div>

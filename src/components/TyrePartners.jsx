@@ -28,6 +28,7 @@ const TyrePartners = () => {
                   <img
                     src={encodeURI(brand.logo)}
                     alt={brand.name}
+                    loading="lazy"
                     className="w-full h-full object-contain transition-all duration-500"
                     onError={(e) => { const el = e.currentTarget.closest('.group\\\\/card'); if (el) el.style.display = 'none'; }}
                   />

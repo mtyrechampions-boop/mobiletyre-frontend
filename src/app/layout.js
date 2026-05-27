@@ -9,8 +9,8 @@ import ScrollToTop from '../components/ScrollToTop';
 import Script from 'next/script';
 
 export const metadata = {
-  title: 'Mobile Tyre Champions | UK\'s Fast Mobile Tyre Service',
-  description: 'Roadside mobile tyre fitting and emergency tyre repair across London and surrounding areas.',
+  title: 'Mobile Tyre Fitting Near Me | Mobile Tyre Service UK',
+  description: 'Looking for mobile tyre fitting near me? Mobile Tyre Champions offers Mobile Tyre Service UK solutions, including fast mobile tyre repair and roadside support.',
 };
 
 export default function RootLayout({ children }) {

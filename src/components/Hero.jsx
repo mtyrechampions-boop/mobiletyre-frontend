@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import QuickAvailabilityForm from './QuickAvailabilityForm';
 
 /**
@@ -19,18 +20,26 @@ const Hero = () => {
     <div className="relative min-h-[600px] flex items-center bg-gray-900 overflow-x-hidden md:overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0 bg-[#1a1a1a]">
-        <div className="sticky top-0 w-full h-[100dvh] flex justify-center items-center md:hidden">
-          <img
+        <div className="sticky top-0 w-full h-[100dvh] flex justify-center items-center md:hidden relative">
+          <Image
             src="/images/mobile-tyre-champions-van1.webp"
             alt="Mobile Tyre Champions van mobile"
+            fill
+            priority
+            sizes="100vw"
             className="w-full h-full object-cover object-center"
           />
         </div>
-        <img
-          src="/images/mobile-tyre-champions-van1.webp"
-          alt="Mobile Tyre Champions van"
-          className="hidden md:block w-full h-full object-cover md:object-center"
-        />
+        <div className="hidden md:block w-full h-full relative">
+          <Image
+            src="/images/mobile-tyre-champions-van1.webp"
+            alt="Mobile Tyre Champions van"
+            fill
+            priority
+            sizes="100vw"
+            className="w-full h-full object-cover md:object-center"
+          />
+        </div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-10 lg:px-20 relative z-10 py-10 md:py-20 lg:py-28">

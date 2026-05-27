@@ -30,11 +30,25 @@ const Services = ({ filterCategory = 'All' }) => {
             <div className="flex flex-col md:flex-row h-full min-h-[400px]">
               {/* Image Side */}
               <div className="w-full md:w-[45%] lg:w-[40%] relative overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className={`w-full h-64 md:h-full ${service.fit === 'contain' ? 'object-contain p-8 bg-slate-50' : 'object-cover'} transition-transform duration-1000 group-hover:scale-110`}
-                />
+                {service.mobileImage ? (
+                  <picture>
+                    <source media="(max-width: 767px)" srcSet={service.mobileImage} />
+                    <source media="(min-width: 768px)" srcSet={service.image} />
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      loading="lazy"
+                      className={`w-full h-64 md:h-full ${service.fit === 'contain' ? 'object-contain p-8 bg-slate-50' : 'object-cover'} transition-transform duration-1000 group-hover:scale-110`}
+                    />
+                  </picture>
+                ) : (
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    loading="lazy"
+                    className={`w-full h-64 md:h-full ${service.fit === 'contain' ? 'object-contain p-8 bg-slate-50' : 'object-cover'} transition-transform duration-1000 group-hover:scale-110`}
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:via-transparent md:to-white/10"></div>
 
                 {/* Category Badge */}
