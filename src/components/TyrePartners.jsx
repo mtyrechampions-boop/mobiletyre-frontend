@@ -4,15 +4,15 @@ import React from 'react';
 
 const TyrePartners = () => {
   const brands = [
-    { name: 'Apollo', logo: '/logo/maxxis.png' },
-    { name: 'CEAT', logo: '/logo/bridgestone.png' },
-    { name: 'Bf Good Rich', logo: '/logo/Bf Good Rich.png' },
-    { name: 'Bridgestone', logo: '/logo/bridgestone.png' },
-    { name: 'Continental', logo: '/logo/continental.png' },
-    { name: 'Dunlop', logo: '/logo/dumlop.png' },
-    { name: 'Kumho', logo: '/logo/kumho tires.png' },
-    { name: 'Michelin', logo: '/logo/michelin.png' },
-    { name: 'Yokohama', logo: '/logo/yokohama.png' },
+    { name: 'Apollo', logo: '/logo/maxxis.webp' },
+    { name: 'CEAT', logo: '/logo/bridgestone.webp' },
+    { name: 'Bf Good Rich', logo: '/logo/Bf Good Rich.webp' },
+    { name: 'Bridgestone', logo: '/logo/bridgestone.webp' },
+    { name: 'Continental', logo: '/logo/continental.webp' },
+    { name: 'Dunlop', logo: '/logo/dumlop.webp' },
+    { name: 'Kumho', logo: '/logo/kumho tires.webp' },
+    { name: 'Michelin', logo: '/logo/michelin.webp' },
+    { name: 'Yokohama', logo: '/logo/yokohama.webp' },
   ];
 
   return (

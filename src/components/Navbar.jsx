@@ -57,7 +57,7 @@ const Navbar = () => {
           <Link href="/" className="flex items-center h-full">
             <div className="flex items-center justify-center h-14 md:h-20 hover:scale-110 transition-all duration-500">
               <img
-                src="/images/MTC logo 2.png"
+                src="/images/MTC logo 2.webp"
                 alt="Mobile Tyre Champions"
                 className="h-full w-auto object-contain"
               />
@@ -134,7 +134,7 @@ const Navbar = () => {
           {/* Header */}
           <div className="p-6 flex items-center justify-between border-b border-slate-100 bg-slate-50/50">
             <div className="bg-white p-1 rounded flex items-center justify-center aspect-square h-10 shadow-sm">
-              <img src="/images/MTC logo 2.png" alt="Logo" className="h-full w-full object-contain" />
+              <img src="/images/MTC logo 2.webp" alt="Logo" className="h-full w-full object-contain" />
             </div>
             <button
               onClick={() => setIsMenuOpen(false)}
