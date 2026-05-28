@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const TyreFinderPage = () => {
     useEffect(() => {
-        document.title = "Find the Right Tyres for Your Car | Registration Lookup Tool | Mobile Tyre Champions";
+        document.title = "Find the Right Tyres for Your Car | Mobile Tyre Champions";
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc) {
             metaDesc.setAttribute("content", "Use our free tyre registration lookup tool to find the exact tyres for your vehicle in seconds. Search by size or reg plate — then book a mobile fitting across Surrey & Hampshire with us.");
