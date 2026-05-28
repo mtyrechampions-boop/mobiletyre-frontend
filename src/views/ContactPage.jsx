@@ -73,7 +73,7 @@ const ContactPage = () => {
                 throw new Error(errorMessage);
             }
 
-            
+
             setSubmitted(true);
             setFormData({
                 fullName: '',
@@ -97,14 +97,14 @@ const ContactPage = () => {
 
     return (
         <div className="font-['Outfit'] bg-slate-50 min-h-screen text-slate-900 overflow-x-hidden">
-            
+
             {/* ── HERO SECTION ── */}
             <section className="relative pt-8 pb-6 md:pt-12 md:pb-10 px-4 border-b border-gray-200 overflow-hidden bg-white">
                 <div className="absolute inset-0 z-0">
-                    <img 
-                        src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2070&auto=format&fit=crop" 
-                        alt="Customer Support Hero" 
-                        className="w-full h-full object-cover opacity-10 grayscale scale-110" 
+                    <img
+                        src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2070&auto=format&fit=crop"
+                        alt="Customer Support Hero"
+                        className="w-full h-full object-cover opacity-10 grayscale scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-slate-50"></div>
                 </div>
@@ -129,7 +129,7 @@ const ContactPage = () => {
             {/* ── CONTACT GRID ── */}
             <section className="pt-4 md:pt-6 pb-10 px-4 md:px-10 lg:px-20 relative z-20">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-                    
+
                     {/* Left: Contact Info (4 cols) */}
                     <div className="lg:col-span-4 space-y-12">
                         <div className="space-y-4 flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -142,7 +142,7 @@ const ContactPage = () => {
                         </div>
 
                         <div className="space-y-6">
-                             <a href="tel:02071013856" className="group flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 p-6 md:p-8 bg-white border border-gray-100 rounded-3xl hover:shadow-2xl hover:border-[#FB7E10]/30 transition-all duration-500 shadow-xl overflow-hidden">
+                            <a href="tel:02071013856" className="group flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 p-6 md:p-8 bg-white border border-gray-100 rounded-3xl hover:shadow-2xl hover:border-[#FB7E10]/30 transition-all duration-500 shadow-xl overflow-hidden">
                                 <div className="shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-orange-50 rounded-xl sm:rounded-2xl flex items-center justify-center text-[#FB7E10] border border-orange-100 group-hover:bg-[#FB7E10] group-hover:text-white group-active:bg-[#FB7E10] group-active:text-white transition-all duration-500">
                                     <Phone size={24} className="sm:w-8 sm:h-8" />
                                 </div>
@@ -184,21 +184,21 @@ const ContactPage = () => {
                         </div>
 
                         <div className="bg-[#0B1528] rounded-[3rem] p-10 text-white space-y-8 relative overflow-hidden group shadow-2xl">
-                             <div className="absolute top-0 right-0 w-32 h-32 bg-[#FB7E10]/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
-                             <div className="space-y-2">
-                                 <h4 className="text-2xl font-black uppercase tracking-tight">Rapid Response Matrix</h4>
-                                 <p className="text-gray-400 font-medium text-sm leading-relaxed">Our centralized dispatch system tracks every unit in real-time to guarantee our arrival within 60 minutes.</p>
-                             </div>
-                             <div className="grid grid-cols-2 gap-4">
-                                 <div className="p-4 bg-white/5 rounded-2xl border border-white/10 text-center">
-                                     <span className="block text-[#FB7E10] text-3xl font-black">30m</span>
-                                     <span className="text-[10px] font-black uppercase tracking-widest text-white/40">Avg. Arrival</span>
-                                 </div>
-                                 <div className="p-4 bg-white/5 rounded-2xl border border-white/10 text-center">
-                                     <span className="block text-[#FB7E10] text-3xl font-black">50+</span>
-                                     <span className="text-[10px] font-black uppercase tracking-widest text-white/40">Live Units</span>
-                                 </div>
-                             </div>
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-[#FB7E10]/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
+                            <div className="space-y-2">
+                                <h4 className="text-2xl font-black uppercase tracking-tight">Rapid Response Matrix</h4>
+                                <p className="text-gray-400 font-medium text-sm leading-relaxed">Our centralized dispatch system tracks every unit in real-time to guarantee our arrival within 60 minutes.</p>
+                            </div>
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="p-4 bg-white/5 rounded-2xl border border-white/10 text-center">
+                                    <span className="block text-[#FB7E10] text-3xl font-black">30m</span>
+                                    <span className="text-[10px] font-black uppercase tracking-widest text-white/40">Avg. Arrival</span>
+                                </div>
+                                <div className="p-4 bg-white/5 rounded-2xl border border-white/10 text-center">
+                                    <span className="block text-[#FB7E10] text-3xl font-black">50+</span>
+                                    <span className="text-[10px] font-black uppercase tracking-widest text-white/40">Live Units</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
