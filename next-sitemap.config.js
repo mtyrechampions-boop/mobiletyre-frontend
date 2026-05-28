@@ -1,15 +1,24 @@
-// next-sitemap.config.js
-/** @type {import('next-sitemap').IConfig} */
+
+
+/** @type {IConfig} */
 const config = {
   siteUrl: 'https://mobiletyrechampions.com',
   generateRobotsTxt: true,
-  // Exclude any URL that includes a query string
-  exclude: [
-    '/contact/*',               // location‑specific contact pages
-    '/find-tyres*?size=*',      // size‑filtered lookup pages
-    '/**/*?*',                  // generic catch‑all for any `?` in the URL
-  ],
+  // Exclude any URL that contains a query string
+  exclude: ['/**?*'],
+  // Strip query params from the generated loc values
+  transform: async (config, url) => {
+    const cleanUrl = url.split('?')[0];
+    return {
+      loc: cleanUrl,
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: new Date().toISOString(),
+    };
+  },
+  // Optional: set a default priority / changefreq if needed
   changefreq: 'weekly',
   priority: 0.8,
 };
+
 export default config;
