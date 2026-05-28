@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Zap, Shield, Award } from 'lucide-react';
 
 const ContactPage = () => {
@@ -17,6 +17,7 @@ const ContactPage = () => {
     });
 
     const searchParams = useSearchParams();
+    const router = useRouter();
 
     useEffect(() => {
         const location = searchParams.get('location');
@@ -26,6 +27,8 @@ const ContactPage = () => {
                 message: `I need mobile tyre assistance in ${location}.`,
                 serviceRequired: 'Immediate Emergency Fitting'
             }));
+            // Remove query parameter to keep a single canonical URL
+            router.replace('/contact');
         }
     }, [searchParams]);
 

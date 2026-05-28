@@ -41,11 +41,8 @@ const TyreFinderPage = () => {
                     </div>
 
                     <div className="space-y-4 max-w-4xl mx-auto">
-                        <h1 className="text-3xl sm:text-5xl md:text-8xl font-bold tracking-tight leading-tight animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
-                            Registration <br />
-                            <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(90deg, #FB7E10 0%, #ffb347 100%)' }}>
-                                Lookup Tool
-                            </span>
+                        <h1 className="text-3xl sm:text-5xl md:text-8xl font-bold tracking-tight leading-tight animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100 text-center">
+                            Registration<br />Lookup Tool
                         </h1>
                         <div className="w-16 sm:w-24 h-1.5 sm:h-2 bg-[#FB7E10] mx-auto rounded-full"></div>
                         <p className="text-gray-400 text-base sm:text-lg md:text-2xl font-medium leading-relaxed max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200 px-2">
@@ -58,9 +55,9 @@ const TyreFinderPage = () => {
                         <a href="tel:02071013856" className="inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 px-8 py-4 rounded-2xl transition-all group">
                             <Phone className="text-[#FB7E10] group-hover:scale-110 transition-transform" />
                             <span className="text-sm font-black uppercase tracking-widest text-[#FB7E10]">Need Help?
-                                
-                                
-                                 Call 0207 101 3856</span>
+
+
+                                Call 0207 101 3856</span>
                         </a>
                     </div>
                 </div>
@@ -69,6 +66,7 @@ const TyreFinderPage = () => {
             {/* ── TYRE FINDER COMPONENT SECTION ─────────────────────────────── */}
             <section className="relative z-20 -mt-10 mb-20">
                 <div className="max-w-7xl mx-auto">
+                    <h2 className="text-3xl font-bold text-center my-8"></h2>
                     <TyreFinder />
                 </div>
             </section>
@@ -141,16 +139,16 @@ const TyreFinderPage = () => {
                     <h2 className="text-4xl md:text-7xl font-bold text-white uppercase tracking-tighter leading-none">
                         Ready to get <br /> <span className="text-[#FB7E10]">moving?</span>
                     </h2>
-                    
+
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-                        <Link 
-                            href="/about" 
+                        <Link
+                            href="/about"
                             className="w-full sm:w-auto px-12 py-5 bg-[#FB7E10] text-white rounded-2xl font-bold tracking-widest text-sm hover:bg-orange-600 transition-all shadow-xl shadow-orange-900/20 active:scale-95 text-center"
                         >
                             Learn About Us
                         </Link>
-                        <a 
-                            href="tel:02071013856" 
+                        <a
+                            href="tel:02071013856"
                             className="w-full sm:w-auto px-12 py-5 bg-transparent border-2 border-white/10 text-white rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-white hover:text-black hover:border-white transition-all active:scale-95 text-center"
                         >
                             Emergency? Call Now

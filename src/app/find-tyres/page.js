@@ -9,6 +9,7 @@ export const metadata = {
 export default function Page() {
   return (
     <Suspense fallback={<div className="min-h-screen bg-slate-50 flex items-center justify-center font-bold text-slate-800">Loading...</div>}>
+
       <TyreFinderPage />
     </Suspense>
   );
