@@ -6,30 +6,30 @@ import { Star } from 'lucide-react';
 const dummyReviews = [
   {
     id: 1,
-    name: "Sahil Kataria",
-    date: "4 weeks ago",
-    content: "Absolutely legends. I stuck on a roadside they came in less than 30 minutes and sort my tyre. Thanks and highly recommend",
-    rating: 5
-  },
-  {
-    id: 2,
     name: "Stefania Tudor",
     date: "4 days ago",
     content: "Super friendly customer service and explained the condition of the rest of my tyres, very helpful. Also came super quick and got the job done efficiently. Recommend :)",
     rating: 5
   },
   {
-    id: 3,
+    id: 2,
     name: "Lucille Metcalfe",
     date: "5 days ago",
     content: "Punctual, courteous service, going the extra mile to make sure I was happy with everything. Thoroughly reccomended service.",
     rating: 5
   },
   {
-    id: 4,
+    id: 3,
     name: "Jbd London",
     date: "2 weeks ago",
     content: "Excellent service from the mobile tyre champion Mr Gill Arrived on time, was professional and friendly throughout, and replaced the tyre quickly with no hassle. Really convenient not having to visit a garage, and the pricing was fair too. Everything was explained clearly and the work was completed efficiently. Highly recommend for anyone needing fast and reliable tyre replacement at home or roadside.",
+    rating: 5
+  },
+    {
+    id: 4,
+    name: "Sahil Kataria",
+    date: "4 weeks ago",
+    content: "Absolutely legends. I stuck on a roadside they came in less than 30 minutes and sort my tyre. Thanks and highly recommend",
     rating: 5
   },
   {
