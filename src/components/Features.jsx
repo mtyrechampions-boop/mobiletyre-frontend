@@ -8,7 +8,7 @@ const Features = () => {
     { src: "https://uploads.vw-mms.de/system/production/images/vwn/030/145/images/7a0d84d3b718c9a621100e43e581278433114c82/DB2019AL01950_web_1600.jpg?1649155356", name: "Volkswagen" },
     // Toyota
     { src: "https://www.carlogos.org/car-logos/toyota-logo-2020-europe-640.png", name: "Toyota" },
-   // Renault
+    // Renault
     { src: "https://w7.pngwing.com/pngs/270/984/png-transparent-renault-5-renault-16-renault-4-car-renault-logo-angle-text-rectangle-thumbnail.png", name: "Renault" },
     // Peugeot
     { src: "https://www.stellantis.com/content/dam/stellantis-corporate/brands/peugeot/peugeot.png", name: "Peugeot" },
@@ -59,10 +59,10 @@ const Features = () => {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-[0.9] mb-4">
             Trusted by the <span className="text-[#FB7E10]">Best in Motion</span>
           </h2>
-         
+
           <p className="text-slate-400 text-xs md:text-sm font-bold uppercase tracking-widest max-w-lg">
             We stock and fit tyres from the brands UK drivers trust — Bridgestone, Goodyear, Continental and more.
-           </p>
+          </p>
         </div>
 
         {/* The Marquee Track */}
@@ -107,9 +107,9 @@ const Features = () => {
       </div>
 
       {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
         {/* Card 1: Ultra-Rapid Deployment (Span 2) */}
-          <div className="bg-[#1c3b7f] rounded-2xl md:rounded-3xl p-6 relative overflow-hidden group hover:shadow-lg transition-all h-full">
+        <div className="bg-[#1c3b7f] rounded-2xl md:rounded-3xl p-6 relative overflow-hidden group hover:shadow-lg transition-all h-full">
           <div className="absolute right-0 bottom-0 pointer-events-none opacity-5 translate-x-1/4 translate-y-1/4 group-hover:scale-110 transition-transform duration-700">
             <svg viewBox="0 0 24 24" fill="currentColor" className="w-96 h-96 text-white">
               <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
@@ -124,14 +124,15 @@ const Features = () => {
                 <path d="M12 7V12" />
               </svg>
             </div>
-            <h3 className="text-2xl font-bold tracking-tight mb-4 text-white">Ultra-Rapid Deployment</h3>
+            <h3 className="text-2xl font-bold tracking-tight mb-4 text-white">Quick Arrival Times</h3>
             <p className="text-white/90 font-medium leading-relaxed max-w-md">
-             When you're stuck, every minute counts. We keep technicians spread across Surrey and Hampshire so we reach you fast — and we give you a realistic arrival time and stick to it.   </p>
+              Our mobile technicians cover Surrey and Hampshire, helping you get moving again without unnecessary delays.
+            </p>
           </div>
         </div>
 
         {/* Card 2: Expertise Guaranteed */}
-          <div className="bg-[#0B1528] rounded-2xl md:rounded-3xl p-6 text-white hover:shadow-xl transition-all h-full">
+        <div className="bg-[#0B1528] rounded-2xl md:rounded-3xl p-6 text-white hover:shadow-xl transition-all h-full">
           <div className="w-10 h-10 md:w-12 md:h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 md:mb-8">
             <svg className="w-6 h-6 text-[#1c3b7f]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M12 15L15 21L21 21L18 15" />
@@ -140,23 +141,25 @@ const Features = () => {
               <path d="M12 6L12 12" />
             </svg>
           </div>
-          <h3 className="text-2xl font-bold tracking-tight mb-4">Expertise Guaranteed</h3>
+          <h3 className="text-2xl font-bold tracking-tight mb-4">Tyres Fitted On-Site</h3>
           <p className="text-gray-400 font-medium leading-relaxed mb-10">
-            Cars, SUVs, vans, 4x4s — our trained technicians handle them all. You get main-dealer quality without ever having to leave your home or the roadside.  </p>
-          
+            Cars, SUVs, vans and 4x4s. Professional fitting wherever you are, using quality tyres you can trust.
+          </p>
+
         </div>
 
         {/* Card 3: 24/7 Kinetic Support */}
-          <div className="bg-[#1c3b7f] rounded-2xl md:rounded-3xl p-6 hover:shadow-lg transition-all h-full">
+        <div className="bg-[#1c3b7f] rounded-2xl md:rounded-3xl p-6 hover:shadow-lg transition-all h-full">
           <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 md:mb-8 border border-blue-400">
             <svg className="w-6 h-6 text-[#1c3b7f]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <circle cx="12" cy="12" r="10" />
               <path d="M12 6V12L16 14" />
             </svg>
           </div>
-          <h3 className="text-2xl font-black uppercase tracking-tight mb-4 text-white">24/7 Kinetic Support</h3>
+          <h3 className="text-2xl font-black uppercase tracking-tight mb-4 text-white">Open 24/7</h3>
           <p className="text-white/90 font-medium leading-relaxed">
-            You'll speak to a real person who gives you a straight answer — no jargon, no upselling, just honest advice about what your tyres need and what it'll cost.  </p>
+            Speak to a real person any time of day or night. Honest pricing, no jargon, and no surprise costs.
+          </p>
         </div>
 
       </div>

@@ -12,6 +12,7 @@ import { usePathname } from 'next/navigation';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [openMobileDropdown, setOpenMobileDropdown] = useState(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -21,7 +22,11 @@ const Navbar = () => {
   }, []);
 
   // Close menu when route changes
-  useEffect(() => { setIsMenuOpen(false); }, [pathname]);
+  useEffect(() => { setIsMenuOpen(false); setOpenMobileDropdown(null); }, [pathname]);
+
+  const toggleMobileDropdown = (label) => {
+    setOpenMobileDropdown(prev => prev === label ? null : label);
+  };
 
   const links = [
     { label: 'Home', to: '/', icon: <Home size={20} /> },
@@ -37,7 +42,24 @@ const Navbar = () => {
         { label: 'Van Tyres', to: '/services/van-tyres' },
       ]
     },
-    { label: 'Services', to: '/services', icon: <Settings size={20} /> },
+    {
+      label: 'Services',
+      to: '#',
+      icon: <Settings size={20} />,
+      dropdown: [
+        { label: 'All Services', to: '/services' },
+        { label: 'Mobile Tyre Fitting', to: '/services/mobile-tyre-fitting' },
+        { label: 'Emergency Tyre Fitting', to: '/services/emergency-tyre-fitting' },
+        { label: 'Puncture Repair', to: '/services/puncture-repair' },
+        { label: 'Locking Wheel Nut Removal', to: '/services/locking-wheel-nut-removal' },
+        { label: 'Trailer Tyre Fitting', to: '/services/trailer-tyre-fitting' },
+        { label: 'Premium Tyre Service', to: '/services/premium-tyre-service' },
+        { label: '24/7 Tyre Service', to: '/services/24-7-tyre-service' },
+        { label: 'Wheel Balancing', to: '/services/precision-wheel-balancing' },
+        { label: 'Tyre Recycling', to: '/services/tyre-recycling' },
+        { label: 'Van Tyres', to: '/services/van-tyres' },
+      ]
+    },
     { label: 'Areas We Cover', to: '/locations', icon: <MapPin size={20} /> },
     { label: 'Contact', to: '/contact', icon: <MessageSquare size={20} /> },
   ];
@@ -148,29 +170,48 @@ const Navbar = () => {
           <div className="flex-grow overflow-y-auto p-4 space-y-2">
             {links.map(({ label, to, icon, isNew, dropdown }) => (
               <div key={label} className="w-full">
-                <Link href={to}
-                  onClick={(e) => { if (to === '#') e.preventDefault(); }}
-                  className={`flex items-center justify-between w-full p-4 rounded-2xl transition-all ${isActive(to)
-                    ? 'text-[#FB7E10] bg-orange-50/50 shadow-inner'
-                    : 'text-slate-700 hover:bg-slate-50 active:bg-orange-50/30'
-                    }`}
-                >
-                  <div className="flex items-center gap-4">
-                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${isActive(to) ? 'bg-[#FB7E10] text-white shadow-lg shadow-orange-500/20' : 'bg-slate-100 text-slate-500'
-                      }`}>
-                      {icon}
+                {dropdown ? (
+                  <button
+                    onClick={() => toggleMobileDropdown(label)}
+                    className={`flex items-center justify-between w-full p-4 rounded-2xl transition-all ${openMobileDropdown === label
+                      ? 'text-[#FB7E10] bg-orange-50/50 shadow-inner'
+                      : 'text-slate-700 hover:bg-slate-50 active:bg-orange-50/30'
+                      }`}
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${openMobileDropdown === label ? 'bg-[#FB7E10] text-white shadow-lg shadow-orange-500/20' : 'bg-slate-100 text-slate-500'
+                        }`}>
+                        {icon}
+                      </div>
+                      <div className="flex flex-col items-start">
+                        <span className="font-bold text-sm tracking-tight">{label}</span>
+                      </div>
                     </div>
-                    <div className="flex flex-col items-start">
-                      <span className="font-bold text-sm tracking-tight">{label}</span>
-                      {isNew && <span className="text-[9px] font-black tracking-widest text-[#FB7E10]">JUST ADDED</span>}
+                    <ChevronDown size={18} className={`text-slate-300 transition-transform duration-300 ${openMobileDropdown === label ? 'rotate-180' : ''}`} />
+                  </button>
+                ) : (
+                  <Link href={to}
+                    className={`flex items-center justify-between w-full p-4 rounded-2xl transition-all ${isActive(to)
+                      ? 'text-[#FB7E10] bg-orange-50/50 shadow-inner'
+                      : 'text-slate-700 hover:bg-slate-50 active:bg-orange-50/30'
+                      }`}
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${isActive(to) ? 'bg-[#FB7E10] text-white shadow-lg shadow-orange-500/20' : 'bg-slate-100 text-slate-500'
+                        }`}>
+                        {icon}
+                      </div>
+                      <div className="flex flex-col items-start">
+                        <span className="font-bold text-sm tracking-tight">{label}</span>
+                        {isNew && <span className="text-[9px] font-black tracking-widest text-[#FB7E10]">JUST ADDED</span>}
+                      </div>
                     </div>
-                  </div>
-                  {dropdown && <ChevronDown size={18} className={`text-slate-300 transition-transform ${isActive(to) ? 'rotate-180' : ''}`} />}
-                </Link>
+                  </Link>
+                )}
 
-                {/* Sub-menu with nice spacing */}
+                {/* Sub-menu with accordion toggle */}
                 {dropdown && (
-                  <div className="grid grid-cols-1 gap-2 mt-2 px-2 pb-2">
+                  <div className={`grid grid-cols-1 gap-2 mt-2 px-2 pb-2 overflow-hidden transition-all duration-300 ${openMobileDropdown === label ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                     {dropdown.map(subItem => (
                       <Link key={subItem.to}
                         href={subItem.to}

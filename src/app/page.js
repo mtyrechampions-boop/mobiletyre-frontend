@@ -5,6 +5,7 @@ import WhyChoose from '@/components/WhyChoose';
 import HowToReadTyre from '@/components/HowToReadTyre';
 import Services from '@/components/Services';
 import HowItWorks from '@/components/HowItWorks';
+import Reviews from '@/components/Reviews';
 import FAQ from '@/components/FAQ';
 import CTA from '@/components/CTA';
 
@@ -76,6 +77,7 @@ export default function Page() {
       <HowToReadTyre />
       <Services />
       <HowItWorks />
+      <Reviews />
       <FAQ />
       <CTA />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />

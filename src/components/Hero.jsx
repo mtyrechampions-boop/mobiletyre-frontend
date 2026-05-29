@@ -17,32 +17,22 @@ import QuickAvailabilityForm from './QuickAvailabilityForm';
 const Hero = () => {
 
   return (
-    <div className="relative min-h-[600px] flex items-center bg-gray-900 overflow-x-hidden md:overflow-hidden">
+    <div className="relative min-h-[100dvh] md:min-h-[600px] flex items-start md:items-center bg-gray-900 overflow-x-hidden md:overflow-hidden pt-24 pb-12 md:py-0">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0 bg-[#1a1a1a]">
-        <div className="sticky top-0 w-full h-[100dvh] flex justify-center items-center md:hidden relative">
-          <Image
-            src="/images/mobile-tyre-champions-van1.webp"
-            alt="Mobile Tyre Champions van mobile"
-            fill
-            priority
-            sizes="100vw"
-            className="w-full h-full object-cover object-center"
-          />
-        </div>
-        <div className="hidden md:block w-full h-full relative">
+        <div className="block w-full h-full relative">
           <Image
             src="/images/mobile-tyre-champions-van1.webp"
             alt="Mobile Tyre Champions van"
             fill
             priority
             sizes="100vw"
-            className="w-full h-full object-cover md:object-center"
+            className="w-full h-full object-cover object-center"
           />
         </div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-10 lg:px-20 relative z-10 py-10 md:py-20 lg:py-28">
+      <div className="container mx-auto px-4 sm:px-10 lg:px-20 relative z-10 py-6 md:py-20 lg:py-28">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
           {/* Left Column - Hero Text & CTAs */}
           <div className="text-white space-y-4 md:space-y-6 text-center flex flex-col items-center bg-black/40 md:bg-black/30 backdrop-blur-md md:backdrop-blur-md p-5 sm:p-8 rounded-[2rem] md:rounded-[2rem] md:p-6 border border-white/10 md:border-white/10 shadow-2xl md:shadow-2xl mt-4 md:mt-0">
