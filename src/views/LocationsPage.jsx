@@ -85,10 +85,10 @@ const LocationsPage = () => {
                <div className="inline-flex items-center gap-2.5 bg-orange-50 border border-orange-100 px-4 py-2 rounded-xl shadow-sm">
                   <span className="text-[#FB7E10] font-black uppercase text-[10px] tracking-widest animate-pulse">Nationwide Coverage</span>
                </div> <br></br>
-               <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-[0.8] text-black">
+               <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-[0.8] text-black">
                   AREAS WE <br /> <span className="text-[#FB7E10]">COVER </span>
                </h1>
-               <p className="text-gray-500 text-sm md:text-lg font-medium max-w-2xl mx-auto leading-relaxed">
+               <p className="text-gray-500 text-sm md:text-base font-medium max-w-2xl mx-auto leading-relaxed">
                   Find your local mobile tyre technician. We operate 24/7 across {locations.length} major zones.
                </p>
 
