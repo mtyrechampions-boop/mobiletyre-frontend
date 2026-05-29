@@ -64,7 +64,7 @@ const LocationsPage = () => {
    }, [searchQuery, activeRegion]);
 
    return (
-      <div className="bg-slate-50 min-h-screen text-slate-900 font-['Outfit'] relative px-4 sm:px-6 overflow-y-auto pb-8">
+      <div className="bg-slate-50 min-h-screen text-slate-900 font-['Outfit'] overflow-hidden relative">
 
          {/* ── BACKGROUND ACCENTS ── */}
          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-100/50 rounded-full blur-[150px] -mr-64 -mt-64"></div>
@@ -75,7 +75,7 @@ const LocationsPage = () => {
             <div className="absolute inset-0 z-0">
                <img
                   src="https://images.unsplash.com/photo-1544436074-c603a16fc0c1?q=80&w=2070&auto=format&fit=crop"
-                  alt="Aerial view of UK roads and motorways representing Mobile Tyre Champions nationwide mobile tyre fitting coverage areas"
+                  alt="Mobile Tyre Service Background"
                   className="w-full h-full object-cover opacity-10 grayscale scale-110"
                />
                <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-slate-50"></div>
@@ -85,10 +85,10 @@ const LocationsPage = () => {
                <div className="inline-flex items-center gap-2.5 bg-orange-50 border border-orange-100 px-4 py-2 rounded-xl shadow-sm">
                   <span className="text-[#FB7E10] font-black uppercase text-[10px] tracking-widest animate-pulse">Nationwide Coverage</span>
                </div> <br></br>
-               <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-[0.8] text-black">
+               <h1 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] text-black">
                   AREAS WE <br /> <span className="text-[#FB7E10]">COVER </span>
                </h1>
-               <p className="text-gray-500 text-sm md:text-base font-medium max-w-2xl mx-auto leading-relaxed">
+               <p className="text-gray-500 text-lg md:text-2xl font-medium max-w-2xl mx-auto leading-relaxed">
                   Find your local mobile tyre technician. We operate 24/7 across {locations.length} major zones.
                </p>
 
