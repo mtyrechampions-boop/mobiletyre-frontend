@@ -99,10 +99,10 @@ const Features = () => {
       {/* Heading */}
       <div className="mb-10 md:mb-16 text-center md:text-left flex flex-col items-center md:items-start group">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight text-black max-w-xl">
-          Precision Engineering.<br className="hidden sm:block" />Roadside Reality.
+          24/7 Mobile Tyre Fitting at Home, Work or Roadside
         </h2>
         <p className="mt-4 text-slate-500 text-sm md:text-lg font-bold max-w-2xl leading-relaxed">
-          Great tyres, fitted by people who know what they're doing, wherever you happen to be.
+          Professional mobile tyre fitting delivered to your location. Fast response times, transparent pricing, and expert help whenever you need it.
         </p>
       </div>
 
