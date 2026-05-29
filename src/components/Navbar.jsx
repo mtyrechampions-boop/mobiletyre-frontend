@@ -91,9 +91,9 @@ const Navbar = () => {
         <div className="flex lg:hidden justify-center items-center scale-90 sm:scale-100">
           <a
             href="tel:02071013856"
-            className="flex items-center gap-2 bg-black text-white px-4 py-2.5 rounded-full font-black text-[11px] tracking-widest shadow-lg hover:scale-105 transition-all whitespace-nowrap"
+            className="flex items-center gap-2.5 bg-black text-white px-6 py-3.5 rounded-xl font-black text-[13px] tracking-widest shadow-md border border-slate-700/50 hover:bg-black transition-all whitespace-nowrap"
           >
-            <Phone size={14} fill="currentColor" />
+            <Phone size={14} className="text-[#FB7E10]" fill="currentColor" />
             <span>0207 101 3856</span>
           </a>
         </div>
@@ -130,9 +130,9 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <a
               href="tel:02071013856"
-              className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full font-black text-[13px] tracking-widest shadow-lg hover:scale-105 active:scale-95 transition-all whitespace-nowrap"
+              className="flex items-center gap-3 bg-black text-white px-8 py-4 rounded-xl font-black text-[16px] tracking-widest shadow-lg border border-slate-700/50 hover:bg-black hover:scale-[1.02] active:scale-95 transition-all whitespace-nowrap"
             >
-              <Phone size={14} fill="currentColor" />
+              <Phone size={16} className="text-[#FB7E10]" fill="currentColor" />
               <span>0207 101 3856</span>
             </a>
           </div>
