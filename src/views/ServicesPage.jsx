@@ -34,7 +34,7 @@ const ServicesPage = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1544436074-c603a16fc0c1?q=80&w=2070&auto=format&fit=crop"
-            alt="Service Hero Background"
+            alt="Professional mobile tyre fitting and replacement services showcasing the full range of tyre solutions by Mobile Tyre Champions"
             className="w-full h-full object-cover opacity-10 grayscale scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white via-white/70 to-slate-50"></div>
@@ -62,11 +62,10 @@ const ServicesPage = () => {
             <button
               key={f}
               onClick={() => setActiveFilter(f)}
-              className={`px-5 py-2 rounded-full font-black text-xs uppercase tracking-widest border transition-all ${
-                activeFilter === f
+              className={`px-5 py-2 rounded-full font-black text-xs uppercase tracking-widest border transition-all ${activeFilter === f
                   ? 'bg-[#FB7E10] text-white border-[#FB7E10] shadow-lg shadow-orange-100'
                   : 'bg-white text-slate-600 border-slate-200 hover:border-orange-300 hover:text-[#FB7E10]'
-              }`}
+                }`}
             >
               {f}
             </button>

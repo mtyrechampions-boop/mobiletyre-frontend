@@ -12,7 +12,7 @@ const Footer = () => {
                     {/* Column 1: About */}
                     <div className="space-y-6 flex flex-col items-center">
                         <Link href="/" className="flex items-center h-16 md:h-20">
-                            <img src="/images/MTC logo 3.png" alt="Mobile Tyre Champions" className="h-full w-auto max-w-full object-contain" />
+                            <img src="/images/MTC logo 3.png" alt="Mobile Tyre Champions brand logo for emergency mobile tyre fitting, tyre replacement, and roadside support" className="h-full w-auto max-w-full object-contain" />
                         </Link>
                         <p className="text-gray-400 text-sm font-medium leading-relaxed max-w-xs mx-auto">
                             Mobile Tyre Champions is a 24/7 mobile tyre fitting service based at Grosvenor Road, Aldershot GU11 3HY.

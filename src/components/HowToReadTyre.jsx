@@ -82,7 +82,7 @@ const HowToReadTyre = () => {
             <div className="relative group flex items-center justify-center p-1 xs:p-2 sm:p-3 md:p-4 lg:p-8 w-full max-w-xs xs:max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-none">
               <img
                 src="/images/emergency mobile tyre  (1).webp"
-                alt="Tyre sidewall markings guide showing section width, aspect ratio, radial construction, and wheel diameter"
+                alt="Diagram showing how to read tyre size markings to help choose the correct replacement tyre"
                 loading="lazy"
                 className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700 pointer-events-none"
               />

@@ -103,7 +103,7 @@ const ContactPage = () => {
                 <div className="absolute inset-0 z-0">
                     <img
                         src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2070&auto=format&fit=crop"
-                        alt="Customer Support Hero"
+                        alt="Professional customer support and mobile tyre fitting dispatch centre available 24/7 for emergency tyre assistance"
                         className="w-full h-full object-cover opacity-10 grayscale scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-slate-50"></div>

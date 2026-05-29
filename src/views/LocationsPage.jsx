@@ -75,7 +75,7 @@ const LocationsPage = () => {
             <div className="absolute inset-0 z-0">
                <img
                   src="https://images.unsplash.com/photo-1544436074-c603a16fc0c1?q=80&w=2070&auto=format&fit=crop"
-                  alt="Mobile Tyre Service Background"
+                  alt="Aerial view of UK roads and motorways representing Mobile Tyre Champions nationwide mobile tyre fitting coverage areas"
                   className="w-full h-full object-cover opacity-10 grayscale scale-110"
                />
                <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-slate-50"></div>

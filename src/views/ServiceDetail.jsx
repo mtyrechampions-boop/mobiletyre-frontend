@@ -33,7 +33,7 @@ const ServiceDetail = ({ id: propId }) => {
                 <div className="absolute inset-0 z-0">
                     <img
                         src={service.image}
-                        alt={service.title}
+                        alt={service.alt || service.title}
                         className={`w-full h-full ${service.fit === 'contain' ? 'object-contain bg-white' : 'object-cover object-center'}`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/60 to-black/20" />

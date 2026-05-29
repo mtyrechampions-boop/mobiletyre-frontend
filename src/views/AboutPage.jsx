@@ -68,7 +68,7 @@ const AboutPage = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/fitting-step.webp"
-            alt="Mobile Tyre Champions technician at work"
+            alt="Mobile tyre fitting technician securing a vehicle wheel during roadside tyre replacement and repair service"
             className="w-full h-full object-cover opacity-40 scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/20" />
@@ -139,7 +139,7 @@ const AboutPage = () => {
 
             <div className="md:w-1/3">
               <div className="rounded-2xl overflow-hidden bg-[#F1F3F6] p-4 shadow-md">
-                <img src="/images/mobile tyre champions contribution to environment.avif" alt="Tyre recycling" className="w-full h-48 object-cover rounded-lg" />
+                <img src="/images/mobile tyre champions contribution to environment.avif" alt="Mobile Tyre Champions environmentally responsible tyre recycling and waste disposal process for sustainable tyre management" className="w-full h-48 object-cover rounded-lg" />
                 <div className="mt-4 text-sm text-gray-600">We partner with registered waste disposal partners to recycle tyres into rubber crumb used in playgrounds, sports surfaces and road construction.</div>
               </div>
             </div>
@@ -156,7 +156,7 @@ const AboutPage = () => {
             <div className="rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
               <img
                 src="/images/high spppppppppppp (42) (1).avif"
-                alt="Our Story"
+                alt="Mobile Tyre Champions team and service van showcasing the company story of professional mobile tyre fitting and roadside assistance"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 onError={(e) => { e.target.src = '/images/fitting-step.webp'; }}
               />
@@ -338,7 +338,7 @@ const AboutPage = () => {
           <div className="absolute top-0 right-0 w-full md:w-1/2 h-full opacity-30 md:opacity-40 pointer-events-none">
             <img
               src="/images/cta-bg.webp"
-              alt="Tire tread background"
+              alt="Detailed tyre tread design showcasing quality replacement tyres and professional mobile tyre fitting services"
               className="w-full h-full object-cover grayscale brightness-200"
             />
             <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-transparent to-black" />

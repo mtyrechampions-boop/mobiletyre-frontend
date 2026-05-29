@@ -68,7 +68,7 @@ const PunctureRepair = () => {
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/puncture.avif"
-                        alt="Puncture Repair Service"
+                        alt="Mobile tyre fitting specialist carrying out puncture repair service on a damaged vehicle tyre"
                         className="w-full h-full object-cover scale-105"
                     />
                     <div className="absolute inset-0 bg-[#0B1528]/80 mix-blend-multiply" />
@@ -242,7 +242,7 @@ const PunctureRepair = () => {
                             <div className="rounded-2xl overflow-hidden">
                                 <img 
                                     src="/images/flat%20tyre%201.avif" 
-                                    alt="Slow Puncture Detection" 
+                                    alt="Close-up of a flat tyre on a vehicle highlighting slow puncture damage requiring professional mobile tyre repair" 
                                     className="w-full h-auto object-cover rounded-2xl shadow-lg"
                                 />
                             </div>

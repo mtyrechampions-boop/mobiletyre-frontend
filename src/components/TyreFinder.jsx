@@ -275,7 +275,7 @@ const TyreFinder = () => {
                             <div className="absolute inset-0 bg-[#FB7E10] blur-[80px] opacity-10 rounded-full group-hover:opacity-20 transition-opacity"></div>
                             <img
                                 src="/images/cta-bg.webp"
-                                alt="Tyre"
+                                alt="Detailed tyre tread design showcasing quality replacement tyres and professional mobile tyre fitting services"
                                 className="w-full max-w-[320px] h-auto object-contain drop-shadow-2xl grayscale brightness-75 group-hover:grayscale-0 transition-all duration-700"
                                 onError={(e) => { e.target.src = 'https://www.mobiletyremates.com/wp-content/themes/mobile-tyre-mates/assets/images/tyre.png'; }}
                             />

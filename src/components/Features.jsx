@@ -3,41 +3,41 @@ import React from 'react';
 const Features = () => {
   const brandLogos = [
     // Ford
-    { src: "https://www.carlogos.org/car-logos/ford-logo-2003-640.png", name: "Ford" },
+    { src: "https://www.carlogos.org/car-logos/ford-logo-2003-640.png", name: "Ford", alt: "Ford automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // Volkswagen
-    { src: "https://uploads.vw-mms.de/system/production/images/vwn/030/145/images/7a0d84d3b718c9a621100e43e581278433114c82/DB2019AL01950_web_1600.jpg?1649155356", name: "Volkswagen" },
+    { src: "https://uploads.vw-mms.de/system/production/images/vwn/030/145/images/7a0d84d3b718c9a621100e43e581278433114c82/DB2019AL01950_web_1600.jpg?1649155356", name: "Volkswagen", alt: "Volkswagen automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // Toyota
-    { src: "https://www.carlogos.org/car-logos/toyota-logo-2020-europe-640.png", name: "Toyota" },
+    { src: "https://www.carlogos.org/car-logos/toyota-logo-2020-europe-640.png", name: "Toyota", alt: "Toyota automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // Renault
-    { src: "https://w7.pngwing.com/pngs/270/984/png-transparent-renault-5-renault-16-renault-4-car-renault-logo-angle-text-rectangle-thumbnail.png", name: "Renault" },
+    { src: "https://w7.pngwing.com/pngs/270/984/png-transparent-renault-5-renault-16-renault-4-car-renault-logo-angle-text-rectangle-thumbnail.png", name: "Renault", alt: "Renault automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // Peugeot
-    { src: "https://www.stellantis.com/content/dam/stellantis-corporate/brands/peugeot/peugeot.png", name: "Peugeot" },
+    { src: "https://www.stellantis.com/content/dam/stellantis-corporate/brands/peugeot/peugeot.png", name: "Peugeot", alt: "Peugeot automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // Skoda
-    { src: "https://cdn.skoda-storyboard.com/2023/07/Skoda_Wordmark_RGB_Emerald_Green_e2c8d407-1440x473.png", name: "Skoda" },
+    { src: "https://cdn.skoda-storyboard.com/2023/07/Skoda_Wordmark_RGB_Emerald_Green_e2c8d407-1440x473.png", name: "Skoda", alt: "Škoda automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // SEAT
-    { src: "https://www.seat.co.uk/content/dam/countries/gb/seat-website/global-header/global-navigation/seat-logo/seat-s-logo.svg", name: "SEAT" },
+    { src: "https://www.seat.co.uk/content/dam/countries/gb/seat-website/global-header/global-navigation/seat-logo/seat-s-logo.svg", name: "SEAT", alt: "SEAT automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // --- Popular UK Models ---
     // Kia Sportage
     // --- Premium Brands ---
     // BMW
-    { src: "https://www.carlogos.org/car-logos/bmw-logo.png", name: "BMW" },
+    { src: "https://www.carlogos.org/car-logos/bmw-logo.png", name: "BMW", alt: "BMW automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // Mercedes-Benz
-    { src: "https://www.carlogos.org/car-logos/mercedes-benz-logo.png", name: "Mercedes-Benz" },
+    { src: "https://www.carlogos.org/car-logos/mercedes-benz-logo.png", name: "Mercedes-Benz", alt: "Mercedes-Benz logo representing premium vehicles serviced by Mobile Tyre Champions" },
     // Porsche
-    { src: "https://www.carlogos.org/car-logos/porsche-logo.png", name: "Porsche" },
+    { src: "https://www.carlogos.org/car-logos/porsche-logo.png", name: "Porsche", alt: "Porsche automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // Lexus
-    { src: "https://www.carlogos.org/car-logos/lexus-logo.png", name: "Lexus" },
+    { src: "https://www.carlogos.org/car-logos/lexus-logo.png", name: "Lexus", alt: "Lexus automotive brand logo displayed among vehicle manufacturers serviced by Mobile Tyre Champions" },
     // --- Luxury Brands ---
     // Bentley
-    { src: "https://www.carlogos.org/car-logos/bentley-logo-2002-640.png", name: "Bentley" },
+    { src: "https://www.carlogos.org/car-logos/bentley-logo-2002-640.png", name: "Bentley", alt: "Bentley automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // Rolls-Royce
-    { src: "https://www.carlogos.org/logo/Rolls-Royce-logo-640x550.jpg", name: "Rolls-Royce" },
+    { src: "https://www.carlogos.org/logo/Rolls-Royce-logo-640x550.jpg", name: "Rolls-Royce", alt: "Rolls-Royce luxury automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // Jaguar
-    { src: "https://www.carlogos.org/car-logos/jaguar-logo-2021-640.png", name: "Jaguar" },
+    { src: "https://www.carlogos.org/car-logos/jaguar-logo-2021-640.png", name: "Jaguar", alt: "Jaguar automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // Mini
-    { src: "https://www.carlogos.org/logo/Mini-logo-2001-640x270.jpg", name: "Mini" },
+    { src: "https://www.carlogos.org/logo/Mini-logo-2001-640x270.jpg", name: "Mini", alt: "Mini automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
     // Aston Martin
-    { src: "https://www.carlogos.org/logo/Aston-Martin-logo-2003-640x286.jpg", name: "Aston Martin" },
+    { src: "https://www.carlogos.org/logo/Aston-Martin-logo-2003-640x286.jpg", name: "Aston Martin", alt: "Aston Martin automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
   ];
 
   return (
@@ -84,7 +84,7 @@ const Features = () => {
                 <div className="h-10 md:h-14 flex items-center justify-center w-full px-4">
                   <img
                     src={logo.src}
-                    alt={logo.name}
+                    alt={logo.alt || logo.name}
                     loading="lazy"
                     className={`max-h-full max-w-full object-contain transition-all duration-500 hover:scale-110 ${logo.name?.includes('Kia') ? 'brightness-0' : ''}`}
                   />

@@ -87,7 +87,7 @@ const EmergencyTyreFitting = () => {
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/emergency tyre.avif"
-                        alt="Emergency Tyre Fitting Service"
+                        alt="Mobile Tyre Champions technician performing emergency roadside tyre replacement at night for a stranded vehicle"
                         className="w-full h-full object-cover scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/80 to-[#0B1528]/40" />

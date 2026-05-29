@@ -40,7 +40,7 @@ const LockingWheelNutRemoval = () => {
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/locking.jpg"
-                        alt="Locking Wheel Nut Removal Technician"
+                        alt="Mobile Tyre Champions specialist using professional tools to safely remove a locking wheel nut without alloy damage"
                         className="w-full h-full object-cover scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/80 to-[#0B1528]/40" />

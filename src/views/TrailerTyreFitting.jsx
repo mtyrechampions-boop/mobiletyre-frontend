@@ -9,7 +9,7 @@ const TrailerTyreFitting = () => {
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/sr6nfj1ypli5n81lf20b.avif"
-                        alt="Mobile Trailer Tyre Fitting Banner"
+                        alt="Mobile tyre fitting specialist replacing a trailer tyre on-site with professional roadside tyre services"
                         className="w-full h-full object-cover scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/80 to-[#0B1528]/40" />
@@ -116,7 +116,7 @@ const TrailerTyreFitting = () => {
                         <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl h-[400px] border-8 border-white">
                             <img 
                                 src="/images/mobile-tyre-champions-van1.webp" 
-                                alt="Mobile Tyre Champions Van" 
+                                alt="Mobile Tyre Champions service vans ready for 24/7 mobile tyre fitting and roadside tyre assistance across London" 
                                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
                             />
                             <div className="absolute inset-x-0 bottom-0 p-10 bg-gradient-to-t from-black/80 to-transparent">

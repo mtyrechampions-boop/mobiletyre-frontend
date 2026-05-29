@@ -80,7 +80,7 @@ const Navbar = () => {
             <div className="flex items-center justify-center h-14 md:h-20 hover:scale-110 transition-all duration-500">
               <img
                 src="/images/MTC logo 2.webp"
-                alt="Mobile Tyre Champions"
+                alt="Mobile Tyre Champions logo representing 24/7 mobile tyre fitting and roadside tyre assistance services"
                 className="h-full w-auto object-contain"
               />
             </div>
@@ -156,7 +156,7 @@ const Navbar = () => {
           {/* Header */}
           <div className="p-6 flex items-center justify-between border-b border-slate-100 bg-slate-50/50">
             <div className="bg-white p-1 rounded flex items-center justify-center aspect-square h-10 shadow-sm">
-              <img src="/images/MTC logo 2.webp" alt="Logo" className="h-full w-full object-contain" />
+              <img src="/images/MTC logo 2.webp" alt="Mobile Tyre Champions logo representing 24/7 mobile tyre fitting and roadside tyre assistance services" className="h-full w-full object-contain" />
             </div>
             <button
               onClick={() => setIsMenuOpen(false)}

@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="block w-full h-full relative">
           <Image
             src="/images/mobile-tyre-champions-van1.webp"
-            alt="Mobile Tyre Champions van"
+            alt="Mobile Tyre Champions service vans ready for 24/7 mobile tyre fitting and roadside tyre assistance across London"
             fill
             priority
             sizes="100vw"

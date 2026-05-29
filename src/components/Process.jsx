@@ -15,7 +15,7 @@ const Process = () => {
         <div className="lg:w-1/2 relative h-[300px] sm:h-[500px] lg:h-auto overflow-hidden group">
           <img
             src="https://images.pexels.com/photos/3399938/pexels-photo-3399938.jpeg"
-            alt="Technician fitting tyre"
+            alt="Detailed view of a car tyre and wheel during inspection, supporting professional mobile tyre fitting services"
             className="w-full h-full object-cover grayscale brightness-110 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-[2000ms] scale-110 group-hover:scale-100"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
