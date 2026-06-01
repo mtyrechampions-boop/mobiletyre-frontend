@@ -89,13 +89,15 @@ const Navbar = () => {
 
         {/* Center Call Button (Mobile Only) */}
         <div className="flex lg:hidden justify-center items-center scale-90 sm:scale-100">
-          <a
-            href="tel:02071013856"
-            className="flex items-center gap-2.5 bg-black text-white px-6 py-3.5 rounded-xl font-black text-[13px] tracking-widest shadow-md border border-slate-700/50 hover:bg-black transition-all whitespace-nowrap"
-          >
-            <Phone size={14} className="text-[#FB7E10]" fill="currentColor" />
-            <span>0207 101 3856</span>
-          </a>
+          <div className="animate-zoom-pulse">
+            <a
+              href="tel:02071013856"
+              className="flex items-center gap-2.5 bg-black text-white px-6 py-3.5 rounded-xl font-black text-[13px] tracking-widest shadow-md border border-slate-700/50 hover:bg-black transition-all whitespace-nowrap"
+            >
+              <Phone size={14} className="text-[#FB7E10]" fill="currentColor" />
+              <span>0207 101 3856</span>
+            </a>
+          </div>
         </div>
 
         {/* Desktop Links (Center on Desktop) */}
@@ -128,13 +130,15 @@ const Navbar = () => {
         {/* Right side controls */}
         <div className="flex justify-end items-center gap-4">
           <div className="hidden lg:block">
-            <a
-              href="tel:02071013856"
-              className="flex items-center gap-3 bg-black text-white px-8 py-4 rounded-xl font-black text-[16px] tracking-widest shadow-lg border border-slate-700/50 hover:bg-black hover:scale-[1.02] active:scale-95 transition-all whitespace-nowrap"
-            >
-              <Phone size={16} className="text-[#FB7E10]" fill="currentColor" />
-              <span>0207 101 3856</span>
-            </a>
+            <div className="animate-zoom-pulse">
+              <a
+                href="tel:02071013856"
+                className="flex items-center gap-3 bg-black text-white px-8 py-4 rounded-xl font-black text-[16px] tracking-widest shadow-lg border border-slate-700/50 hover:bg-black hover:scale-[1.02] active:scale-95 transition-all whitespace-nowrap"
+              >
+                <Phone size={16} className="text-[#FB7E10]" fill="currentColor" />
+                <span>0207 101 3856</span>
+              </a>
+            </div>
           </div>
 
           <button

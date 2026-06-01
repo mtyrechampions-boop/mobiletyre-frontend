@@ -31,6 +31,7 @@ body {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -40,6 +41,7 @@ body {
   0% {
     transform: translateX(-50%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -73,4 +75,25 @@ body {
   .animate-marquee-reverse {
     animation-duration: 10s;
   }
+}
+
+@keyframes zoomPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(251, 126, 16, 0.6);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px 8px rgba(251, 126, 16, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(251, 126, 16, 0);
+  }
+}
+
+.animate-zoom-pulse {
+  animation: zoomPulse 1.8s infinite ease-in-out;
+  display: inline-block;
+  border-radius: 0.75rem;
 }
