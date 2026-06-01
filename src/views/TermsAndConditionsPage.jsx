@@ -1,5 +1,5 @@
-import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 'use client';
+import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 
 import Link from 'next/link';
 import { Shield, Phone, ArrowRight, Mail, MapPin, Clock, FileText, Scale, Truck, CreditCard, AlertTriangle, Ban, RefreshCw, Wrench, ShieldCheck, ScrollText, Handshake, Info, CircleDot } from 'lucide-react';
