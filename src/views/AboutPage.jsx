@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Phone, ArrowRight, Shield, Clock, Users, Wrench, MapPin, CheckCircle, Zap, Award, HeartHandshake } from 'lucide-react';
+import { RESPONSE_PROMISE } from '@/lib/siteText';
 
 /* ─── Data ──────────────────────────────────────────────────────────────── */
 
@@ -10,7 +11,7 @@ const values = [
   {
     icon: <Zap className="w-6 h-6 text-[#FB7E10]" />,
     title: 'Speed Without Compromise',
-    desc: 'Our dispatchers match you to the nearest certified technician so your GPS guides us to you in seconds — average arrival under 40 miles.',
+    desc: "Our dispatchers match you to the nearest certified technician so your GPS guides us to you in seconds — average arrival in under 60 minutes.",
   },
   {
     icon: <Shield className="w-6 h-6 text-[#FB7E10]" />,
@@ -179,8 +180,10 @@ const AboutPage = () => {
               Mobile Tyre Champions was founded by people who understood that the traditional garage model isn't built for how modern life actually works. You discover a flat tyre at 7am, just before the school run. You notice your tyres are wearing thin on a Sunday evening. You blow a tyre on a dual carriageway at midnight. None of these moments are convenient. None of them fit neatly into a 9-to-5 booking slot.
             </p>
             <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-              We set out to build a mobile tyre service that genuinely works for drivers one that's fast, honest, professionally equipped, and available when people actually need it
-
+              We set out to build a mobile tyre service that genuinely works for drivers – one that's fast, honest, professionally equipped, and available when people actually need it.
+            </p>
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+              While our central headquarters and main depot are based in <strong>Aldershot, Hampshire</strong>, we operate a fully mobile, strategically stationed fleet of technicians. This allows us to provide rapid coverage and 24/7 mobile tyre fitting across <strong>Greater London, Surrey, Hampshire, Berkshire</strong>, and surrounding regions. {RESPONSE_PROMISE}
             </p>
 
             {/* service bullets */}
@@ -299,7 +302,7 @@ const AboutPage = () => {
               <MapPin size={22} className="text-[#FB7E10]" />
             </div>
             <div>
-              <div className="text-white/40 text-[10px] font-black uppercase tracking-widest mb-1">Address</div>
+              <div className="text-white/40 text-[10px] font-black uppercase tracking-widest mb-1">HQ Address</div>
               <div className="text-white font-bold text-sm md:text-base leading-snug">Grosvenor Road, Aldershot<br />GU11 3HY</div>
             </div>
           </div>

@@ -115,7 +115,7 @@ const ContactPage = () => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
                         </span>
-                        <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-green-700">Live: 50+ Technicians Online UK-Wide</span>
+                        <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-green-700">Live: 50+ Technicians Online Across London & South East</span>
                     </div>
                     <h1 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] text-black">
                         GET IN <br /> <span className="text-[#FB7E10]">TOUCH</span>

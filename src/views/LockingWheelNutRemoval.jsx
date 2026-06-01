@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Phone, CheckCircle, AlertTriangle, PenTool, PhoneCall, HelpCircle, Wrench, ChevronDown, ShieldCheck, Zap } from 'lucide-react';
+import { RESPONSE_PROMISE } from '@/lib/siteText';
 
 const LockingWheelNutRemoval = () => {
     const [openFaq, setOpenFaq] = React.useState(null);
@@ -13,7 +14,7 @@ const LockingWheelNutRemoval = () => {
     const faqs = [
         {
             q: "How quickly can you reach me?",
-            a: "For emergency callouts, we aim to reach you within 60 minutes. In major urban areas, response times are often faster. In rural locations, we'll always give you an honest ETA."
+            a: RESPONSE_PROMISE
         },
         {
             q: "Will you come to me on the motorway?",

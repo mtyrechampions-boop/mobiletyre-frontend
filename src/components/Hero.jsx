@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="block w-full h-full relative">
           <Image
             src="/images/mobile-tyre-champions-van1.webp"
-            alt="Mobile Tyre Champions service vans ready for 24/7 mobile tyre fitting and roadside tyre assistance across London"
+            alt="Mobile Tyre Champions service vans ready for 24/7 mobile tyre fitting and roadside tyre assistance across London, Surrey and Hampshire"
             fill
             priority
             sizes="100vw"
@@ -39,12 +39,12 @@ const Hero = () => {
             <div className="inline-flex items-center gap-2 bg-[#33251a] border border-[#fb7e10]/30 px-3 md:px-4 py-1.5 rounded-full">
               <span className="text-orange-500">⚡</span>
               <span className="text-[9px] sm:text-[10px] md:text-xs font-bold uppercase tracking-wider text-orange-400">
-                London Fast Mobile Tyre Service – 24/7
+                Fast Mobile Tyre Service — London · Surrey · Hampshire
               </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              24/7 Tyre Help Across London <br className="hidden lg:block" />
+              24/7 Tyre Help Across London, Surrey & Hampshire <br className="hidden lg:block" />
               <span className="text-[#FB7E10]">We Reach You in 30–40 Minutes.</span>
             </h1>
 

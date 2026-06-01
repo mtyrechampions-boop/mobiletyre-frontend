@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, CheckCircle, Clock, MapPin, Wrench, ShieldCheck, Truck, Route, PhoneCall, Gauge, Star, Users, Zap } from 'lucide-react';
+import { RESPONSE_PROMISE } from '@/lib/siteText';
 
 const TrailerTyreFitting = () => {
     return (
@@ -74,7 +75,7 @@ const TrailerTyreFitting = () => {
                                 </div>
                                 <div className="space-y-4">
                                     <p>
-                                        Mobile Tyre Champions delivers expert response within Surrey and Hampshire. We reach you within 60 minutes with fully equipped specialist mobile vans.
+                                        Mobile Tyre Champions delivers expert response within Surrey and Hampshire. {RESPONSE_PROMISE}
                                     </p>
                                     <div className="p-5 bg-slate-900 rounded-3xl text-white flex items-center gap-5 border border-white/10 shadow-xl">
                                         <div className="w-12 h-12 bg-[#FB7E10] rounded-2xl flex items-center justify-center shrink-0">

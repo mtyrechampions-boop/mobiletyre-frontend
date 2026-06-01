@@ -15,7 +15,7 @@ const Footer = () => {
                             <img src="/images/MTC logo 3.webp" alt="Mobile Tyre Champions brand logo for emergency mobile tyre fitting, tyre replacement, and roadside support" className="h-full w-auto max-w-full object-contain" />
                         </Link>
                         <p className="text-gray-400 text-sm font-medium leading-relaxed max-w-xs mx-auto">
-                            Mobile Tyre Champions is a 24/7 mobile tyre fitting service based at Grosvenor Road, Aldershot GU11 3HY.
+                            Mobile Tyre Champions — headquarters in Grosvenor Road, Aldershot GU11 3HY — serving Surrey, Hampshire, Berkshire and West London.
                         </p>
 
                         {/* Social Media Icons */}
@@ -159,7 +159,7 @@ const Footer = () => {
                 <div className="pt-10 mt-16 border-t border-white/5">
                     <div className="flex flex-col items-center justify-center gap-6 px-4 text-center">
                         <p className="text-gray-500 text-xs font-medium">
-                            © 2025 Mobile Tyre Champions. All rights reserved.
+                            © {new Date().getFullYear()} Mobile Tyre Champions. All rights reserved.
                         </p>
                         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[11px] font-bold uppercase tracking-wider text-gray-500">
                             <Link href="/privacy" className="hover:text-[#FB7E10] transition-colors">Privacy Policy</Link>

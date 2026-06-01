@@ -19,7 +19,7 @@ const schemaData = {
   image: "https://mobiletyrechampions.com/logo.png",
   telephone: "+44-XXXXXXXXXX",
   email: "info@mobiletyrechampions.com",
-  description: "Mobile Tyre Champions provides emergency mobile tyre fitting, roadside tyre replacement, puncture repair and 24 hour mobile tyre services across London, Surrey, Hampshire, Berkshire and nearby highways including M25, M3 and M4.",
+  description: "Mobile Tyre Champions provides 24/7 emergency mobile tyre fitting, puncture repair and roadside tyre services across London, Surrey, Hampshire, Berkshire and West London.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Grosvenor Road",
@@ -39,11 +39,10 @@ const schemaData = {
     { "@type": "AdministrativeArea", name: "Surrey" },
     { "@type": "AdministrativeArea", name: "Hampshire" },
     { "@type": "AdministrativeArea", name: "Berkshire" },
+    { "@type": "Place", name: "West London" },
     { "@type": "Place", name: "M25 Motorway" },
     { "@type": "Place", name: "M3 Motorway" },
     { "@type": "Place", name: "M4 Motorway" },
-    { "@type": "Place", name: "A3 Highway" },
-    { "@type": "Place", name: "A31 Highway" },
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -63,8 +62,8 @@ const schemaData = {
 };
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting Near Me | Mobile Tyre Service UK',
-  description: 'Looking for mobile tyre fitting near me? Mobile Tyre Champions offers Mobile Tyre Service UK solutions, including fast mobile tyre repair and roadside support.',
+  title: 'Mobile Tyre Fitting in London, Surrey & Hampshire | Mobile Tyre Champions',
+  description: 'Mobile Tyre Champions provides 24/7 emergency mobile tyre fitting and roadside tyre services across London, Surrey, Hampshire, Berkshire and West London. Fast local response and expert roadside repairs.',
 };
 
 export default function Page() {

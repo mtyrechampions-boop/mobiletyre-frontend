@@ -300,9 +300,9 @@ const TermsAndConditionsPage = () => {
             </p>
 
             <div className="flex flex-wrap items-center gap-4 text-sm text-gray-400">
-              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#FB7E10]" />
-                <span>Last Updated: 1 June 2025</span>
+                <span>Last Updated: 1 June 2026</span>
               </div>
               <div className="w-1 h-1 rounded-full bg-gray-600 hidden sm:block" />
               <div className="flex items-center gap-2">

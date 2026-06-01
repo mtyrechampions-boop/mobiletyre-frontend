@@ -99,7 +99,7 @@
     alt: "Mobile tyre fitting technician carrying out roadside tyre replacement on a vehicle wheel during an emergency callout",
     priority: true,
     category: "Emergency",
-    description: "Blown a tyre? Hit a pothole? We provide rapid emergency response across the UK, day or night.",
+    description: "Blown a tyre? Hit a pothole? We provide rapid emergency response across London, Surrey, Hampshire, and Berkshire, day or night.",
     cta: "Book a Service",
     secondaryCta: "Learn More",
     features: [

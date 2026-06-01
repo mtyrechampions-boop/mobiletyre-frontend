@@ -80,7 +80,7 @@ const ServiceDetail = ({ id: propId }) => {
                 <div className="flex justify-between items-center max-w-md mx-auto text-xs font-bold uppercase tracking-widest text-[#0B1528]">
                     <div className="flex flex-col items-center gap-1">
                         <Clock size={16} className="text-[#FB7E10]" />
-                        <span className="text-[9px] text-gray-500">{isEmergency ? '30-60 Min ETA' : 'Fast Arrival'}</span>
+                        <span className="text-[9px] text-gray-500">{isEmergency ? '60-Min Response' : 'Fast Arrival'}</span>
                     </div>
                     <div className="flex flex-col items-center gap-1 border-l border-r border-gray-100 px-4">
                         <MapPin size={16} className="text-[#FB7E10]" />
@@ -98,7 +98,7 @@ const ServiceDetail = ({ id: propId }) => {
                 <section className="hidden md:block bg-[#0B1528]">
                     <div className="max-w-7xl mx-auto flex justify-around py-6 px-10">
                         {[
-                            { icon: Clock, title: isEmergency ? "Rapid 30-60 Min Response" : "Same Day Availability" },
+                            { icon: Clock, title: isEmergency ? "Rapid 60-Min Response" : "Same Day Availability" },
                             { icon: Star, title: `${service.rating || '4.9'} Average Rating (${service.reviews || '500+'} reviews)` },
                             { icon: ShieldCheck, title: "Over 5,000 Jobs Completed" },
                             { icon: Wrench, title: "Fully Equipped Mobile Units" }

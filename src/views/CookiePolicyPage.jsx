@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Shield, Phone, ArrowRight, Mail, MapPin, Clock, FileText, Eye, Info, CheckCircle, HelpCircle, Settings, ToggleLeft, ToggleRight } from 'lucide-react';
+import { RESPONSE_PROMISE } from '@/lib/siteText';
 
 /* ─── Cookies Section Data ───────────────────────────────────────────────── */
 
@@ -144,9 +145,9 @@ const CookiePolicyPage = () => {
             </p>
 
             <div className="flex flex-wrap items-center gap-4 text-sm text-gray-400">
-              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#FB7E10]" />
-                <span>Last Updated: 1 June 2025</span>
+                <span>Last Updated: 1 June 2026</span>
               </div>
               <div className="w-1 h-1 rounded-full bg-gray-600 hidden sm:block" />
               <div className="flex items-center gap-2">
@@ -322,7 +323,7 @@ const CookiePolicyPage = () => {
               Ready to Book Your<br className="hidden sm:block" /> Mobile Fitting?
             </h2>
             <p className="text-gray-400 font-medium text-base md:text-lg leading-relaxed">
-              We arrive in under 40 minutes on average across Surrey & Hampshire. Premium service, affordable pricing.
+              {RESPONSE_PROMISE} Premium service, affordable pricing.
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center md:justify-start gap-4 md:gap-6 pt-2">
               <a href="tel:02071013856" className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#FB7E10] text-white px-8 md:px-10 py-3 md:py-4 rounded-xl font-black text-base md:text-lg hover:bg-orange-600 transition-all shadow-xl active:scale-95">

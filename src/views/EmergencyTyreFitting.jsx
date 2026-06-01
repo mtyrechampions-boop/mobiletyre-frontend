@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Phone, CheckCircle, AlertTriangle, Zap, ShieldCheck, Clock, MapPin, Wrench, ChevronDown, PhoneCall, Truck, AlertOctagon } from 'lucide-react';
+import { RESPONSE_PROMISE } from '@/lib/siteText';
 
 const EmergencyTyreFitting = () => {
     const [openFaq, setOpenFaq] = React.useState(null);
@@ -34,21 +35,21 @@ const EmergencyTyreFitting = () => {
     ];
 
     const coverageAreas = [
-        "London and the South East",
-        "Midlands",
-        "North West",
-        "North East",
-        "Yorkshire",
-        "South West",
-        "East of England",
-        "Scotland",
-        "Wales"
+        "Greater London",
+        "Surrey",
+        "Hampshire",
+        "Berkshire",
+        "M25 Motorway",
+        "M3 Motorway",
+        "M4 Motorway",
+        "A3 Highway",
+        "A31 Highway"
     ];
 
     const faqs = [
         {
             q: "How quickly can you reach me?",
-            a: "For emergency callouts, we aim to reach you within 60 minutes. In major urban areas, response times are often faster. In rural locations, we'll always give you an honest ETA."
+            a: RESPONSE_PROMISE
         },
         {
             q: "What should I do if I have a flat tyre on the motorway?",
@@ -119,7 +120,7 @@ const EmergencyTyreFitting = () => {
                     </div>
 
                     <p className="text-slate-300 max-w-2xl mx-auto font-medium text-base md:text-xl mb-10 leading-relaxed px-4">
-                        24/7 rapid response tyre service across the UK. Stuck with a flat tyre? Blown a tyre on the motorway? We're available around the clock.
+                        24/7 rapid response tyre service across London and the South East. {RESPONSE_PROMISE}
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -263,7 +264,7 @@ const EmergencyTyreFitting = () => {
                         <div className="space-y-8 border-t-2 border-[#FB7E10]/20 pt-8">
                             <div className="space-y-4">
                                 <h3 className="text-3xl md:text-5xl font-black text-black uppercase tracking-tighter">
-                                    24/7 Emergency Coverage <span className="text-[#FB7E10]">Across the UK</span>
+                                    24/7 Emergency Coverage <span className="text-[#FB7E10]">Across London & South East</span>
                                 </h3>
                                 <p className="text-gray-600 font-medium text-lg">
                                     Our emergency mobile tyre service operates across the United Kingdom, including all major motorways and A-roads. We cover:

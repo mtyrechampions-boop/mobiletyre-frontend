@@ -83,7 +83,7 @@ const LocationsPage = () => {
 
             <div className="max-w-7xl mx-auto text-center space-y-8 relative z-10">
                <div className="inline-flex items-center gap-2.5 bg-orange-50 border border-orange-100 px-4 py-2 rounded-xl shadow-sm">
-                  <span className="text-[#FB7E10] font-black uppercase text-[10px] tracking-widest animate-pulse">Nationwide Coverage</span>
+                  <span className="text-[#FB7E10] font-black uppercase text-[10px] tracking-widest animate-pulse">London, Surrey & Hampshire Coverage</span>
                </div> <br></br>
                <h1 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] text-black">
                   AREAS WE <br /> <span className="text-[#FB7E10]">COVER </span>

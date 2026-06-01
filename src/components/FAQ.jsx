@@ -1,7 +1,8 @@
-'use client';
+"use client";
 
 import React, { useState } from 'react';
 import { HelpCircle, ChevronDown } from 'lucide-react';
+import { RESPONSE_PROMISE } from '@/lib/siteText';
 
 const FAQ = () => {
     const [openFaq, setOpenFaq] = useState(null);
@@ -13,7 +14,7 @@ const FAQ = () => {
     const faqs = [
         {
             q: "How quickly can you reach me?",
-            a: "For emergency callouts, we aim to reach you within 60 minutes. In major urban areas, response times are often faster. In rural locations, we'll always give you an honest ETA."
+            a: RESPONSE_PROMISE
         },
         {
             q: "Will you come to me on the motorway?",
