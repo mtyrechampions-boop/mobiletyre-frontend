@@ -1,6 +1,7 @@
-'use client';
+"use client";
 
 import React, { useState, useMemo } from 'react';
+import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 import Link from 'next/link';
 import { MapPin, Phone, ArrowRight, Shield, Clock, Zap, Star, Search, Navigation } from 'lucide-react';
 
@@ -83,7 +84,7 @@ const LocationsPage = () => {
 
             <div className="max-w-7xl mx-auto text-center space-y-8 relative z-10">
                <div className="inline-flex items-center gap-2.5 bg-orange-50 border border-orange-100 px-4 py-2 rounded-xl shadow-sm">
-                  <span className="text-[#FB7E10] font-black uppercase text-[10px] tracking-widest animate-pulse">London, Surrey & Hampshire Coverage</span>
+                  <span className="text-[#FB7E10] font-black uppercase text-[10px] tracking-widest animate-pulse">{SERVICE_AREAS_TEXT.replace(' and ', ' & ')} Coverage</span>
                </div> <br></br>
                <h1 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] text-black">
                   AREAS WE <br /> <span className="text-[#FB7E10]">COVER </span>
@@ -252,7 +253,7 @@ const LocationsPage = () => {
                   <div className="bg-[#0B1528] p-6 rounded-3xl text-white space-y-2 min-w-[280px] shadow-xl">
                      <p className="text-[10px] font-black uppercase tracking-widest text-blue-400">Response Target</p>
                      <div className="flex items-baseline gap-2">
-                        <span className="text-4xl font-black text-[#FB7E10]">30-40</span>
+                        <span className="text-4xl font-black text-[#FB7E10]">30–60</span>
                         <span className="text-xl font-bold">MINS</span>
                      </div>
                      <p className="text-white/40 text-[10px] font-bold uppercase tracking-widest">Average Roadside Arrival</p>

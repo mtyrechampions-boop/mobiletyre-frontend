@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, CheckCircle, Clock, MapPin, Wrench, ShieldCheck, Truck, Route, PhoneCall, Gauge, Star, Users, Zap } from 'lucide-react';
-import { RESPONSE_PROMISE } from '@/lib/siteText';
+import { RESPONSE_PROMISE, SERVICE_AREAS_TEXT } from '@/lib/siteText';
 
 const TrailerTyreFitting = () => {
     return (
@@ -75,7 +75,7 @@ const TrailerTyreFitting = () => {
                                 </div>
                                 <div className="space-y-4">
                                     <p>
-                                        Mobile Tyre Champions delivers expert response within Surrey and Hampshire. {RESPONSE_PROMISE}
+                                        {SERVICE_AREAS_TEXT}. {RESPONSE_PROMISE}
                                     </p>
                                     <div className="p-5 bg-slate-900 rounded-3xl text-white flex items-center gap-5 border border-white/10 shadow-xl">
                                         <div className="w-12 h-12 bg-[#FB7E10] rounded-2xl flex items-center justify-center shrink-0">
@@ -117,7 +117,7 @@ const TrailerTyreFitting = () => {
                         <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl h-[400px] border-8 border-white">
                             <img 
                                 src="/images/mobile-tyre-champions-van1.webp" 
-                                alt="Mobile Tyre Champions service vans ready for 24/7 mobile tyre fitting and roadside tyre assistance across London" 
+                                alt={`Mobile Tyre Champions service vans ready for 24/7 mobile tyre fitting and roadside tyre assistance ${SERVICE_AREAS_TEXT}`} 
                                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
                             />
                             <div className="absolute inset-x-0 bottom-0 p-10 bg-gradient-to-t from-black/80 to-transparent">

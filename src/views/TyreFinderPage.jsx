@@ -1,6 +1,7 @@
-'use client';
+"use client";
 
 import React, { useEffect } from 'react';
+import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 import TyreFinder from '../components/TyreFinder';
 import { ArrowRight, ShieldCheck, Zap, HelpCircle, Star, Phone } from 'lucide-react';
 import Link from 'next/link';
@@ -10,7 +11,7 @@ const TyreFinderPage = () => {
         document.title = "Find the Right Tyres for Your Car | Mobile Tyre Champions";
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc) {
-            metaDesc.setAttribute("content", "Use our free tyre registration lookup tool to find the exact tyres for your vehicle in seconds. Search by size or reg plate — then book a mobile fitting across Surrey & Hampshire with us.");
+            metaDesc.setAttribute("content", `Use our free tyre registration lookup tool to find the exact tyres for your vehicle in seconds. Search by size or reg plate — then book a mobile fitting across ${SERVICE_AREAS_TEXT.replace('Covering ', '')} with us.`);
         }
     }, []);
 

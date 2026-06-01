@@ -1,6 +1,7 @@
-'use client';
+"use client";
 
 import Link from 'next/link';
+import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 import { Shield, Phone, ArrowRight, Mail, MapPin, Clock, FileText, Eye, Database, Lock, UserCheck, Globe, Bell, Trash2, AlertTriangle } from 'lucide-react';
 
 /* ─── Policy Section Data ────────────────────────────────────────────────── */
@@ -292,7 +293,7 @@ const PrivacyPolicyPage = () => {
                     <a href="https://www.mobiletyrechampions.com" className="text-[#FB7E10] font-bold hover:underline" target="_blank" rel="noopener noreferrer">
                       www.mobiletyrechampions.com
                     </a>{' '}
-                    and provides mobile tyre fitting, puncture repair, emergency tyre services, locking wheel nut removal, trailer tyre fitting, and related automotive services across London, Surrey, Hampshire, and surrounding areas.
+                    and provides mobile tyre fitting, puncture repair, emergency tyre services, locking wheel nut removal, trailer tyre fitting, and related automotive services. {SERVICE_AREAS_TEXT} and surrounding areas.
                   </p>
                   <p>
                     This Privacy Policy describes how we collect, use, and protect your personal information in accordance with the UK General Data Protection Regulation (UK GDPR), the Data Protection Act 2018, and the Privacy and Electronic Communications Regulations (PECR).

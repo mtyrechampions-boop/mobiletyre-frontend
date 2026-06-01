@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Phone, ArrowRight, Shield, Clock, Users, Wrench, MapPin, CheckCircle, Zap, Award, HeartHandshake } from 'lucide-react';
-import { RESPONSE_PROMISE } from '@/lib/siteText';
+import { RESPONSE_PROMISE, SERVICE_AREAS_TEXT } from '@/lib/siteText';
 
 /* ─── Data ──────────────────────────────────────────────────────────────── */
 
@@ -183,7 +183,7 @@ const AboutPage = () => {
               We set out to build a mobile tyre service that genuinely works for drivers – one that's fast, honest, professionally equipped, and available when people actually need it.
             </p>
             <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-              While our central headquarters and main depot are based in <strong>Aldershot, Hampshire</strong>, we operate a fully mobile, strategically stationed fleet of technicians. This allows us to provide rapid coverage and 24/7 mobile tyre fitting across <strong>Greater London, Surrey, Hampshire, Berkshire</strong>, and surrounding regions. {RESPONSE_PROMISE}
+              While our central headquarters and main depot are based in <strong>Aldershot, Hampshire</strong>, we operate a fully mobile, strategically stationed fleet of technicians. This allows us to provide rapid coverage and 24/7 mobile tyre fitting across {SERVICE_AREAS_TEXT} and surrounding regions. {RESPONSE_PROMISE}
             </p>
 
             {/* service bullets */}

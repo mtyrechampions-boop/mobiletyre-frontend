@@ -1,13 +1,17 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
+// Navbar is provided by Next.js `src/app/layout.js`. To avoid duplicate
+// navigation when running under the Next app router, do not render Navbar
+// from this SPA entry. Keep the import commented for reference.
+// import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Process from './components/Process';
 import Services from './components/Services';
 import HowToReadTyre from './components/HowToReadTyre';
 import CTA from './components/CTA';
-import Footer from './components/Footer';
+// Footer handled by Next layout; commented out to avoid duplicate rendering
+// import Footer from './components/Footer';
 import HowItWorks from './components/HowItWorks';
 import FAQ from './components/FAQ';
 import AboutPage from './pages/AboutPage';
@@ -16,14 +20,16 @@ import ContactPage from './pages/ContactPage';
 import ServicesPage from './pages/ServicesPage';
 import LocationsPage from './pages/LocationsPage';
 import ServiceDetail from './pages/ServiceDetail';
-import WhatsAppButton from './components/WhatsAppButton';
-import FloatingCallButton from './components/FloatingCallButton';
+// Global UI handled by Next layout; comment out to avoid duplication
+// import WhatsAppButton from './components/WhatsAppButton';
+// import FloatingCallButton from './components/FloatingCallButton';
 import LockingWheelNutRemoval from './pages/LockingWheelNutRemoval';
 import TrailerTyreFitting from './pages/TrailerTyreFitting';
 import EmergencyTyreFitting from './pages/EmergencyTyreFitting';
 import MobileTyreFitting from './pages/MobileTyreFitting';
 import PunctureRepair from './pages/PunctureRepair';
-import TyrePartners from './components/TyrePartners';
+// TyrePartners is rendered in Next layout; avoid duplicate
+// import TyrePartners from './components/TyrePartners';
 import NotFoundPage from './pages/NotFoundPage';
 import BookingPage from './pages/BookingPage';
 
@@ -55,8 +61,7 @@ function App() {
     <BrowserRouter>
       <div className="min-h-screen bg-slate-50 font-['Outfit']">
         <ScrollToTop />
-        <TyrePartners />
-        <Navbar />
+        {/* TyrePartners handled by layout */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -73,9 +78,7 @@ function App() {
           <Route path="/booking" element={<BookingPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
-        <Footer />
-        <WhatsAppButton />
-        <FloatingCallButton />
+        {/* Footer, WhatsAppButton, FloatingCallButton handled by layout */}
       </div>
     </BrowserRouter>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 
 const Footer = () => {
     return (
@@ -15,7 +16,7 @@ const Footer = () => {
                             <img src="/images/MTC logo 3.webp" alt="Mobile Tyre Champions brand logo for emergency mobile tyre fitting, tyre replacement, and roadside support" className="h-full w-auto max-w-full object-contain" />
                         </Link>
                         <p className="text-gray-400 text-sm font-medium leading-relaxed max-w-xs mx-auto">
-                            Mobile Tyre Champions — headquarters in Grosvenor Road, Aldershot GU11 3HY — serving Surrey, Hampshire, Berkshire and West London.
+                            Mobile Tyre Champions — Headquarters: Grosvenor Road, Aldershot GU11 3HY — {SERVICE_AREAS_TEXT}.
                         </p>
 
                         {/* Social Media Icons */}

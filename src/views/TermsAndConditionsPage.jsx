@@ -1,3 +1,4 @@
+import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 'use client';
 
 import Link from 'next/link';
@@ -365,7 +366,7 @@ const TermsAndConditionsPage = () => {
                     By using our website, booking a service, or engaging with our technicians, you confirm that you have read, understood, and agree to these Terms. If you do not agree with any part of these Terms, you should not use our services.
                   </p>
                   <p>
-                    These Terms apply to all customers — both private individuals and business clients — across all service areas including London, Surrey, Hampshire, and surrounding regions. For any questions, contact us at{' '}
+                    These Terms apply to all customers — both private individuals and business clients — across all service areas including {SERVICE_AREAS_TEXT} and surrounding regions. For any questions, contact us at{' '}
                     <a href="mailto:info@mobiletyrechampions.com" className="text-[#FB7E10] font-bold hover:underline">
                       info@mobiletyrechampions.com
                     </a>{' '}

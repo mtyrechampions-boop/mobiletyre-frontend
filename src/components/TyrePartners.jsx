@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const TyrePartners = () => {
   const brands = [
@@ -15,6 +15,13 @@ const TyrePartners = () => {
     { name: 'Yokohama', logo: '/logo/yokohama.webp', alt: "Yokohama tyre brand logo featured in the tyre manufacturers carousel on the Mobile Tyre Champions homepage" },
   ];
 
+  const [renderBrands, setRenderBrands] = useState(brands);
+
+  useEffect(() => {
+    // Duplicate client-side only for marquee looping
+    setRenderBrands(prev => [...brands, ...brands]);
+  }, []);
+
   return (
     <div className="bg-white py-2 md:py-3 overflow-hidden relative">
       <div className="max-w-[1400px] mx-auto px-4 md:px-10 flex items-center justify-between gap-6 md:gap-16">
@@ -22,7 +29,7 @@ const TyrePartners = () => {
 
         <div className="flex-1 overflow-hidden relative group">
           <div className="flex w-max animate-marquee items-center gap-0">
-            {[...brands, ...brands].map((brand, i) => (
+            {renderBrands.map((brand, i) => (
               <div key={i} className="flex-shrink-0 mr-8 md:mr-12 transition-all duration-500 hover:scale-105 group/card">
                 <div className="bg-white flex items-center justify-center w-24 h-16 md:w-32 md:h-20 p-0 transition-all duration-500">
                   <img

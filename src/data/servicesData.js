@@ -1,4 +1,6 @@
- export const servicesData = [
+import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
+
+export const servicesData = [
   {
     id: 'premium-tyre-service',
     title: "Premium Tyre Service",
@@ -99,7 +101,7 @@
     alt: "Mobile tyre fitting technician carrying out roadside tyre replacement on a vehicle wheel during an emergency callout",
     priority: true,
     category: "Emergency",
-    description: "Blown a tyre? Hit a pothole? We provide rapid emergency response across London, Surrey, Hampshire, and Berkshire, day or night.",
+    description: `Blown a tyre? Hit a pothole? We provide rapid emergency response. ${SERVICE_AREAS_TEXT}, day or night.`,
     cta: "Book a Service",
     secondaryCta: "Learn More",
     features: [
@@ -170,7 +172,7 @@
     id: 'mobile-tyre-fitting',
     title: "Mobile Tyre Fitting",
     image: "/images/high spppppppppppp (39).webp",
-    alt: "Fully branded Mobile Tyre Champions van providing emergency mobile tyre fitting services across London and surrounding areas",
+    alt: `Fully branded Mobile Tyre Champions van providing emergency mobile tyre fitting services ${SERVICE_AREAS_TEXT}`,
     category: "Standard",
     description: "Professional tyre replacement — we come to you. No waiting rooms, no wasted hours, just fast and professional service wherever your vehicle happens to be.",
     cta: "Book a Service",

@@ -1,6 +1,7 @@
-'use client';
+"use client";
 
 import React, { useState } from 'react';
+import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 import { Star } from 'lucide-react';
 
 const dummyReviews = [
@@ -75,7 +76,7 @@ const Reviews = () => {
             Trusted by Our Customers
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-sm md:text-lg font-medium">
-            Don't just take our word for it. Here is what drivers across London, Surrey, and Hampshire have to say about our mobile tyre fitting service.
+            Don't just take our word for it. Here is what drivers {SERVICE_AREAS_TEXT} have to say about our mobile tyre fitting service.
           </p>
         </div>
 

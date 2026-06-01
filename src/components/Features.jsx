@@ -1,4 +1,9 @@
-import React from 'react';
+"use client";
+
+"use client";
+
+import React, { useEffect, useState } from 'react';
+import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 
 const Features = () => {
   const brandLogos = [
@@ -40,6 +45,13 @@ const Features = () => {
     { src: "https://www.carlogos.org/logo/Aston-Martin-logo-2003-640x286.jpg", name: "Aston Martin", alt: "Aston Martin automotive brand logo displayed among vehicle makes serviced by Mobile Tyre Champions" },
   ];
 
+  const [logos, setLogos] = useState(brandLogos);
+
+  useEffect(() => {
+    // duplicate logos only on the client after mount to enable an infinite marquee
+    setLogos(prev => [...brandLogos, ...brandLogos]);
+  }, []);
+
   return (
     <div className="bg-[#f8fafc] py-8 xs:py-10 sm:py-12 md:py-5 lg:py-10 px-4 sm:px-10 lg:px-20 overflow-hidden relative border-y border-slate-100/50">
       {/* Dynamic Background Texture */}
@@ -76,7 +88,7 @@ const Features = () => {
 
           {/* Single Row: Forward Motion */}
           <div className="flex w-max animate-marquee-slow items-center py-6 relative z-10">
-            {[...brandLogos, ...brandLogos].map((logo, i) => (
+            {logos.map((logo, i) => (
               <div
                 key={`r1-${i}`}
                 className="mx-4 md:mx-6 flex flex-col items-center justify-center bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)] transition-all duration-500 hover:-translate-y-1 w-28 h-24 md:w-40 md:h-36 flex-shrink-0"
@@ -116,7 +128,7 @@ const Features = () => {
             </svg>
           </div>
 
-          <div className="relative z-10">
+            <div className="relative z-10">
             <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-8 border border-blue-400">
               <svg className="w-6 h-6 text-[#1c3b7f]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <circle cx="12" cy="12" r="10" />
@@ -126,7 +138,7 @@ const Features = () => {
             </div>
             <h3 className="text-2xl font-bold tracking-tight mb-4 text-white">Quick Arrival Times</h3>
             <p className="text-white/90 font-medium leading-relaxed max-w-md">
-              Our mobile technicians cover Surrey and Hampshire, helping you get moving again without unnecessary delays.
+              {SERVICE_AREAS_TEXT}. Helping you get moving again without unnecessary delays.
             </p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 import { Phone, Quote, Zap, ArrowRight, ShieldCheck, CreditCard, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 
@@ -29,9 +30,9 @@ const Process = () => {
               <div className="space-y-1">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                  <p className="text-green-700 text-[10px] font-bold tracking-widest leading-none">Technician Deployed</p>
+                  <p className="text-green-700 text-[10px] font-bold tracking-widest leading-none">Technician Dispatched</p>
                 </div>
-                <p className="text-black font-black uppercase text-xl leading-tight tracking-tight">MISSION STATUS: <span className="text-green-600">IN-FLIGHT</span></p>
+                <p className="text-black font-black uppercase text-xl leading-tight tracking-tight">Status: <span className="text-green-600">En Route</span></p>
               </div>
             </div>
           </div>
@@ -41,12 +42,12 @@ const Process = () => {
         <div className="lg:w-1/2 p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16 flex flex-col justify-center space-y-10 md:space-y-16">
           <div className="space-y-6 text-center md:text-left">
             <div className="inline-flex items-center gap-2 bg-slate-50 border border-slate-100 px-4 py-2 rounded-xl">
-              <span className="text-[#FB7E10] font-black uppercase text-[10px] tracking-widest tracking-tighter">Operational Protocol</span>
+              <span className="text-[#FB7E10] font-black uppercase text-[10px] tracking-widest tracking-tighter">How It Works</span>
             </div>
             <h2 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:leading-[0.85] text-black">
               Flat Tyre? <br /> <span className="text-[#FB7E10]">Reach us instantly</span>
             </h2>
-            <p className="text-gray-400 font-medium text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">A flat tyre is stressful enough without the wait. Our 24/7 emergency callout covers all of Surrey and Hampshire — call us and we'll be on our way.</p>
+            <p className="text-gray-400 font-medium text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">A flat tyre is stressful enough without the wait. {SERVICE_AREAS_TEXT}. Call us and we'll be on our way.</p>
           </div>
 
           <div className="space-y-8 md:space-y-12 relative">
@@ -64,7 +65,7 @@ const Process = () => {
                 idx: "02",
                 icon: <Quote size={28} />,
                 title: "Upfront Quote",
-                desc: "Not in a rush? Book a slot that fits your day. We work around you, not the other way around."
+                desc: "You'll receive a fixed quote before we attend. No hidden fees or surprise charges."
               },
               {
                 idx: "03",

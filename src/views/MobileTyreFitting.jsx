@@ -1,6 +1,7 @@
-'use client';
+"use client";
 
 import React from 'react';
+import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 import { Phone, CheckCircle, Truck, Zap, ShieldCheck, Clock, MapPin, Wrench, ChevronDown, Gauge, Users, Award, Cog } from 'lucide-react';
 
 const MobileTyreFitting = () => {
@@ -108,7 +109,7 @@ const MobileTyreFitting = () => {
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/high spppppppppppp (39).webp"
-                        alt="Fully branded Mobile Tyre Champions van providing emergency mobile tyre fitting services across London and surrounding areas"
+                        alt={`Fully branded Mobile Tyre Champions van providing emergency mobile tyre fitting services ${SERVICE_AREAS_TEXT}`}
                         className="w-full h-full object-cover scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/80 to-[#0B1528]/40" />

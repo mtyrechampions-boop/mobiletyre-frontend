@@ -5,7 +5,7 @@ const cards = [
   {
     icon: <Zap className="w-6 h-6 text-[#FB7E10]" />,
     title: 'Fast Response Times',
-    desc: "We understand that a tyre problem doesn't wait for a convenient moment. Our technicians are dispatched quickly and aim to reach you within the hour for emergency call-outs.",
+    desc: "We understand that a tyre problem doesn't wait for a convenient moment. Our technicians are dispatched quickly and typically arrive within 30–60 minutes depending on location and traffic for emergency call-outs.",
   },
   {
     icon: <Clock className="w-6 h-6 text-[#FB7E10]" />,

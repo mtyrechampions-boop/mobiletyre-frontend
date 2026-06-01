@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { servicesData } from '../data/servicesData';
+import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 
 const getIcon = (id) => {
   switch (id) {
@@ -79,7 +80,7 @@ const Services = () => {
             Our <span className="text-[#FB7E10]">Services</span>
           </h2>
           <p className="mt-4 text-slate-500 text-sm md:text-lg font-medium max-w-2xl leading-relaxed">
-            Professional mobile tyre services at your home, work or roadside — available 24/7 across London, Surrey and Hampshire.
+            Professional mobile tyre services at your home, work or roadside — available 24/7. {SERVICE_AREAS_TEXT}.
           </p>
         </div>
 
