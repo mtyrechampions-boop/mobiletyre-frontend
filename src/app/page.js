@@ -68,7 +68,7 @@ const schemaData = {
 };
 
 export const metadata = {
-  title: '24/7 Mobile Tyre Fitting in London, Surrey & Hampshire | Emergency Tyre Service',
+  title: 'Mobile Tyre Fitting Across London, Surrey & Hampshire | Mobile Tyre Champions',
   description: `Mobile Tyre Champions provides 24/7 emergency mobile tyre fitting and roadside tyre services. ${SERVICE_AREAS_TEXT}. Fast local response and expert roadside repairs.`,
 };
 

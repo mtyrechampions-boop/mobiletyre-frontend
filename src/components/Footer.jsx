@@ -19,6 +19,18 @@ const Footer = () => {
                             Mobile Tyre Champions — Headquarters: Grosvenor Road, Aldershot GU11 3HY — {SERVICE_AREAS_TEXT}.
                         </p>
 
+                        <div className="mt-4 text-sm text-white font-bold space-y-1">
+                            <div>Mobile Tyre Champions</div>
+                            <div className="text-[#FB7E10]">24/7 Mobile Tyre Fitting</div>
+                            <div className="text-gray-300">London, Surrey &amp; Hampshire</div>
+                        </div>
+
+                        <ul className="mt-4 flex flex-col gap-2 text-sm">
+                            <li><Link href="/services/emergency-tyre-fitting" className="text-gray-400 hover:text-[#FB7E10]">Emergency Tyre Replacement</Link></li>
+                            <li><Link href="/services/puncture-repair" className="text-gray-400 hover:text-[#FB7E10]">Puncture Repairs</Link></li>
+                            <li><Link href="/services/mobile-tyre-fitting" className="text-gray-400 hover:text-[#FB7E10]">Roadside Tyre Fitting</Link></li>
+                        </ul>
+
                         {/* Social Media Icons */}
                         <div className="flex items-center justify-center gap-4">
                             {[

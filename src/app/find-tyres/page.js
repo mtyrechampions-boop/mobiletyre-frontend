@@ -4,7 +4,7 @@ import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 
 export const metadata = {
   title: 'Find the Right Tyres for Your Car | Mobile Tyre Champions',
-  description: `Use our free tyre registration lookup tool to find the exact tyres for your vehicle in seconds. Search by size or reg plate — then book a mobile fitting across ${SERVICE_AREAS_TEXT.replace('Covering ', '')}.`,
+  description: `Use our free tyre registration lookup tool to find the exact tyres for your vehicle in seconds. Search by size or reg plate — then book a mobile fitting across ${SERVICE_AREAS_TEXT}.`,
 };
 
 export default function Page() {

@@ -151,7 +151,7 @@ const EmergencyTyreFitting = () => {
 
                             <div className="prose prose-lg max-w-none text-gray-600 font-medium leading-relaxed space-y-6">
                                 <p>
-                                    Stuck with a flat tyre? Blown a tyre on the motorway? Call Mobile Tyre Champions. We aim to reach you within 60 minutes of your call, bringing everything needed to get you moving again.
+                                    Stuck with a flat tyre? Blown a tyre on the motorway? Call Mobile Tyre Champions. Typical arrival within 30–60 minutes depending on traffic and location, bringing everything needed to get you moving again.
                                 </p>
                             </div>
                         </div>
@@ -263,7 +263,7 @@ const EmergencyTyreFitting = () => {
                         <div className="space-y-8 border-t-2 border-[#FB7E10]/20 pt-8">
                             <div className="space-y-4">
                                 <h3 className="text-3xl md:text-5xl font-black text-black uppercase tracking-tighter">
-                                    24/7 Emergency Coverage <span className="text-[#FB7E10]">{SERVICE_AREAS_TEXT.replace(' and ', ' & ')}</span>
+                                    24/7 Emergency Coverage <span className="text-[#FB7E10]">{SERVICE_AREAS_TEXT}</span>
                                 </h3>
                                 <p className="text-gray-600 font-medium text-lg">
                                     Our emergency mobile tyre service operates across the United Kingdom, including all major motorways and A-roads. We cover:

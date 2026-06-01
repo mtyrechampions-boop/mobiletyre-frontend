@@ -116,7 +116,7 @@ const ContactPage = () => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
                         </span>
-                        <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-green-700">Live: 50+ Technicians Online {SERVICE_AREAS_TEXT.replace(' and ', ' & ')}</span>
+                        <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-green-700">Live: 50+ Technicians Online {SERVICE_AREAS_TEXT}</span>
                     </div>
                     <h1 className="text-5xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] text-black">
                         GET IN <br /> <span className="text-[#FB7E10]">TOUCH</span>
@@ -188,7 +188,7 @@ const ContactPage = () => {
                             <div className="absolute top-0 right-0 w-32 h-32 bg-[#FB7E10]/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
                             <div className="space-y-2">
                                 <h4 className="text-2xl font-black uppercase tracking-tight">Rapid Response Matrix</h4>
-                                <p className="text-gray-400 font-medium text-sm leading-relaxed">Our centralized dispatch system tracks every unit in real-time to guarantee our arrival within 60 minutes.</p>
+                                <p className="text-gray-400 font-medium text-sm leading-relaxed">Our centralized dispatch system tracks every unit in real-time to provide a typical arrival within 30–60 minutes depending on traffic and location.</p>
                             </div>
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="p-4 bg-white/5 rounded-2xl border border-white/10 text-center">

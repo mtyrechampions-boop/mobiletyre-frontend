@@ -4,7 +4,7 @@ import { servicesData } from '@/data/servicesData';
 import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 
 export const metadata = {
-  title: 'Mobile Tyre Service Details | Mobile Tyre Champions',
+  title: 'Mobile Tyre Service Details | Mobile Tyre Fitting Across London, Surrey & Hampshire',
   description: `Fast, reliable mobile tyre services available 24/7. ${SERVICE_AREAS_TEXT}.`,
 };
 
