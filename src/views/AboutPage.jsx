@@ -75,7 +75,7 @@ const AboutPage = () => {
         </div>
 
         {/* decorative ring */}
-     
+
         <div className="container mx-auto px-4 md:px-10 lg:px-20 relative z-10 py-16 md:py-24">
           <div className="max-w-3xl space-y-6">
             {/* badge */}
@@ -93,7 +93,7 @@ const AboutPage = () => {
 
             <p className="text-gray-300 text-base md:text-xl leading-relaxed max-w-2xl">
               We exist to make tyre care hassle-free. Whether you're stuck at the roadside or planning a service day, our team delivers premium mobile tyre fitting directly to you — with expert technicians, fully equipped vans, and zero waiting rooms.
-             </p>
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <a href="tel:02071013856" className="flex items-center justify-center gap-3 bg-[#FB7E10] text-white px-8 py-4 rounded-xl font-black text-base hover:bg-orange-600 transition-all shadow-xl active:scale-95">
@@ -139,7 +139,7 @@ const AboutPage = () => {
 
             <div className="md:w-1/3">
               <div className="rounded-2xl overflow-hidden bg-[#F1F3F6] p-4 shadow-md">
-                <img src="/images/mobile tyre champions contribution to environment.avif" alt="Mobile Tyre Champions environmentally responsible tyre recycling and waste disposal process for sustainable tyre management" className="w-full h-48 object-cover rounded-lg" />
+                <img src="/images/mobile tyre champions contribution to environment.webp" alt="Mobile Tyre Champions environmentally responsible tyre recycling and waste disposal process for sustainable tyre management" className="w-full h-48 object-cover rounded-lg" />
                 <div className="mt-4 text-sm text-gray-600">We partner with registered waste disposal partners to recycle tyres into rubber crumb used in playgrounds, sports surfaces and road construction.</div>
               </div>
             </div>
@@ -155,14 +155,14 @@ const AboutPage = () => {
           <div className="w-full md:w-1/2 relative">
             <div className="rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
               <img
-                src="/images/high spppppppppppp (42) (1).avif"
+                src="/images/high spppppppppppp (42) (1).webp"
                 alt="Mobile Tyre Champions team and service van showcasing the company story of professional mobile tyre fitting and roadside assistance"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 onError={(e) => { e.target.src = '/images/fitting-step.webp'; }}
               />
             </div>
             {/* floating badge */}
-           
+
           </div>
 
           {/* Text side */}
@@ -177,11 +177,11 @@ const AboutPage = () => {
 
             <p className="text-gray-600 text-base md:text-lg leading-relaxed">
               Mobile Tyre Champions was founded by people who understood that the traditional garage model isn't built for how modern life actually works. You discover a flat tyre at 7am, just before the school run. You notice your tyres are wearing thin on a Sunday evening. You blow a tyre on a dual carriageway at midnight. None of these moments are convenient. None of them fit neatly into a 9-to-5 booking slot.
-              </p>
+            </p>
             <p className="text-gray-600 text-base md:text-lg leading-relaxed">
               We set out to build a mobile tyre service that genuinely works for drivers one that's fast, honest, professionally equipped, and available when people actually need it
 
-             </p>
+            </p>
 
             {/* service bullets */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
@@ -266,7 +266,7 @@ const AboutPage = () => {
             {values.map((v, i) => (
               <div
                 key={i}
-                className={`rounded-2xl md:rounded-3xl p-6 md:p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300 ${i === 0 || i === 3 ? 'bg-[#0B1528] text-white' : 'bg-white' }`}
+                className={`rounded-2xl md:rounded-3xl p-6 md:p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300 ${i === 0 || i === 3 ? 'bg-[#0B1528] text-white' : 'bg-white'}`}
               >
                 {/* watermark icon */}
                 <div className="absolute bottom-4 right-4 opacity-5 pointer-events-none group-hover:opacity-10 transition-opacity">
@@ -356,7 +356,7 @@ const AboutPage = () => {
                 <Phone size={18} fill="white" />
                 Call 0207 101 3856
               </a>
-              <Link 
+              <Link
                 href="/contact"
                 className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white px-8 md:px-10 py-3 md:py-4 rounded-xl font-black text-base md:text-lg hover:bg-[#0B1528] hover:border-transparent transition-all shadow-xl active:scale-95"
               >

@@ -39,7 +39,7 @@ const LockingWheelNutRemoval = () => {
             <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-end items-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/images/locking.jpg"
+                        src="/images/locking.webp"
                         alt="Mobile Tyre Champions specialist using professional tools to safely remove a locking wheel nut without alloy damage"
                         className="w-full h-full object-cover scale-105"
                     />

@@ -4,7 +4,7 @@
     title: "Premium Tyre Service",
     image: "/images/Premium Tyre Service.webp",
     alt: "Luxury vehicle wheel and tyre in a workshop, showcasing professional mobile tyre fitting and replacement services",
-    mobileImage: "/images/PREMIUM TYRE SERVICE.avif",
+    mobileImage: "/images/PREMIUM TYRE SERVICE.webp",
     category: "Standard",
     description: "We find the right tyre for your vehicle and budget, then fit and balance it at your location. Bridgestone, Continental, Goodyear — all available.",
     cta: "Book a Service",
@@ -21,7 +21,7 @@
   {
     id: 'puncture-repair',
     title: "Puncture Repair",
-    image: "/images/puncture.avif",
+    image: "/images/puncture.webp",
     alt: "Mobile tyre fitting specialist carrying out puncture repair service on a damaged vehicle tyre",
     category: "Standard",
     description: " Not every puncture needs a full tyre replacement. Where it's safe to do so, our technicians will professionally repair your puncture to get you moving again at a fraction of the cost.",
@@ -39,7 +39,7 @@
   {
     id: 'trailer-tyre-fitting',
     title: "Trailer Tyre Fitting",
-    image: "/images/sr6nfj1ypli5n81lf20b.avif",
+    image: "/images/sr6nfj1ypli5n81lf20b.webp",
     alt: "Mobile tyre fitting specialist replacing a trailer tyre on-site with professional roadside tyre services",
     category: "Specialist",
     description: "New tyres fitted at your home, workplace, or roadside. We fit, balance, and dispose of your old tyres all in a single visit.",
@@ -57,7 +57,7 @@
   {
     id: '24-7-tyre-service',
     title: "24/7 Tyre Service",
-    image: "/images/uuwfxmut2k4atratyvcx.avif",
+    image: "/images/uuwfxmut2k4atratyvcx.webp",
     alt: "Mobile Tyre Champions technician providing 24/7 emergency mobile tyre fitting service at night for stranded vehicles",
     priority: true,
     category: "Emergency",
@@ -95,7 +95,7 @@
   {
     id: 'emergency-tyre-fitting',
     title: "Emergency Tyre Fitting",
-    image: "/images/emergency.avif",
+    image: "/images/emergency.webp",
     alt: "Mobile tyre fitting technician carrying out roadside tyre replacement on a vehicle wheel during an emergency callout",
     priority: true,
     category: "Emergency",
@@ -114,7 +114,7 @@
   {
     id: 'locking-wheel-nut-removal',
     title: "Locking Wheel Nut Removal",
-    image: "/images/locking.jpg",
+    image: "/images/locking.webp",
     alt: "Specialist tool being used to safely remove a seized locking wheel nut without damaging the vehicle alloy wheel",
     category: "Specialist",
     description: "Lost your locking wheel nut key? Without it, nothing can be changed. Our specialist tools remove locking nuts safely — no damage to your alloys, no fuss.",
@@ -133,7 +133,7 @@
   {
     id: 'tyre-recycling',
     title: "Tyre Recycling",
-    image: "/images/tyre recycling.avif",
+    image: "/images/tyre recycling.webp",
     alt: "Collection of worn tyres prepared for tyre recycling and environmentally responsible disposal services",
     category: "Standard",
     description: "Responsible on-site collection and certified recycling of scrap tyres. We separate reusable tyres, recycle end-of-life rubber, and provide commercial disposal receipts.",
@@ -151,7 +151,7 @@
   {
     id: 'van-tyres',
     title: "Van Tyres & Light Commercial",
-    image: "/images/high spppppppppppp (41).avif",
+    image: "/images/high spppppppppppp (41).webp",
     alt: "Mobile tyre fitting specialist carrying out roadside tyre replacement for a stranded vehicle",
     category: "Specialist",
     description: "We carry a wide range of commercial vehicle tyres and can serve business fleets as well as individual van owners.",
@@ -169,7 +169,7 @@
   {
     id: 'mobile-tyre-fitting',
     title: "Mobile Tyre Fitting",
-    image: "/images/high spppppppppppp (39).avif",
+    image: "/images/high spppppppppppp (39).webp",
     alt: "Fully branded Mobile Tyre Champions van providing emergency mobile tyre fitting services across London and surrounding areas",
     category: "Standard",
     description: "Professional tyre replacement — we come to you. No waiting rooms, no wasted hours, just fast and professional service wherever your vehicle happens to be.",

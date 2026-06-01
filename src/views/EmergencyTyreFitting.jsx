@@ -86,7 +86,7 @@ const EmergencyTyreFitting = () => {
             <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-end items-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/images/emergency tyre.avif"
+                        src="/images/emergency tyre.webp"
                         alt="Mobile Tyre Champions technician performing emergency roadside tyre replacement at night for a stranded vehicle"
                         className="w-full h-full object-cover scale-105"
                     />

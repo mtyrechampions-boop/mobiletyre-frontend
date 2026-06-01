@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Zap, Wrench, DollarSign, Star } from 'lucide-react';
+import { Clock, Zap, Wrench, DollarSign, Star, ShieldCheck } from 'lucide-react';
 
 const cards = [
   {
@@ -26,6 +26,11 @@ const cards = [
     icon: <Star className="w-6 h-6 text-[#FB7E10]" />,
     title: 'Premium & Budget Tyres',
     desc: "We carry tyres from the UK's most trusted brands alongside reliable budget options for those watching the pennies.",
+  },
+  {
+    icon: <ShieldCheck className="w-6 h-6 text-[#FB7E10]" />,
+    title: 'Certified & Experienced Technicians',
+    desc: "Our fully trained and certified technicians bring years of hands-on experience to every job. From fitting and balancing to puncture repairs, you can trust our team to deliver a safe, professional service every time.",
   },
 ];
 

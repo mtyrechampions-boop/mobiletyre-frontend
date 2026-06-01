@@ -63,8 +63,8 @@ const ServicesPage = () => {
               key={f}
               onClick={() => setActiveFilter(f)}
               className={`px-5 py-2 rounded-full font-black text-xs uppercase tracking-widest border transition-all ${activeFilter === f
-                  ? 'bg-[#FB7E10] text-white border-[#FB7E10] shadow-lg shadow-orange-100'
-                  : 'bg-white text-slate-600 border-slate-200 hover:border-orange-300 hover:text-[#FB7E10]'
+                ? 'bg-[#FB7E10] text-white border-[#FB7E10] shadow-lg shadow-orange-100'
+                : 'bg-white text-slate-600 border-slate-200 hover:border-orange-300 hover:text-[#FB7E10]'
                 }`}
             >
               {f}

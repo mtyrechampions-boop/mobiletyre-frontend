@@ -67,7 +67,7 @@ const PunctureRepair = () => {
             <section className="relative min-h-[600px] md:min-h-[750px] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/images/puncture.avif"
+                        src="/images/puncture.webp"
                         alt="Mobile tyre fitting specialist carrying out puncture repair service on a damaged vehicle tyre"
                         className="w-full h-full object-cover scale-105"
                     />
@@ -241,7 +241,7 @@ const PunctureRepair = () => {
 
                             <div className="rounded-2xl overflow-hidden">
                                 <img 
-                                    src="/images/flat%20tyre%201.avif" 
+                                    src="/images/flat%20tyre%201.webp" 
                                     alt="Close-up of a flat tyre on a vehicle highlighting slow puncture damage requiring professional mobile tyre repair" 
                                     className="w-full h-auto object-cover rounded-2xl shadow-lg"
                                 />

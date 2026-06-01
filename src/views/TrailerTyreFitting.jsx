@@ -8,7 +8,7 @@ const TrailerTyreFitting = () => {
             <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-end items-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/images/sr6nfj1ypli5n81lf20b.avif"
+                        src="/images/sr6nfj1ypli5n81lf20b.webp"
                         alt="Mobile tyre fitting specialist replacing a trailer tyre on-site with professional roadside tyre services"
                         className="w-full h-full object-cover scale-105"
                     />

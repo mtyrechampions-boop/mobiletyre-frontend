@@ -107,7 +107,7 @@ const MobileTyreFitting = () => {
             <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-end items-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/images/high spppppppppppp (39).avif"
+                        src="/images/high spppppppppppp (39).webp"
                         alt="Fully branded Mobile Tyre Champions van providing emergency mobile tyre fitting services across London and surrounding areas"
                         className="w-full h-full object-cover scale-105"
                     />
@@ -196,7 +196,7 @@ const MobileTyreFitting = () => {
 
                             <div className="mt-8 rounded-2xl overflow-hidden">
                                 <img 
-                                    src="/images/expert%20mech.avif" 
+                                    src="/images/expert%20mech.webp" 
                                     alt="Experienced mobile tyre fitting technician inspecting vehicle wheel and tyre during professional on-site service" 
                                     className="w-full h-auto object-cover rounded-2xl shadow-lg"
                                 />
@@ -216,7 +216,7 @@ const MobileTyreFitting = () => {
 
                             <div className="rounded-2xl overflow-hidden mb-8">
                                 <img 
-                                    src="/images/emergency tyre.avif" 
+                                    src="/images/emergency tyre.webp" 
                                     alt="Mobile Tyre Champions emergency tyre replacement service vehicle attending a roadside callout" 
                                     className="w-full h-auto object-cover rounded-2xl shadow-lg"
                                 />
@@ -313,7 +313,7 @@ const MobileTyreFitting = () => {
                                 </div>
                                 <div className="rounded-2xl overflow-hidden">
                                     <img 
-                                        src="/images/precision%20wheel.avif" 
+                                        src="/images/precision%20wheel.webp" 
                                         alt="Professional wheel balancing equipment in use during mobile tyre fitting to ensure smooth and safe driving" 
                                         className="w-full h-auto object-cover rounded-2xl shadow-lg"
                                     />
