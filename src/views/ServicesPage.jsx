@@ -30,7 +30,7 @@ const ServicesPage = () => {
       </div>
 
       {/* ── HERO ── */}
-      <section className="relative pt-14 pb-20 md:pt-20 md:pb-36 px-4 overflow-hidden border-b border-gray-200">
+      <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-end items-center overflow-hidden pt-20 md:pt-24 lg:pt-28 px-4 border-b border-gray-200">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1544436074-c603a16fc0c1?q=80&w=2070&auto=format&fit=crop"
@@ -40,7 +40,7 @@ const ServicesPage = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-white via-white/70 to-slate-50"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto relative z-10 text-center space-y-6">
+        <div className="max-w-7xl mx-auto relative z-10 text-center space-y-6 pb-20 md:pb-32">
           <div className="inline-flex items-center gap-2.5 bg-orange-50 border border-orange-100 px-4 py-2 rounded-xl shadow-sm">
             <span className="text-[#FB7E10] font-black uppercase text-[10px] tracking-widest animate-pulse">Professional Mobile Units</span>
           </div>

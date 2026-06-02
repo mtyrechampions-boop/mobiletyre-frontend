@@ -28,7 +28,7 @@ const ServiceDetail = ({ id: propId }) => {
     return (
         <div className="bg-slate-50 min-h-screen pb-28 pt-0">
             {/* ── HERO SECTION ───────────────────────── */}
-            <section className="relative min-h-[50vh] md:min-h-[70vh] flex flex-col justify-end items-center overflow-hidden border-b-[10px] border-[#FB7E10] pt-0 md:pt-8">
+            <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-end items-center overflow-hidden border-b-[10px] border-[#FB7E10] pt-20 md:pt-24 lg:pt-28">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <img
@@ -40,7 +40,7 @@ const ServiceDetail = ({ id: propId }) => {
                 </div>
 
                 {/* Hero Content */}
-                <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-10 lg:px-20 pb-16 md:pb-24 text-center">
+                <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-10 lg:px-20 pb-20 md:pb-32 text-center">
                     {/* Urgency Badge */}
                     {isEmergency && (
                         <div className="inline-flex items-center gap-2 bg-red-600/90 text-white px-4 py-1.5 rounded-full mb-6 border border-red-400 shadow-[0_0_20px_rgba(220,38,38,0.4)] animate-pulse">

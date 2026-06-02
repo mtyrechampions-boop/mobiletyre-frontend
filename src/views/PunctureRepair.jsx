@@ -64,7 +64,7 @@ const PunctureRepair = () => {
     return (
         <div className="bg-white min-h-screen">
             {/* HERO SECTION */}
-            <section className="relative min-h-[600px] md:min-h-[750px] flex items-center justify-center overflow-hidden">
+            <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-end items-center overflow-hidden pt-20 md:pt-24 lg:pt-28">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/puncture.webp"
@@ -75,7 +75,7 @@ const PunctureRepair = () => {
                     <div className="absolute inset-0 bg-gradient-to-b from-[#0B1528]/50 via-[#0B1528]/75 to-[#0B1528]" />
                 </div>
 
-                <div className="relative z-10 w-full max-w-4xl mx-auto px-4 py-16 text-center animate-fadeIn">
+                <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-10 lg:px-20 pb-20 md:pb-32 text-center animate-fadeIn">
                     <h1 className="text-4xl sm:text-6xl md:text-7xl font-black text-white uppercase tracking-tight mb-6">
                         Puncture Repair
                     </h1>
