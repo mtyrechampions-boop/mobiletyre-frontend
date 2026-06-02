@@ -130,7 +130,7 @@ const LocationSEOPage = ({ location }) => {
     return (
         <div className="bg-slate-50 min-h-screen">
             {/* HERO: service-style, image background with dark overlay */}
-            <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-end items-center overflow-hidden pt-20 md:pt-24 lg:pt-28">
+            <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-center items-center overflow-hidden pt-20 md:pt-24 lg:pt-28">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/mobile-tyre-champions-van1.webp"
@@ -140,7 +140,7 @@ const LocationSEOPage = ({ location }) => {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/80 to-[#0B1528]/40" />
                 </div>
 
-                <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-10 lg:px-20 pb-20 md:pb-32 text-center animate-fadeIn">
+                <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-10 lg:px-20 text-center animate-fadeIn">
                     {/* badge removed per request */}
 
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight leading-tight mb-4">
