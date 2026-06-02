@@ -129,40 +129,40 @@ const LocationSEOPage = ({ location }) => {
 
     return (
         <div className="bg-slate-50 min-h-screen">
-            {/* Unique SEO Hero Section */}
-            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-4 border-b border-gray-200 z-10 overflow-hidden shadow-sm bg-[#0B1528] text-white">
-                <div className="absolute inset-0 z-0 bg-slate-950">
+            {/* HERO: service-style, image background with dark overlay */}
+            <section className="relative h-[70vh] min-h-[480px] flex flex-col justify-end items-center overflow-hidden">
+                <div className="absolute inset-0 z-0">
                     <img
                         src="/images/mobile-tyre-champions-van1.webp"
                         alt={data.heroTitle}
-                        className="w-full h-full object-cover object-center opacity-40"
+                        className="w-full h-full object-cover scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/60 to-slate-950"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/85 to-[#0B1528]/40" />
                 </div>
 
-                <div className="max-w-7xl mx-auto text-center space-y-8 relative z-10">
-                    <div className="inline-flex items-center gap-2.5 bg-orange-500/10 border border-orange-500/20 px-4 py-2 rounded-xl shadow-sm backdrop-blur-sm">
-                        <span className="text-[#FB7E10] font-black uppercase text-[10px] tracking-widest animate-pulse">24/7 {formattedLocationName} Coverage</span>
+                <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-10 lg:px-20 pb-16 md:pb-24 text-center">
+                    <div className="inline-flex items-center gap-2 bg-[#FB7E10]/20 border border-[#FB7E10]/30 px-4 py-2 rounded-full mb-6 backdrop-blur-sm">
+                        <span className="text-[#FB7E10] text-[10px] md:text-xs font-black uppercase tracking-[0.2em]">24/7 {formattedLocationName} Coverage</span>
                     </div>
-                    
-                    <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter leading-tight font-sans">
+
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white uppercase tracking-tight leading-tight mb-4">
                         {data.heroTitle}
                     </h1>
-                    
-                    <p className="text-gray-300 text-lg md:text-2xl font-medium max-w-3xl mx-auto leading-relaxed font-sans">
+
+                    <p className="text-slate-300 max-w-3xl mx-auto font-medium text-base md:text-lg mb-6 leading-relaxed">
                         {data.heroSubtitle}
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <a
                             href="tel:02071013856"
-                            className="inline-flex items-center justify-center gap-3 bg-[#FB7E10] text-white px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-sm hover:bg-orange-600 transition-all shadow-lg active:scale-95 font-sans"
+                            className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#FB7E10] text-white px-8 py-3 rounded-xl font-bold uppercase tracking-widest hover:bg-orange-600 transition-shadow shadow-xl"
                         >
-                            <Phone size={18} /> {data.ctaText}
+                            <Phone size={18} /> Call Now
                         </a>
                         <Link
                             href="/contact"
-                            className="inline-flex items-center justify-center gap-3 bg-white text-[#0B1528] px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-sm hover:bg-gray-100 transition-all shadow-lg active:scale-95 font-sans"
+                            className="inline-flex items-center justify-center gap-3 bg-white text-[#0B1528] px-6 py-3 rounded-xl font-bold uppercase tracking-widest hover:bg-gray-100 transition-all shadow-sm"
                         >
                             Book Online
                         </Link>
@@ -191,32 +191,106 @@ const LocationSEOPage = ({ location }) => {
                 </div>
             </section>
 
-            {/* Unique Content Section to satisfy SEO without reusing Homepage components */}
-            <section className="py-20 px-6 bg-slate-50 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-orange-100/30 rounded-full blur-[100px] -mr-64 -mt-64"></div>
-                
-                <div className="max-w-4xl mx-auto relative z-10 text-center space-y-8">
-                    <h2 className="text-3xl md:text-5xl font-black uppercase text-black tracking-tight font-sans">
-                        Why Choose Mobile Tyre Champions in <span className="text-[#FB7E10]">{formattedLocationName}</span>
-                    </h2>
-                    
-                    <div className="space-y-6 text-gray-600 font-medium text-lg md:text-xl leading-relaxed text-left bg-white p-8 md:p-12 rounded-[2rem] shadow-xl border border-gray-100">
-                        <p className="font-sans">{data.uniqueContent.paragraph1}</p>
-                        <div className="w-16 h-1 bg-[#FB7E10] rounded-full mx-auto my-6"></div>
-                        <p className="font-sans">{data.uniqueContent.paragraph2}</p>
-                        
-                        <div className="mt-8 pt-8 border-t border-gray-100">
-                            <h4 className="text-xl font-bold text-black mb-4 font-sans">Our Local Services:</h4>
-                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                {['Emergency Tyre Replacement', 'Mobile Puncture Repair', 'Locking Wheel Nut Removal', 'Wheel Balancing'].map(service => (
-                                    <li key={service} className="flex items-center gap-3 text-sm text-gray-700 font-sans">
-                                        <CheckCircle size={18} className="text-green-500 flex-shrink-0" />
-                                        {service}
-                                    </li>
-                                ))}
-                            </ul>
+            {/* MAIN CONTENT: left details + right sticky CTA card (service-style) */}
+            <section className="py-16 md:py-24 px-4 sm:px-10 lg:px-20 bg-white">
+                <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-start">
+                    {/* Left: Detailed Info */}
+                    <div className="lg:w-2/3 space-y-12">
+                        <div className="space-y-6">
+                            <h2 className="text-3xl md:text-5xl font-black text-black tracking-tight leading-tight">
+                                {data.uniqueContent.heading || `Why Choose Mobile Tyre Champions in ${formattedLocationName}`}
+                            </h2>
+                            <div className="w-20 h-2 bg-[#FB7E10]" />
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-600 font-medium leading-relaxed text-base md:text-lg">
+                                <div className="space-y-4">
+                                    <p>{data.uniqueContent.paragraph1}</p>
+                                    <ul className="space-y-3">
+                                        <li className="flex items-center gap-3 text-sm font-black text-black uppercase tracking-tight"><div className="w-1.5 h-1.5 bg-[#FB7E10] rounded-full" />Fast local response</li>
+                                        <li className="flex items-center gap-3 text-sm font-black text-black uppercase tracking-tight"><div className="w-1.5 h-1.5 bg-[#FB7E10] rounded-full" />Fully equipped mobile vans</li>
+                                        <li className="flex items-center gap-3 text-sm font-black text-black uppercase tracking-tight"><div className="w-1.5 h-1.5 bg-[#FB7E10] rounded-full" />Professional, safety-first technicians</li>
+                                    </ul>
+                                </div>
+                                <div className="space-y-4">
+                                    <p>{data.uniqueContent.paragraph2}</p>
+                                    <div className="p-4 bg-orange-50 border-l-4 border-[#FB7E10] italic text-sm font-bold text-orange-900">Experienced local fitters, rapid dispatch across {formattedLocationName}.</div>
+                                </div>
+                            </div>
                         </div>
+
+                        {/* Grid Features */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div className="bg-slate-50 border border-slate-100 p-8 rounded-3xl group hover:shadow-xl transition-all duration-300">
+                                <div className="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center mb-6 group-hover:bg-[#FB7E10] group-hover:text-white transition-colors">
+                                    <Shield size={24} className="text-[#FB7E10] group-hover:text-white" />
+                                </div>
+                                <h3 className="text-xl font-black uppercase tracking-tight text-slate-900 mb-4">Safe, Professional Fitters</h3>
+                                <p className="text-slate-500 font-medium leading-relaxed">Our technicians follow strict safety procedures and are trained for roadside and driveway operations.</p>
+                            </div>
+
+                            <div className="bg-slate-50 border border-slate-100 p-8 rounded-3xl group hover:shadow-xl transition-all duration-300">
+                                <div className="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center mb-6 group-hover:bg-[#FB7E10] group-hover:text-white transition-colors">
+                                    <Zap size={24} className="text-[#FB7E10] group-hover:text-white" />
+                                </div>
+                                <h3 className="text-xl font-black uppercase tracking-tight text-slate-900 mb-4">Rapid On-Site Service</h3>
+                                <p className="text-slate-500 font-medium leading-relaxed">We aim for fast arrival times across local postcodes to minimise disruption.</p>
+                            </div>
+                        </div>
+
+                        {/* FAQs (local) */}
+                        {localFaqs.length > 0 && (
+                            <div className="space-y-8">
+                                <div className="space-y-2">
+                                    <h2 className="text-3xl md:text-4xl font-black text-black uppercase tracking-tight flex items-center gap-4">Frequently Asked <span className="text-[#FB7E10]">Questions</span></h2>
+                                    <p className="text-gray-500 font-bold uppercase text-[10px] tracking-[0.2em]">Everything you need to know about our mobile tyre fitting service in {formattedLocationName}</p>
+                                </div>
+
+                                <div className="space-y-3">
+                                    {localFaqs.map((faq, idx) => (
+                                        <div key={idx} className="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden transition-all duration-300">
+                                            <button 
+                                                onClick={() => toggleFaq(idx)}
+                                                className="w-full flex items-center justify-between p-6 text-left group"
+                                            >
+                                                <span className="text-sm md:text-base font-black uppercase tracking-tight text-slate-900 group-hover:text-[#FB7E10] transition-colors">{faq.q}</span>
+                                                <svg className={`w-5 h-5 text-slate-400 transition-transform duration-300 ${openFaqIndex === idx ? 'rotate-180 text-[#FB7E10]' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                                            </button>
+                                            <div className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openFaqIndex === idx ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}>
+                                                <p className="text-slate-600 font-medium leading-relaxed text-sm">{faq.a}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
                     </div>
+
+                    {/* Right: sticky CTA / What's Included card */}
+                    <aside className="lg:w-1/3 w-full sticky top-28">
+                        <div className="bg-[#0B1528] rounded-3xl p-6 md:p-8 text-white relative shadow-[0_20px_40px_rgba(11,21,40,0.45)]">
+                            <div className="relative z-10 space-y-6">
+                                <h3 className="text-2xl font-black uppercase tracking-tight drop-shadow-md">Quick Overview</h3>
+                                <p className="text-white/90">On-site tyre fitting, puncture repair and emergency replacements across {formattedLocationName}.</p>
+
+                                <ul className="space-y-3 pt-2">
+                                    {['30–60 minutes typical arrival','Fully equipped mobile vans','Wheel balancing available','Secure on-site payments'].map((f, i) => (
+                                        <div key={i} className="flex items-start gap-3">
+                                            <div className="w-6 h-6 mt-1 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+                                                <CheckCircle size={14} className="text-white" />
+                                            </div>
+                                            <span className="font-bold text-white/95 leading-tight">{f}</span>
+                                        </div>
+                                    ))}
+                                </ul>
+
+                                <div className="pt-6">
+                                    <a href="tel:02071013856" className="w-full flex items-center justify-center gap-3 bg-[#FB7E10] text-white py-3 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-orange-600 hover:scale-105 transition-transform duration-200 shadow-md">
+                                        <Phone size={18} /> Call Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
             </section>
 
