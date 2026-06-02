@@ -46,7 +46,7 @@ const HowItWorks = () => {
       
       <div className="max-w-7xl mx-auto relative z-10">
         <h2 className="text-4xl md:text-5xl font-black text-center text-white mb-16 tracking-tighter uppercase drop-shadow-md">
-          HOW IT WORKS
+          HOW WE WORK
         </h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 lg:justify-center">

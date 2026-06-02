@@ -188,7 +188,7 @@ const ServicesPage = () => {
 
           <div className="grid md:grid-cols-3 gap-6 items-start">
             <div className="space-y-4">
-              <h3 className="font-black text-lg">How it works</h3>
+              <h3 className="font-black text-lg">How we work</h3>
               <ul className="text-gray-600 list-inside list-disc space-y-2">
                 <li>Collected on-site when we fit your new tyres or by appointment.</li>
                 <li>Inspected and separated — tyres suitable for re-use are set aside.</li>

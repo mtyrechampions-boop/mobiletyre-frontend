@@ -42,7 +42,7 @@ const Process = () => {
         <div className="lg:w-1/2 p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16 flex flex-col justify-center space-y-10 md:space-y-16">
           <div className="space-y-6 text-center md:text-left">
             <div className="inline-flex items-center gap-2 bg-slate-50 border border-slate-100 px-4 py-2 rounded-xl">
-              <span className="text-[#FB7E10] font-black uppercase text-[10px] tracking-widest tracking-tighter">How It Works</span>
+              <span className="text-[#FB7E10] font-black uppercase text-[10px] tracking-widest tracking-tighter">How We Work</span>
             </div>
             <h2 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:leading-[0.85] text-black">
               Flat Tyre? <br /> <span className="text-[#FB7E10]">Reach us instantly</span>

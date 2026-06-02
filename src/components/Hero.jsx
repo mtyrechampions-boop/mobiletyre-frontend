@@ -33,10 +33,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-10 lg:px-20 relative z-10 py-6 md:py-20 lg:py-28">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-10 lg:px-20 relative z-10 py-6 md:py-16 lg:py-10 xl:py-28">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 xl:gap-12 items-center">
           {/* Left Column - Hero Text & CTAs */}
-          <div className="text-white space-y-4 md:space-y-6 text-center flex flex-col items-center bg-black/40 md:bg-black/30 backdrop-blur-md md:backdrop-blur-md p-5 sm:p-8 rounded-[2rem] md:rounded-[2rem] md:p-6 border border-white/10 md:border-white/10 shadow-2xl md:shadow-2xl mt-4 md:mt-0">
+          <div className="text-white space-y-4 lg:space-y-4 xl:space-y-6 text-center flex flex-col items-center bg-black/40 md:bg-black/30 backdrop-blur-md md:backdrop-blur-md p-5 sm:p-8 md:p-6 lg:p-5 xl:p-8 rounded-[2rem] border border-white/10 md:border-white/10 shadow-2xl md:shadow-2xl mt-4 md:mt-0">
             <div className="inline-flex items-center gap-2 bg-[#33251a] border border-[#fb7e10]/30 px-3 md:px-4 py-1.5 rounded-full">
               <span className="text-orange-500">⚡</span>
               <span className="text-[9px] sm:text-[10px] md:text-xs font-bold uppercase tracking-wider text-orange-400">
@@ -44,22 +44,22 @@ const Hero = () => {
               </span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-6xl font-bold leading-tight">
               24/7 Tyre Help — {SERVICE_AREAS_TEXT}
             </h1>
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#FB7E10]">
+            <h3 className="text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-3xl font-semibold text-[#FB7E10]">
               Typical arrival in 30–60 minutes depending on location and traffic.
             </h3>
 
-            <p className="max-w-md text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
-              Real roadside emergencies don’t wait, and neither do we. With 24/7 emergency roadside help, our experts come to your location fast, wherever you are.<span className="text-white font-bold"></span>
+            <p className="max-w-md text-gray-300 text-sm sm:text-base lg:text-sm xl:text-lg leading-relaxed">
+              Real roadside emergencies don’t wait, and neither do we. With 24/7 emergency roadside help, our experts come to your location fast, wherever you are.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-4 w-full max-w-sm md:max-w-none justify-center mx-auto">
               <div className="w-full sm:w-auto animate-zoom-pulse">
                 <a
                   href="tel:02071013856"
-                  className="w-full flex items-center justify-center gap-3 bg-[#FB7E10] text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold text-base md:text-lg hover:bg-orange-600 transition-all border-2 border-transparent"
+                  className="w-full flex items-center justify-center gap-3 bg-[#FB7E10] text-white px-6 md:px-8 lg:px-6 xl:px-8 py-3 md:py-4 lg:py-2.5 xl:py-4 rounded-lg font-bold text-base md:text-lg lg:text-sm xl:text-lg hover:bg-orange-600 transition-all border-2 border-transparent"
                 >
                   Call Now: 0207 101 3856
                 </a>
@@ -68,7 +68,7 @@ const Hero = () => {
                 href="https://wa.me/447494024653"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#22C55E] text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold text-base md:text-lg hover:bg-green-600 transition-all border-2 border-transparent"
+                className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#22C55E] text-white px-6 md:px-8 lg:px-6 xl:px-8 py-3 md:py-4 lg:py-2.5 xl:py-4 rounded-lg font-bold text-base md:text-lg lg:text-sm xl:text-lg hover:bg-green-600 transition-all border-2 border-transparent"
               >
                 Whatsapp
               </a>
@@ -77,7 +77,7 @@ const Hero = () => {
 
           {/* Right Column - Booking Form */}
           <div className="flex justify-center md:justify-end">
-            <div className="bg-white/95 backdrop-blur-md rounded-[2rem] md:rounded-[2.5rem] p-5 sm:p-10 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] w-full max-w-md relative border border-white/20">
+            <div className="bg-white/95 backdrop-blur-md rounded-[2rem] md:rounded-[2.5rem] p-5 sm:p-10 lg:p-6 xl:p-10 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] w-full max-w-md relative border border-white/20">
               {/* Decorative Elements */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-orange-100/40 rounded-full -mr-16 -mt-16 blur-3xl"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-blue-100/20 rounded-full -ml-12 -mb-12 blur-3xl"></div>
