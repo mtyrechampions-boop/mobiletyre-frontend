@@ -130,24 +130,24 @@ const LocationSEOPage = ({ location }) => {
     return (
         <div className="bg-slate-50 min-h-screen">
             {/* HERO: service-style, image background with dark overlay */}
-            <section className="relative h-[70vh] min-h-[480px] flex flex-col justify-end items-center overflow-hidden pt-36 sm:pt-40 md:pt-32 lg:pt-44">
+            <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-end items-center overflow-hidden pt-20 md:pt-24 lg:pt-28">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/mobile-tyre-champions-van1.webp"
                         alt={data.heroTitle}
                         className="w-full h-full object-cover scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/85 to-[#0B1528]/40" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/80 to-[#0B1528]/40" />
                 </div>
 
-                <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-10 lg:px-20 pt-8 sm:pt-12 md:pt-8 lg:pt-14 pb-16 md:pb-24 text-center">
+                <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-10 lg:px-20 pb-20 md:pb-32 text-center animate-fadeIn">
                     {/* badge removed per request */}
 
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white uppercase tracking-tight leading-tight mb-4">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight leading-tight mb-4">
                         {data.heroTitle}
                     </h1>
 
-                    <p className="text-slate-300 max-w-3xl mx-auto font-medium text-base md:text-lg mb-6 leading-relaxed">
+                    <p className="text-slate-300 max-w-3xl mx-auto font-medium text-sm sm:text-base md:text-lg mb-6 leading-relaxed px-2 sm:px-0">
                         {data.heroSubtitle}
                     </p>
 
@@ -264,10 +264,10 @@ const LocationSEOPage = ({ location }) => {
                     </div>
 
                     {/* Right: sticky CTA / What's Included card */}
-                    <aside className="lg:w-1/3 w-full sticky top-36">
-                        <div className="bg-[#0B1528] rounded-3xl p-6 md:p-8 text-white relative shadow-[0_20px_40px_rgba(11,21,40,0.45)]">
+                    <aside className="lg:w-1/3 w-full lg:sticky lg:top-28 mt-8 lg:mt-0">
+                        <div className="bg-[#0B1528] rounded-3xl p-5 md:p-8 text-white relative shadow-[0_20px_40px_rgba(11,21,40,0.45)]">
                             <div className="relative z-10 space-y-6">
-                                <h3 className="text-2xl font-black uppercase tracking-tight drop-shadow-md">Quick Overview</h3>
+                                <h3 className="text-xl md:text-2xl font-black uppercase tracking-tight drop-shadow-md">Quick Overview</h3>
                                 <p className="text-white/90">On-site tyre fitting, puncture repair and emergency replacements across {formattedLocationName}.</p>
 
                                 <ul className="space-y-3 pt-2">
@@ -281,7 +281,7 @@ const LocationSEOPage = ({ location }) => {
                                     ))}
                                 </ul>
 
-                                <div className="pt-6">
+                                <div className="pt-4">
                                     <a href="tel:02071013856" className="w-full flex items-center justify-center gap-3 bg-[#FB7E10] text-white py-3 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-orange-600 hover:scale-105 transition-transform duration-200 shadow-md">
                                         <Phone size={18} /> Call Now
                                     </a>
