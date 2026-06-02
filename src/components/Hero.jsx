@@ -37,12 +37,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 xl:gap-12 items-center">
           {/* Left Column - Hero Text & CTAs */}
           <div className="text-white space-y-4 lg:space-y-4 xl:space-y-6 text-center flex flex-col items-center bg-black/40 md:bg-black/30 backdrop-blur-md md:backdrop-blur-md p-5 sm:p-8 md:p-6 lg:p-5 xl:p-8 rounded-[2rem] border border-white/10 md:border-white/10 shadow-2xl md:shadow-2xl mt-4 md:mt-0">
-            <div className="inline-flex items-center gap-2 bg-[#33251a] border border-[#fb7e10]/30 px-3 md:px-4 py-1.5 rounded-full">
-              <span className="text-orange-500">⚡</span>
-              <span className="text-[9px] sm:text-[10px] md:text-xs font-bold uppercase tracking-wider text-orange-400">
-                Fast Mobile Tyre Service — {SERVICE_AREAS_TEXT}
-              </span>
-            </div>
+
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-6xl font-bold leading-tight">
               24/7 Tyre Help — {SERVICE_AREAS_TEXT}
