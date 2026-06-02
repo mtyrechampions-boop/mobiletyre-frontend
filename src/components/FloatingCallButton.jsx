@@ -5,7 +5,7 @@ const FloatingCallButton = () => {
     return (
         <a
             href="tel:02071013856"
-            className="fixed bottom-8 left-8 z-[9999] group"
+            className="hidden md:block fixed bottom-8 left-8 z-[9999] group"
             aria-label="Call Us Now"
         >
             {/* Tooltip */}

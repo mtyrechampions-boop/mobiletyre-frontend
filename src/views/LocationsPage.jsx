@@ -46,6 +46,18 @@ const locations = [
    { name: 'Windlesham', region: 'Surrey', postcode: 'GU20', status: 'Operational' },
    { name: 'Woking', region: 'Surrey', postcode: 'GU21', status: 'Operational' },
    { name: 'Yateley', region: 'Hampshire', postcode: 'GU46', status: 'Operational' },
+   { name: 'Reading Central', region: 'Reading', postcode: 'RG1', status: 'Operational' },
+   { name: 'Reading West', region: 'Reading', postcode: 'RG30', status: 'Operational' },
+   { name: 'Caversham', region: 'Reading', postcode: 'RG4', status: 'Operational' },
+   { name: 'Tilehurst', region: 'Reading', postcode: 'RG31', status: 'Operational' },
+   { name: 'Earley', region: 'Reading', postcode: 'RG6', status: 'Operational' },
+   { name: 'Woodley', region: 'Reading', postcode: 'RG5', status: 'Operational' },
+   { name: 'Lower Earley', region: 'Reading', postcode: 'RG6', status: 'Operational' },
+   { name: 'Whitley', region: 'Reading', postcode: 'RG2', status: 'Operational' },
+   { name: 'Shinfield', region: 'Reading', postcode: 'RG2', status: 'Operational' },
+   { name: 'Calcot', region: 'Reading', postcode: 'RG31', status: 'Operational' },
+   { name: 'Theale', region: 'Reading', postcode: 'RG7', status: 'Operational' },
+   { name: 'Wokingham', region: 'Reading', postcode: 'RG40', status: 'Operational' },
 ];
 
 const LocationsPage = () => {
@@ -146,6 +158,12 @@ const LocationsPage = () => {
                         className={`flex items-center gap-2 transition-colors hover:text-[#FB7E10] ${activeRegion === 'Berkshire' ? 'text-[#FB7E10]' : ''}`}
                      >
                         <Navigation size={18} className={activeRegion === 'Berkshire' ? 'text-[#FB7E10]' : 'text-slate-300'} /> Berkshire
+                     </button>
+                     <button
+                        onClick={() => setActiveRegion('Reading')}
+                        className={`flex items-center gap-2 transition-colors hover:text-[#FB7E10] ${activeRegion === 'Reading' ? 'text-[#FB7E10]' : ''}`}
+                     >
+                        <Navigation size={18} className={activeRegion === 'Reading' ? 'text-[#FB7E10]' : 'text-slate-300'} /> Reading
                      </button>
                      <button
                         onClick={() => document.getElementById('highways-section').scrollIntoView({ behavior: 'smooth' })}

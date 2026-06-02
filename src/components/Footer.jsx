@@ -16,13 +16,13 @@ const Footer = () => {
                             <img src="/images/MTC logo 3.webp" alt="Mobile Tyre Champions brand logo for emergency mobile tyre fitting, tyre replacement, and roadside support" className="h-full w-auto max-w-full object-contain" />
                         </Link>
                         <p className="text-gray-400 text-sm font-medium leading-relaxed max-w-xs mx-auto">
-                            Mobile Tyre Champions — Headquarters: Grosvenor Road, Aldershot GU11 3HY — {SERVICE_AREAS_TEXT}.
+                            Mobile Tyre Champions — Headquarters in Aldershot, serving Surrey, Hampshire, Berkshire and West London.
                         </p>
 
                         <div className="mt-4 text-sm text-white font-bold space-y-1">
                             <div>Mobile Tyre Champions</div>
                             <div className="text-[#FB7E10]">24/7 Mobile Tyre Fitting</div>
-                            <div className="text-gray-300">London, Surrey &amp; Hampshire</div>
+                            <div className="text-gray-300">Serving Surrey, Hampshire, Berkshire and West London</div>
                         </div>
 
                         <ul className="mt-4 flex flex-col gap-2 text-sm">
@@ -100,8 +100,11 @@ const Footer = () => {
                                 { name: 'Home', path: '/' },
                                 { name: 'Services', path: '/services' },
                                 { name: 'About', path: '/about' },
-                                { name: 'Locations', path: '/locations' },
-                                { name: 'Blog', path: '/blog' },
+                                { name: 'All Locations', path: '/locations' },
+                                { name: 'Hampshire', path: '/locations/hampshire' },
+                                { name: 'Berkshire', path: '/locations/berkshire' },
+                                { name: 'Surrey', path: '/locations/surrey' },
+                                { name: 'Reading', path: '/locations/reading' },
                                 { name: 'Contact', path: '/contact' }
                             ].map((link) => (
                                 <Link key={link.name}
@@ -168,11 +171,76 @@ const Footer = () => {
                     </div>
                 </div>
 
+                {/* Review Platforms Section */}
+                <div className="mt-16 pt-12 border-t border-white/5">
+                    <h4 className="text-white font-bold text-lg mb-8">Rated Across Top Platforms</h4>
+                    <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+
+                        {/* TopGoogle */}
+                        <a
+                            href="https://www.topgoogle.com/listing/mobile-tyre-champions/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center gap-3 bg-[#F5F0E1] border border-[#E8DFC8] hover:border-[#FB7E10]/50 rounded-2xl px-6 py-4 transition-all duration-300 hover:shadow-[0_0_30px_rgba(251,126,16,0.15)] hover:-translate-y-0.5"
+                        >
+                            <div className="text-left">
+                                <p className="text-[#0B1528] font-black text-sm leading-none mb-1.5">TopGoogle</p>
+                                <div className="flex items-center gap-0.5">
+                                    {[...Array(5)].map((_, i) => (
+                                        <svg key={i} className="w-3.5 h-3.5 text-[#FBBC05]" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    ))}
+                                </div>
+                            </div>
+                        </a>
+
+                        {/* Google Reviews */}
+                        <a
+                            href="https://share.google/fl7N5RA9cbcogzGy7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center gap-3 bg-[#F5F0E1] border border-[#E8DFC8] hover:border-[#FB7E10]/50 rounded-2xl px-6 py-4 transition-all duration-300 hover:shadow-[0_0_30px_rgba(251,126,16,0.15)] hover:-translate-y-0.5"
+                        >
+                            <div className="text-left">
+                                <p className="text-[#0B1528] font-black text-sm leading-none mb-1.5">Google</p>
+                                <div className="flex items-center gap-0.5">
+                                    {[...Array(5)].map((_, i) => (
+                                        <svg key={i} className={`w-3.5 h-3.5 ${i < 4 ? 'text-[#FBBC05]' : 'text-gray-400'}`} fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    ))}
+                                </div>
+                            </div>
+                        </a>
+
+                        {/* Trustpilot */}
+                        <a
+                            href="https://www.trustpilot.com/review/mobiletyrechampions.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center gap-3 bg-[#F5F0E1] border border-[#E8DFC8] hover:border-[#FB7E10]/50 rounded-2xl px-6 py-4 transition-all duration-300 hover:shadow-[0_0_30px_rgba(251,126,16,0.15)] hover:-translate-y-0.5"
+                        >
+                            <div className="text-left">
+                                <p className="text-[#0B1528] font-black text-sm leading-none mb-1.5">Trustpilot</p>
+                                <div className="flex items-center gap-0.5">
+                                    {[...Array(5)].map((_, i) => (
+                                        <svg key={i} className="w-3.5 h-3.5 text-[#00B67A]" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    ))}
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
                 {/* Copyright Section */}
                 <div className="pt-10 mt-16 border-t border-white/5">
                     <div className="flex flex-col items-center justify-center gap-6 px-4 text-center">
                         <p className="text-gray-500 text-xs font-medium">
-                            © {new Date().getFullYear()} Mobile Tyre Champions. All rights reserved.
+                            © 2026 Mobile Tyre Champions. All rights reserved.
                         </p>
                         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[11px] font-bold uppercase tracking-wider text-gray-500">
                             <Link href="/privacy" className="hover:text-[#FB7E10] transition-colors">Privacy Policy</Link>

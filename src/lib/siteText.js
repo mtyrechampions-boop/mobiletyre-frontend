@@ -1,3 +1,3 @@
 export const RESPONSE_PROMISE = "Typical arrival within 30–60 minutes depending on traffic and location.";
-export const SERVICE_AREAS_TEXT = "Mobile Tyre Fitting Across London, Surrey & Hampshire";
+export const SERVICE_AREAS_TEXT = "Mobile Tyre Fitting Across Hampshire, Berkshire and Surrey, UK";
 export const CURRENT_YEAR = new Date().getFullYear();

@@ -44,10 +44,12 @@ const Hero = () => {
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              24/7 Tyre Help — {SERVICE_AREAS_TEXT} <br className="hidden lg:block" />
-              <span className="text-[#FB7E10]">Typical arrival in 30–60 minutes depending on location and traffic.</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+              24/7 Tyre Help — {SERVICE_AREAS_TEXT}
             </h1>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#FB7E10]">
+              Typical arrival in 30–60 minutes depending on location and traffic.
+            </h3>
 
             <p className="max-w-md text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
               Real roadside emergencies don’t wait, and neither do we. With 24/7 emergency roadside help, our experts come to your location fast, wherever you are.<span className="text-white font-bold"></span>

@@ -1,0 +1,33 @@
+# Mobile Tyre Service - Frontend
+
+## Overview
+This repository contains the frontend application for a 24/7 mobile tyre fitting service operating across Hampshire, Berkshire, and Surrey, UK. The service offers emergency roadside tyre replacement, repair, and fitting.
+
+## Technology Stack
+- **Framework:** Next.js (with React 19)
+- **Styling:** Tailwind CSS 4
+- **Maps & Location:** Google Maps API (`@react-google-maps/api`), Leaflet (`react-leaflet`)
+- **Icons:** Lucide React
+- **Routing:** Mixed usage of Next.js App Router (`src/app`) and React Router DOM.
+
+## Project Structure
+The source code is primarily located in the `src` directory:
+- `src/app/` - Next.js App Router pages and layouts.
+- `src/components/` - Reusable UI components (e.g., Hero, Footer, Services, CTA).
+- `src/views/` - Page-level components acting as complex views.
+- `src/lib/` - Shared utilities, configurations, and global constants (e.g., `siteText.js`).
+- `src/api/` - Handlers for backend integrations (e.g., Strapi backend) and external API requests.
+- `src/data/` - Static data files (e.g., service definitions in `servicesData.js`).
+- `src/assets/` - Images, fonts, and other static media.
+
+## Key Features
+- **Location-based Booking:** Integration with Google Places Autocomplete to capture user location for swift service.
+- **Dynamic Service Areas:** Global constants handle service locations allowing easy updates across the platform.
+- **Responsive Design:** Fully responsive interface tailored for users on mobile devices experiencing roadside emergencies.
+- **Fast Performance:** Optimized assets and Next.js static rendering capabilities for quick load times.
+
+## Commands
+- `npm run dev` - Start development server.
+- `npm run build` - Build for production.
+- `npm start` - Start production server.
+- `npm run lint` - Run ESLint.

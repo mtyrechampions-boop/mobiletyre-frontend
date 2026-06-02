@@ -6,7 +6,7 @@ const WhatsAppButton = () => {
             href="https://wa.me/447494024653"
             target="_blank"
             rel="noopener noreferrer"
-            className="fixed bottom-8 right-8 z-[9999] group"
+            className="hidden md:block fixed bottom-8 right-8 z-[9999] group"
             aria-label="Chat on WhatsApp"
         >
             {/* Tooltip */}

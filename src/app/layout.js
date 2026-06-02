@@ -6,6 +6,7 @@ import TyrePartners from '../components/TyrePartners';
 import WhatsAppButton from '../components/WhatsAppButton';
 import FloatingCallButton from '../components/FloatingCallButton';
 import ScrollToTop from '../components/ScrollToTop';
+import MobileActionBar from '../components/MobileActionBar';
 import Script from 'next/script';
 
 export const metadata = {
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <WhatsAppButton />
         <FloatingCallButton />
+        <MobileActionBar />
       </body>
     </html>
   );

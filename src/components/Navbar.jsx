@@ -60,7 +60,18 @@ const Navbar = () => {
         { label: 'Van Tyres', to: '/services/van-tyres' },
       ]
     },
-    { label: 'Areas We Cover', to: '/locations', icon: <MapPin size={20} /> },
+    {
+      label: 'Areas We Cover',
+      to: '/locations',
+      icon: <MapPin size={20} />,
+      dropdown: [
+        { label: 'All Locations', to: '/locations' },
+        { label: 'Hampshire', to: '/locations/hampshire' },
+        { label: 'Berkshire', to: '/locations/berkshire' },
+        { label: 'Surrey', to: '/locations/surrey' },
+        { label: 'Reading', to: '/locations/reading' }
+      ]
+    },
     { label: 'Contact', to: '/contact', icon: <MessageSquare size={20} /> },
   ];
 
