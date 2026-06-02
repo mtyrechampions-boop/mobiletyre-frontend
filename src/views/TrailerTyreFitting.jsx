@@ -6,7 +6,7 @@ const TrailerTyreFitting = () => {
     return (
         <div className="bg-white min-h-screen">
             {/* HERO SECTION */}
-            <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-end items-center overflow-hidden">
+            <section className="relative h-[80vh] min-h-[600px] flex flex-col justify-end items-center overflow-hidden pt-20 md:pt-24 lg:pt-28">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/sr6nfj1ypli5n81lf20b.webp"
@@ -16,7 +16,7 @@ const TrailerTyreFitting = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/80 to-[#0B1528]/40" />
                 </div>
 
-                <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-10 lg:px-20 pb-20 md:pb-32 text-center animate-fadeIn">
+                <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-10 lg:px-20 pt-4 sm:pt-8 pb-20 md:pb-32 text-center animate-fadeIn">
                     <div className="inline-flex items-center gap-2 bg-[#FB7E10]/20 border border-[#FB7E10]/30 px-5 py-2 rounded-full mb-8 backdrop-blur-md">
                         <Truck size={16} className="text-[#FB7E10]" />
                         <span className="text-[#FB7E10] text-[10px] md:text-xs font-black uppercase tracking-[0.2em]">Trailer, RV & Campervan Support</span>
