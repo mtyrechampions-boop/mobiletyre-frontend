@@ -130,7 +130,7 @@ const LocationSEOPage = ({ location }) => {
     return (
         <div className="bg-slate-50 min-h-screen">
             {/* HERO: service-style, image background with dark overlay */}
-            <section className="relative h-[70vh] min-h-[480px] flex flex-col justify-end items-center overflow-hidden pt-28 md:pt-32 lg:pt-36">
+            <section className="relative h-[70vh] min-h-[480px] flex flex-col justify-end items-center overflow-hidden pt-36 sm:pt-40 md:pt-32 lg:pt-44">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/mobile-tyre-champions-van1.webp"
@@ -140,7 +140,7 @@ const LocationSEOPage = ({ location }) => {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/85 to-[#0B1528]/40" />
                 </div>
 
-                <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-10 lg:px-20 pt-6 sm:pt-10 pb-16 md:pb-24 text-center">
+                <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-10 lg:px-20 pt-8 sm:pt-12 md:pt-8 lg:pt-14 pb-16 md:pb-24 text-center">
                     {/* badge removed per request */}
 
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white uppercase tracking-tight leading-tight mb-4">
@@ -264,7 +264,7 @@ const LocationSEOPage = ({ location }) => {
                     </div>
 
                     {/* Right: sticky CTA / What's Included card */}
-                    <aside className="lg:w-1/3 w-full sticky top-32">
+                    <aside className="lg:w-1/3 w-full sticky top-36">
                         <div className="bg-[#0B1528] rounded-3xl p-6 md:p-8 text-white relative shadow-[0_20px_40px_rgba(11,21,40,0.45)]">
                             <div className="relative z-10 space-y-6">
                                 <h3 className="text-2xl font-black uppercase tracking-tight drop-shadow-md">Quick Overview</h3>
