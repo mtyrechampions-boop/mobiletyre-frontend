@@ -35,18 +35,17 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 sm:px-10 lg:px-20 relative z-10 py-6 md:py-16 lg:py-10 xl:py-28">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 xl:gap-12 items-center">
-          {/* Left Column - Hero Text & CTAs */}
-          <div className="text-white space-y-4 lg:space-y-4 xl:space-y-6 text-center flex flex-col items-center bg-black/40 md:bg-black/30 backdrop-blur-md md:backdrop-blur-md p-5 sm:p-8 md:p-6 lg:p-5 xl:p-8 rounded-[2rem] border border-white/10 md:border-white/10 shadow-2xl md:shadow-2xl mt-4 md:mt-0">
+          <div className="text-white space-y-4 lg:space-y-3 xl:space-y-6 text-center flex flex-col items-center bg-black/40 md:bg-black/30 backdrop-blur-md md:backdrop-blur-md p-5 sm:p-8 md:p-6 lg:p-4 xl:p-8 rounded-[2rem] border border-white/10 md:border-white/10 shadow-2xl md:shadow-2xl mt-4 md:mt-0">
 
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-6xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-2xl xl:text-6xl font-bold leading-tight">
               24/7 Tyre Help — {SERVICE_AREAS_TEXT}
             </h1>
-            <h3 className="text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-3xl font-semibold text-[#FB7E10]">
+            <h3 className="text-xl sm:text-2xl md:text-2xl lg:text-base xl:text-3xl font-semibold text-[#FB7E10]">
               Typical arrival in 30–60 minutes depending on location and traffic.
             </h3>
 
-            <p className="max-w-md text-gray-300 text-sm sm:text-base lg:text-sm xl:text-lg leading-relaxed">
+            <p className="max-w-md text-gray-300 text-sm sm:text-base lg:text-xs xl:text-lg leading-relaxed">
               Real roadside emergencies don’t wait, and neither do we. With 24/7 emergency roadside help, our experts come to your location fast, wherever you are.
             </p>
 
@@ -54,7 +53,7 @@ const Hero = () => {
               <div className="w-full sm:w-auto animate-zoom-pulse">
                 <a
                   href="tel:02071013856"
-                  className="w-full flex items-center justify-center gap-3 bg-[#FB7E10] text-white px-6 md:px-8 lg:px-6 xl:px-8 py-3 md:py-4 lg:py-2.5 xl:py-4 rounded-lg font-bold text-base md:text-lg lg:text-sm xl:text-lg hover:bg-orange-600 transition-all border-2 border-transparent"
+                  className="w-full flex items-center justify-center gap-3 bg-[#FB7E10] text-white px-6 md:px-8 lg:px-4 xl:px-8 py-3 md:py-4 lg:py-2 xl:py-4 rounded-lg font-bold text-base md:text-lg lg:text-xs xl:text-lg hover:bg-orange-600 transition-all border-2 border-transparent"
                 >
                   Call Now: 0207 101 3856
                 </a>
@@ -63,7 +62,7 @@ const Hero = () => {
                 href="https://wa.me/447494024653"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#22C55E] text-white px-6 md:px-8 lg:px-6 xl:px-8 py-3 md:py-4 lg:py-2.5 xl:py-4 rounded-lg font-bold text-base md:text-lg lg:text-sm xl:text-lg hover:bg-green-600 transition-all border-2 border-transparent"
+                className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#22C55E] text-white px-6 md:px-8 lg:px-4 xl:px-8 py-3 md:py-4 lg:py-2 xl:py-4 rounded-lg font-bold text-base md:text-lg lg:text-xs xl:text-lg hover:bg-green-600 transition-all border-2 border-transparent"
               >
                 Whatsapp
               </a>
