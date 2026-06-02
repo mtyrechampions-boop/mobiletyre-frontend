@@ -131,13 +131,13 @@ const LocationSEOPage = ({ location }) => {
         <div className="bg-slate-50 min-h-screen">
             {/* Unique SEO Hero Section */}
             <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-4 border-b border-gray-200 z-10 overflow-hidden shadow-sm bg-[#0B1528] text-white">
-                <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 z-0 bg-slate-950">
                     <img
                         src="/images/mobile-tyre-champions-van1.webp"
                         alt={data.heroTitle}
-                        className="w-full h-full object-cover opacity-20"
+                        className="w-full h-full object-cover object-center opacity-40"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#0B1528]/80 to-[#0B1528]"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/60 to-slate-950"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto text-center space-y-8 relative z-10">
