@@ -37,7 +37,7 @@ const locationFaqsData = {
         },
         {
             q: "Which postcodes in Berkshire are covered?",
-            a: "We cover postcodes across Berkshire including Bracknell (RG12), Ascot (SL5), Crowthorne (RG45), Sandhurst (GU47), and surrounding areas."
+            a: "We cover postcodes across Berkshire including Slough (SL1), Windsor (SL4), Maidenhead (SL6), Bracknell (RG12), Ascot (SL5), Sunningdale (SL5), Langley (SL3), Eton (SL4), Newbury (RG14), Thatcham (RG18), Hungerford (RG17), Twyford (RG10), Crowthorne (RG45), Sandhurst (GU47), and surrounding areas."
         },
         {
             q: "Can you remove locking wheel nuts in Berkshire?",
