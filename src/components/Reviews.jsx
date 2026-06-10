@@ -1,56 +1,31 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
-import { Star } from 'lucide-react';
-
-const dummyReviews = [
-  {
-    id: 1,
-    name: "Stefania Tudor",
-    date: "4 days ago",
-    content: "Super friendly customer service and explained the condition of the rest of my tyres, very helpful. Also came super quick and got the job done efficiently. Recommend :)",
-    rating: 5
-  },
-  {
-    id: 2,
-    name: "Lucille Metcalfe",
-    date: "5 days ago",
-    content: "Punctual, courteous service, going the extra mile to make sure I was happy with everything. Thoroughly reccomended service.",
-    rating: 5
-  },
-  {
-    id: 3,
-    name: "Jbd London",
-    date: "2 weeks ago",
-    content: "Excellent service from the mobile tyre champion Mr Gill Arrived on time, was professional and friendly throughout, and replaced the tyre quickly with no hassle. Really convenient not having to visit a garage, and the pricing was fair too. Everything was explained clearly and the work was completed efficiently. Highly recommend for anyone needing fast and reliable tyre replacement at home or roadside.",
-    rating: 5
-  },
-    {
-    id: 4,
-    name: "Sahil Kataria",
-    date: "4 weeks ago",
-    content: "Absolutely legends. I stuck on a roadside they came in less than 30 minutes and sort my tyre. Thanks and highly recommend",
-    rating: 5
-  },
-  {
-    id: 5,
-    name: "Aradhna Sharma",
-    date: "4 weeks ago",
-    content: "Excellent service. Extremely happy with the service and the company. Really professional and would use again.",
-    rating: 5
-  },
-  {
-    id: 6,
-    name: "Lokesh Kumar",
-    date: "4 weeks ago",
-    content: "I had a flat tyre on A31 and the service I received was absolutely outstanding. They came in approx 20 minutes and fix my tyre. The price was also genuine, thank you so much Gill. I highly recommend everyone",
-    rating: 5
-  }
-];
+import { Star, Loader2 } from 'lucide-react';
 
 const Reviews = () => {
   const [expandedReviews, setExpandedReviews] = useState({});
+  const [reviews, setReviews] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const response = await fetch('https://admins.mobiletyrechampions.com/api/Reviews');
+        const data = await response.json();
+        if (data && data.data) {
+          setReviews(data.data);
+        }
+      } catch (error) {
+        console.error('Error fetching reviews:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchReviews();
+  }, []);
 
   const toggleReview = (id) => {
     setExpandedReviews(prev => ({
@@ -81,7 +56,11 @@ const Reviews = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {dummyReviews.map((review) => (
+          {isLoading ? (
+            <div className="col-span-full flex justify-center items-center py-12">
+              <Loader2 className="w-8 h-8 animate-spin text-[#FB7E10]" />
+            </div>
+          ) : reviews.map((review) => (
             <div 
               key={review.id} 
               className="bg-white p-6 md:p-8 rounded-2xl border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-300 flex flex-col justify-between h-full"
@@ -93,9 +72,9 @@ const Reviews = () => {
                   ))}
                 </div>
                 <p className={`text-slate-700 italic leading-relaxed font-medium ${expandedReviews[review.id] ? 'mb-6' : 'line-clamp-4 mb-2'}`}>
-                  "{review.content}"
+                  "{review.reviewText}"
                 </p>
-                {review.content.length > 140 && !expandedReviews[review.id] && (
+                {review.reviewText?.length > 140 && !expandedReviews[review.id] && (
                   <button 
                     onClick={() => toggleReview(review.id)}
                     className="text-sm font-bold text-[#FB7E10] hover:text-orange-600 mb-6 transition-colors text-left"
@@ -103,7 +82,7 @@ const Reviews = () => {
                     Read full review
                   </button>
                 )}
-                {review.content.length > 140 && expandedReviews[review.id] && (
+                {review.reviewText?.length > 140 && expandedReviews[review.id] && (
                   <button 
                     onClick={() => toggleReview(review.id)}
                     className="text-sm font-bold text-[#FB7E10] hover:text-orange-600 mt-2 mb-6 transition-colors text-left"
@@ -115,12 +94,12 @@ const Reviews = () => {
               
               <div className="flex items-center gap-4 mt-auto pt-4 border-t border-slate-50">
                 <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-400">
-                  {review.name.charAt(0)}
+                  {review.reviewerName?.charAt(0)}
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 text-sm tracking-tight">{review.name}</h4>
+                  <h4 className="font-bold text-slate-900 text-sm tracking-tight">{review.reviewerName}</h4>
                   <div className="flex items-center gap-2 text-xs text-slate-400 font-medium">
-                    <span>{review.date}</span>
+                    <span>{review.timeElapsed}</span>
                   </div>
                 </div>
               </div>
