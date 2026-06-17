@@ -78,11 +78,11 @@ export default function Page() {
     <>
       <Hero />
       <Features />
+      <RecentFittings />
       <WhyChoose />
       <Process />
       <HowToReadTyre />
       <Services />
-      <RecentFittings />
       <HowItWorks />
       <Reviews />
       <FAQ />
