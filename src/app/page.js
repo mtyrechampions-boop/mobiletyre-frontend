@@ -4,6 +4,7 @@ import Process from '@/components/Process';
 import WhyChoose from '@/components/WhyChoose';
 import HowToReadTyre from '@/components/HowToReadTyre';
 import Services from '@/components/Services';
+import RecentFittings from '@/components/RecentFittings';
 import HowItWorks from '@/components/HowItWorks';
 import Reviews from '@/components/Reviews';
 import FAQ from '@/components/FAQ';
@@ -81,6 +82,7 @@ export default function Page() {
       <Process />
       <HowToReadTyre />
       <Services />
+      <RecentFittings />
       <HowItWorks />
       <Reviews />
       <FAQ />

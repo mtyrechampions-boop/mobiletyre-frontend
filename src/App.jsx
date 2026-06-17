@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import Process from './components/Process';
 import Services from './components/Services';
+import RecentFittings from './components/RecentFittings';
 import HowToReadTyre from './components/HowToReadTyre';
 import CTA from './components/CTA';
 // Footer handled by Next layout; commented out to avoid duplicate rendering
@@ -50,6 +51,7 @@ const HomePage = () => (
     <Process />
     <HowToReadTyre />
     <Services />
+    <RecentFittings />
     <HowItWorks />
     <FAQ />
     <CTA />
