@@ -14,7 +14,7 @@ const staticBlogs = [
     excerpt: 'Find out why mobile tyre fitting is taking the UK by storm. Find out the pros, cons and how emergency mobile tyre fitting can save you time and hassle.',
     date: 'June 19, 2026',
     readTime: '6 min read',
-    image: '/images/emergency.webp',
+    image: '/blogs-images/Is Mobile Tyre Fitting Worth It All UK Drivers Need to Know.webp',
     category: 'Guides'
   },
   {
@@ -23,7 +23,7 @@ const staticBlogs = [
     excerpt: 'Few driving situations are more frustrating than discovering a flat tyre. Learn how emergency mobile tyre fitting services get you back on the road safely.',
     date: 'June 19, 2026',
     readTime: '5 min read',
-    image: '/images/flat-tyres.webp',
+    image: '/blogs-images/Emergency Mobile Tyre Fitting What to Do When You Get a Flat Tyre.webp',
     category: 'Safety'
   }
 ];

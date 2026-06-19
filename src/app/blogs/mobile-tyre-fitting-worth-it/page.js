@@ -60,7 +60,7 @@ export default function BlogPostWorthIt() {
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* Article Header */}
       <div className="bg-[#0B1528] pt-28 pb-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[url('/images/emergency.webp')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 opacity-20 bg-[url('/blogs-images/Is%20Mobile%20Tyre%20Fitting%20Worth%20It%20All%20UK%20Drivers%20Need%20to%20Know.webp')] bg-cover bg-center"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           <Link href="/blogs" className="inline-flex items-center gap-2 text-[#FB7E10] font-bold hover:text-white transition-colors mb-8">
             <ArrowLeft size={20} />
