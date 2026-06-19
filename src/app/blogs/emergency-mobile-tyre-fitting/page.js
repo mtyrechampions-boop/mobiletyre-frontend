@@ -71,12 +71,9 @@ export default function BlogPostEmergency() {
             <div className="flex items-center gap-1.5"><Calendar size={16} /> June 19, 2026</div>
             <div className="flex items-center gap-1.5"><Clock size={16} /> 5 min read</div>
           </div>
-          <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-6">
+          <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-0">
             Emergency Mobile Tyre Fitting: What to Do When You Get a Flat Tyre
           </h1>
-          <p className="text-xl text-slate-300 font-medium max-w-4xl">
-            Few driving situations are more frustrating than discovering a flat tyre. Learn how emergency mobile tyre fitting services get you back on the road safely.
-          </p>
         </div>
       </div>
 
@@ -202,7 +199,7 @@ export default function BlogPostEmergency() {
 
           <h3 className="text-xl md:text-2xl font-bold text-[#0B1528] mt-8 mb-4">Step 4: Contact Emergency Mobile Tyre Fitting</h3>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
-            Don't risk further vehicle damage or accident by driving to a garage. Call a professional emergency mobile tyre fitter. A technician can come to your home, workplace, or roadside right away.
+            Don't risk further vehicle damage or accident by driving to a garage. Call a professional <Link href="/services/emergency-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">emergency mobile tyre fitter</Link>. A technician can come to your home, workplace, or roadside right away. You can <Link href="/booking" className="text-[#FB7E10] font-bold hover:underline">book an appointment online</Link> or <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">contact us directly</Link> for immediate assistance.
           </p>
 
           {/* Section 3 */}
@@ -218,7 +215,7 @@ export default function BlogPostEmergency() {
             <li>Cause expensive suspension or bodywork damage</li>
           </ul>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
-            Emergency mobile tyre fitting completely resolves this. Professional technicians arrive directly at your location in areas like <strong>Surrey</strong>, <strong>Hampshire</strong>, <strong>Berkshire</strong>, or <strong>London</strong>, saving you time and money.
+            Emergency mobile tyre fitting completely resolves this. Professional technicians arrive directly at your location in areas like <Link href="/locations/surrey" className="text-[#FB7E10] font-bold hover:underline">Surrey</Link>, <Link href="/locations/hampshire" className="text-[#FB7E10] font-bold hover:underline">Hampshire</Link>, <Link href="/locations/berkshire" className="text-[#FB7E10] font-bold hover:underline">Berkshire</Link>, or <strong>London</strong>, saving you time and money.
           </p>
 
           {/* Section 4 */}
@@ -245,7 +242,7 @@ export default function BlogPostEmergency() {
             <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm">
               <span className="text-2xl font-black text-[#FB7E10]">04</span>
               <h4 className="font-bold text-[#0B1528] mt-2 mb-1">Balancing & Check</h4>
-              <p className="text-xs text-slate-500 m-0 leading-relaxed">We perform wheel balancing and safety inspections to ensure roadworthiness.</p>
+              <p className="text-xs text-slate-500 m-0 leading-relaxed">We perform <Link href="/services/precision-wheel-balancing" className="text-[#FB7E10] font-bold hover:underline">precision wheel balancing</Link> and safety inspections to ensure roadworthiness.</p>
             </div>
           </div>
 
@@ -295,7 +292,7 @@ export default function BlogPostEmergency() {
           {/* Puncture Repair Section */}
           <h3 className="text-xl md:text-2xl font-bold text-[#0B1528] mt-8 mb-4">Can a Mobile Tyre Fitter Repair a Puncture?</h3>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
-            Yes. Punctures located within the central three-quarters of the tyre tread can often be repaired using standard BS AU 159 plug-patches. However, if the puncture is in the sidewall or shoulder, or the tyre shows signs of excessive wear, a complete replacement is required for safety.
+            Yes. Our <Link href="/services/puncture-repair" className="text-[#FB7E10] font-bold hover:underline">professional puncture repair service</Link> can fix punctures located within the central three-quarters of the tyre tread using standard BS AU 159 plug-patches. However, if the puncture is in the sidewall or shoulder, or the tyre shows signs of excessive wear, a complete <Link href="/services/mobile-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">mobile tyre replacement</Link> is required for safety.
           </p>
 
           {/* FAQs Section */}
@@ -328,10 +325,13 @@ export default function BlogPostEmergency() {
 
           <h2 className="text-2xl md:text-3xl font-black text-[#0B1528] mt-12 mb-6">In Summary</h2>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
-            A flat tyre can happen anytime, but it doesn’t have to ruin your day. Emergency mobile tyre fitting is a fast, safe, and convenient solution for drivers in the UK. Whether you’re stuck at home, at work, or on the roadside, you can get expert help from professional technicians without the need to visit a garage.
+            A flat tyre can happen anytime, but it doesn't have to ruin your day. <Link href="/services/emergency-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">Emergency mobile tyre fitting</Link> is a fast, safe, and convenient solution for drivers across the UK. Whether you're stuck at home, at work, or on the roadside, you can get expert help from professional technicians without the need to visit a garage.
+          </p>
+          <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
+            Considering switching to mobile tyre services altogether? Read our guide on <Link href="/blogs/mobile-tyre-fitting-worth-it" className="text-[#FB7E10] font-bold hover:underline">Is Mobile Tyre Fitting Worth It?</Link> to understand the benefits, costs, and convenience compared to traditional garages.
           </p>
           <p className="mb-0 text-slate-600 leading-relaxed text-base md:text-lg">
-            If you are unlucky enough to suffer a puncture or blowout, call <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">Mobile Tyre Champions</Link> today to get back on the road safely and quickly.
+            If you are unlucky enough to suffer a puncture or blowout, <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">contact Mobile Tyre Champions</Link> today or <Link href="/booking" className="text-[#FB7E10] font-bold hover:underline">book your appointment online</Link> to get back on the road safely and quickly.
           </p>
         </article>
       </div>

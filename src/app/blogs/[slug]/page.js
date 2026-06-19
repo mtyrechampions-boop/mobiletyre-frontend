@@ -96,14 +96,9 @@ export default async function BlogPostPage({ params }) {
             <div className="flex items-center gap-1.5"><Calendar size={16} /> {blog.date}</div>
             <div className="flex items-center gap-1.5"><Clock size={16} /> {blog.readTime}</div>
           </div>
-          <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-6">
+          <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-0">
             {blog.title}
           </h1>
-          {blog.excerpt && (
-            <p className="text-xl text-slate-300 font-medium max-w-4xl">
-              {blog.excerpt}
-            </p>
-          )}
         </div>
       </div>
 

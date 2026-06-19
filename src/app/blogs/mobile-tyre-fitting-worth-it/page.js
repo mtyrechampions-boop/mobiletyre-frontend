@@ -71,12 +71,9 @@ export default function BlogPostWorthIt() {
             <div className="flex items-center gap-1.5"><Calendar size={16} /> June 19, 2026</div>
             <div className="flex items-center gap-1.5"><Clock size={16} /> 6 min read</div>
           </div>
-          <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-6">
+          <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-0">
             Is Mobile Tyre Fitting Worth It? All UK Drivers Need to Know
           </h1>
-          <p className="text-xl text-slate-300 font-medium max-w-4xl">
-            Find out why mobile tyre fitting is taking the UK by storm. Explore the pros, cons, and how roadside assistance saves you time and hassle.
-          </p>
         </div>
       </div>
 
@@ -155,7 +152,7 @@ export default function BlogPostWorthIt() {
             Mobile tyre fitting is a service where professional tyre technicians come to you to replace, repair, or fit tyres. The tyre centre comes to you, instead of you going to a tyre centre.
           </p>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
-            Whether at home, at work, in a car park, or stuck on the side of the road in regions like <strong>London</strong>, <strong>Surrey</strong>, <strong>Hampshire</strong>, or <strong>Berkshire</strong>, a mobile tyre fitting service can help with the latest fully equipped service vehicles.
+            Whether at home, at work, in a car park, or stuck on the side of the road in regions like <strong>London</strong>, <Link href="/locations/surrey" className="text-[#FB7E10] font-bold hover:underline">Surrey</Link>, <Link href="/locations/hampshire" className="text-[#FB7E10] font-bold hover:underline">Hampshire</Link>, or <Link href="/locations/berkshire" className="text-[#FB7E10] font-bold hover:underline">Berkshire</Link>, a mobile tyre fitting service can help with the latest fully equipped service vehicles.
           </p>
 
           <p className="mb-4 font-bold text-[#0B1528] text-lg">Services usually include:</p>
@@ -170,7 +167,7 @@ export default function BlogPostWorthIt() {
             </li>
             <li className="flex items-start gap-3 text-slate-600 text-base md:text-[17px]">
               <CheckCircle2 className="text-[#FB7E10] mt-1 flex-shrink-0" size={18} />
-              <span>Precision wheel balancing</span>
+              <span><Link href="/services/precision-wheel-balancing" className="text-[#FB7E10] font-bold hover:underline">Precision wheel balancing</Link></span>
             </li>
             <li className="flex items-start gap-3 text-slate-600 text-base md:text-[17px]">
               <CheckCircle2 className="text-[#FB7E10] mt-1 flex-shrink-0" size={18} />
@@ -266,13 +263,13 @@ export default function BlogPostWorthIt() {
           {/* Section 5 */}
           <h2 id="when-to-consider" className="text-2xl md:text-3xl font-black text-[#0B1528] mt-12 mb-6 scroll-mt-28">When to Consider Mobile Tyre Replacement?</h2>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
-            Mobile tyre replacement is perfect for a number of scenarios:
+            Mobile tyre replacement is perfect for a number of scenarios. Use our <Link href="/find-tyres" className="text-[#FB7E10] font-bold hover:underline">tyre finder</Link> to check available sizes for your vehicle before booking:
           </p>
           <ul className="list-disc pl-6 space-y-3 my-6 text-slate-600 text-base md:text-[17px]">
-            <li><strong>Flat Tyres at Home:</strong> Avoid trying to mount a spare or waiting hours for recovery in your driveway.</li>
+            <li><strong>Flat Tyres at Home:</strong> Avoid trying to mount a spare or waiting hours for recovery in your driveway. Our <Link href="/services/mobile-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">mobile tyre fitting service</Link> comes directly to you.</li>
             <li><strong>Tyre Damage at Work:</strong> Let us change your tyres in the company car park while you work.</li>
-            <li><strong>Roadside Emergencies:</strong> If you suffer a puncture on motorways like the M25 or M3, call us for rapid safety assistance.</li>
-            <li><strong>Company Fleets:</strong> Keep business vehicles moving with pre-arranged site visits.</li>
+            <li><strong>Roadside Emergencies:</strong> If you suffer a puncture on motorways like the M25 or M3, call our <Link href="/services/emergency-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">24/7 emergency tyre fitting team</Link> for rapid safety assistance.</li>
+            <li><strong>Company Fleets:</strong> Keep business vehicles moving with pre-arranged site visits. <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">Get in touch</Link> to discuss a fleet service plan.</li>
           </ul>
 
           {/* Section 6 */}
@@ -281,7 +278,7 @@ export default function BlogPostWorthIt() {
             <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm">
               <span className="text-3xl font-black text-[#FB7E10]">01</span>
               <h4 className="font-bold text-[#0B1528] mt-2 mb-1">Book Online</h4>
-              <p className="text-xs text-slate-500 m-0 leading-relaxed">Select your required tyre sizes and choose a preferred appointment slot.</p>
+              <p className="text-xs text-slate-500 m-0 leading-relaxed">Visit our <Link href="/booking" className="text-[#FB7E10] font-bold hover:underline">booking page</Link>, select your tyre sizes using the <Link href="/find-tyres" className="text-[#FB7E10] font-bold hover:underline">tyre finder</Link>, and choose your preferred appointment slot.</p>
             </div>
             <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm">
               <span className="text-3xl font-black text-[#FB7E10]">02</span>
@@ -320,8 +317,11 @@ export default function BlogPostWorthIt() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-black text-[#0B1528] mt-12 mb-6">Final Thoughts</h2>
+          <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
+            The benefits of <Link href="/services/mobile-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">mobile tyre fitting</Link> far outweigh the cost. From saving valuable time to avoiding the hassle of visiting a traditional garage, it offers a modern solution to tyre maintenance. If you are stuck with a puncture or need new tyres, <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">contact Mobile Tyre Champions</Link> today or use our <Link href="/find-tyres" className="text-[#FB7E10] font-bold hover:underline">tyre finder tool</Link> to get the right fit quickly.
+          </p>
           <p className="mb-0 text-slate-600 leading-relaxed text-base md:text-lg">
-            The benefits of mobile tyre fitting far outweigh the cost. From saving valuable time to avoiding the hassle of visiting a traditional garage, it offers a modern solution to tyre maintenance. If you are stuck with a puncture or need new tyres, contact <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">Mobile Tyre Champions</Link> today to get back on the move quickly and safely.
+            Already dealing with a flat? Read our step-by-step guide: <Link href="/blogs/emergency-mobile-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">Emergency Mobile Tyre Fitting — What to Do When You Get a Flat Tyre</Link> for safety tips and what to do next.
           </p>
         </article>
       </div>
