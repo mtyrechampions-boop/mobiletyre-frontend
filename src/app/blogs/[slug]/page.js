@@ -85,13 +85,13 @@ export default async function BlogPostPage({ params }) {
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* Article Header */}
       <div className="bg-[#0B1528] pt-32 pb-24 px-4 relative overflow-hidden">
-        {/* Banner image with a sleek gradient overlay */}
+        {/* Banner image with full opacity to prevent the blue background from bleeding through */}
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay"
+          className="absolute inset-0 bg-cover bg-center opacity-100"
           style={{ backgroundImage: `url('${blog.image || '/images/emergency.webp'}')` }}
         ></div>
         {/* Dark mask overlay to make text highly readable */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/80 to-[#0B1528]/45"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1528] via-[#0B1528]/80 to-transparent"></div>
         {/* Glow accent */}
         <div className="absolute -top-40 left-1/4 w-[500px] h-[300px] bg-[#FB7E10]/10 blur-[120px] rounded-full pointer-events-none" />
         {/* Tech Grid Pattern */}

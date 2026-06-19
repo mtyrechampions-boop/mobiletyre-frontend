@@ -60,10 +60,10 @@ export default function BlogPostEmergency() {
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* Article Header */}
       <div className="bg-[#0B1528] pt-32 pb-24 px-4 relative overflow-hidden">
-        {/* Banner image with a sleek gradient overlay */}
-        <div className="absolute inset-0 bg-[url('/blogs-images/emergency-mobile-tyre-fitting-banner.webp')] bg-cover bg-center opacity-30 mix-blend-overlay"></div>
+        {/* Banner image with full opacity to prevent the blue background from bleeding through */}
+        <div className="absolute inset-0 bg-[url('/blogs-images/emergency-mobile-tyre-fitting-banner.webp')] bg-cover bg-center opacity-100"></div>
         {/* Dark mask overlay to make text highly readable */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/80 to-[#0B1528]/45"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1528] via-[#0B1528]/80 to-transparent"></div>
         {/* Glow accent */}
         <div className="absolute -top-40 left-1/4 w-[500px] h-[300px] bg-[#FB7E10]/10 blur-[120px] rounded-full pointer-events-none" />
         {/* Tech Grid Pattern */}
@@ -169,7 +169,7 @@ export default function BlogPostEmergency() {
             <img
               src="/blogs-images/emergency-mobile-tyre-fitting/roadside-emergency-tyre-fitting.webp"
               alt="Roadside emergency tyre fitting service van replacing a flat tyre for a motorist stranded on the side of the road"
-              className="w-full h-72 object-cover"
+              className="w-full h-auto"
             />
             <figcaption className="bg-slate-50 px-5 py-3 text-sm text-slate-500 text-center leading-relaxed">
               When stranded with a flat tyre, professional roadside assistance comes directly to your location.
@@ -244,7 +244,7 @@ export default function BlogPostEmergency() {
             <img
               src="/blogs-images/emergency-mobile-tyre-fitting/emergency-tyre-safety-guide.webp"
               alt="Safety checklist guide for emergency mobile tyre fitting at home or roadside"
-              className="w-full h-72 object-cover"
+              className="w-full h-auto"
             />
             <figcaption className="bg-slate-50 px-5 py-3 text-sm text-slate-500 text-center leading-relaxed">
               By calling emergency mobile tyre fitting, you bypass the hazards of the roadside and remain safe while the replacement is done.
@@ -335,7 +335,7 @@ export default function BlogPostEmergency() {
             <img
               src="/blogs-images/emergency-mobile-tyre-fitting/mobile-tyre-technician-action.webp"
               alt="Professional mobile tyre fitting technician balancing and fitting a new tyre on-site in Surrey"
-              className="w-full h-72 object-cover"
+              className="w-full h-auto"
             />
             <figcaption className="bg-slate-50 px-5 py-3 text-sm text-slate-500 text-center leading-relaxed">
               Mobile technicians are equipped with advanced tools to balance and fit new tyres quickly and safely.

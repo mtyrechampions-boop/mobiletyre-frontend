@@ -60,10 +60,10 @@ export default function BlogPostWorthIt() {
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* Article Header */}
       <div className="bg-[#0B1528] pt-32 pb-24 px-4 relative overflow-hidden">
-        {/* Banner image with a sleek gradient overlay */}
-        <div className="absolute inset-0 bg-[url('/blogs-images/mobile-tyre-fitting-worth-it-banner.webp')] bg-cover bg-center opacity-30 mix-blend-overlay"></div>
+        {/* Banner image with full opacity to prevent the blue background from bleeding through */}
+        <div className="absolute inset-0 bg-[url('/blogs-images/mobile-tyre-fitting-worth-it-banner.webp')] bg-cover bg-center opacity-100"></div>
         {/* Dark mask overlay to make text highly readable */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/80 to-[#0B1528]/45"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1528] via-[#0B1528]/80 to-transparent"></div>
         {/* Glow accent */}
         <div className="absolute -top-40 left-1/4 w-[500px] h-[300px] bg-[#FB7E10]/10 blur-[120px] rounded-full pointer-events-none" />
         {/* Tech Grid Pattern */}
@@ -171,7 +171,7 @@ export default function BlogPostWorthIt() {
             <img
               src="/blogs-images/mobile-tyre-fitting-worth-it/mobile-tyre-fitting-van.webp"
               alt="Mobile Tyre Champions service van fully equipped with new tyres arriving at a customer location in the UK"
-              className="w-full h-72 object-cover"
+              className="w-full h-auto"
             />
             <figcaption className="bg-slate-50 px-5 py-3 text-sm text-slate-500 text-center leading-relaxed">
               A Mobile Tyre Champions technician arrives fully equipped to your home, office or roadside — no garage trip needed.
@@ -273,7 +273,7 @@ export default function BlogPostWorthIt() {
             <img
               src="/blogs-images/mobile-tyre-fitting-worth-it/tyre-balancing-guide.webp"
               alt="A professional wheel balancing guide representing standard procedure included in Mobile Tyre Champions services"
-              className="w-full h-72 object-cover"
+              className="w-full h-auto"
             />
             <figcaption className="bg-slate-50 px-5 py-3 text-sm text-slate-500 text-center leading-relaxed">
               Precision wheel balancing is included as standard with every tyre fitting — helping you enjoy a smoother, safer drive and extend tyre life.
@@ -384,7 +384,7 @@ export default function BlogPostWorthIt() {
             <img
               src="/blogs-images/mobile-tyre-fitting-worth-it/mobile-tyre-fitting-process.webp"
               alt="Step-by-step mobile tyre fitting and balancing process completed on-site by a Mobile Tyre Champions technician"
-              className="w-full h-72 object-cover"
+              className="w-full h-auto"
             />
             <figcaption className="bg-slate-50 px-5 py-3 text-sm text-slate-500 text-center leading-relaxed">
               From booking to safety sign-off — the entire mobile tyre fitting process is designed to be fast, professional, and completely hassle-free.

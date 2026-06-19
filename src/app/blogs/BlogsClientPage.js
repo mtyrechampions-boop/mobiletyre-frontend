@@ -60,11 +60,15 @@ export default function BlogsClientPage({ apiBlogs = [] }) {
     <div className="bg-slate-50 min-h-screen">
 
       {/* ── Hero (dark, matching other pages) ───────────── */}
-      <div className="bg-[#0B1528] pt-28 pb-20 px-4 relative overflow-hidden">
+      <div className="bg-[#0B1528] pt-32 pb-24 px-4 relative overflow-hidden">
         {/* Subtle background texture */}
-        <div className="absolute inset-0 opacity-5 bg-[url('/images/emergency.webp')] bg-cover bg-center" />
+        <div className="absolute inset-0 opacity-25 bg-[url('/images/emergency.webp')] bg-cover bg-center" />
+        {/* Dark mask overlay to make text highly readable */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/85 to-[#0B1528]/50"></div>
         {/* Orange glow accent */}
-        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#FB7E10]/10 blur-[100px] rounded-full" />
+        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#FB7E10]/15 blur-[100px] rounded-full" />
+        {/* Tech Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:32px_32px]"></div>
 
         <div className="max-w-7xl mx-auto relative z-10 text-center">
           {/* Eyebrow */}
