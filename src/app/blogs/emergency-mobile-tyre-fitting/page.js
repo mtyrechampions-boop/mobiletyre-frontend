@@ -59,20 +59,30 @@ export default function BlogPostEmergency() {
   return (
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* Article Header */}
-      <div className="bg-[#0B1528] pt-28 pb-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[url('/blogs-images/Emergency%20Mobile%20Tyre%20Fitting%20What%20to%20Do%20When%20You%20Get%20a%20Flat%20Tyre.webp')] bg-cover bg-center"></div>
-        <div className="max-w-7xl mx-auto relative z-10">
-          <Link href="/blogs" className="inline-flex items-center gap-2 text-[#FB7E10] font-bold hover:text-white transition-colors mb-8">
-            <ArrowLeft size={20} />
+      <div className="bg-[#0B1528] pt-32 pb-24 px-4 relative overflow-hidden">
+        {/* Banner image with a sleek gradient overlay */}
+        <div className="absolute inset-0 bg-[url('/blogs-images/emergency-mobile-tyre-fitting-banner.webp')] bg-cover bg-center opacity-30 mix-blend-overlay"></div>
+        {/* Dark mask overlay to make text highly readable */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/80 to-[#0B1528]/45"></div>
+        {/* Glow accent */}
+        <div className="absolute -top-40 left-1/4 w-[500px] h-[300px] bg-[#FB7E10]/10 blur-[120px] rounded-full pointer-events-none" />
+        {/* Tech Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:32px_32px]"></div>
+
+        <div className="max-w-7xl mx-auto relative z-10 text-center lg:text-left">
+          <Link href="/blogs" className="inline-flex items-center gap-2 text-[#FB7E10] font-black text-sm uppercase tracking-wider hover:text-white transition-all mb-8 group bg-[#FB7E10]/10 hover:bg-[#FB7E10] border border-[#FB7E10]/20 hover:border-transparent px-5 py-2.5 rounded-full">
+            <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
             Back to Blog
           </Link>
-          <div className="flex items-center gap-4 text-sm font-semibold text-slate-300 mb-6">
-            <span className="bg-[#FB7E10] text-white px-3 py-1 rounded-full uppercase tracking-wider">Safety</span>
-            <div className="flex items-center gap-1.5"><Calendar size={16} /> June 19, 2026</div>
-            <div className="flex items-center gap-1.5"><Clock size={16} /> 5 min read</div>
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-semibold text-slate-300 mb-6">
+            <span className="bg-gradient-to-r from-[#FB7E10] to-[#ff9838] text-white font-black text-[10px] uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg shadow-orange-500/20">Safety</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-white/20 hidden sm:inline-block"></span>
+            <div className="flex items-center gap-1.5"><Calendar size={14} className="text-[#FB7E10]" /> June 19, 2026</div>
+            <span className="w-1.5 h-1.5 rounded-full bg-white/20 hidden sm:inline-block"></span>
+            <div className="flex items-center gap-1.5"><Clock size={14} className="text-[#FB7E10]" /> 5 min read</div>
           </div>
-          <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-0">
-            Emergency Mobile Tyre Fitting: What to Do When You Get a Flat Tyre
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-0 tracking-tight drop-shadow-md">
+            Emergency Mobile <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FB7E10] to-[#ffaa55]">Tyre Fitting:</span> <br className="hidden md:inline" />What to Do When You Get a Flat Tyre
           </h1>
         </div>
       </div>
@@ -106,9 +116,25 @@ export default function BlogPostEmergency() {
               <span className="w-1.5 h-1.5 rounded-full bg-[#FB7E10]"></span>
               When to Call
             </a>
+            <a href="#benefits-emergency" className="text-sm text-slate-600 hover:text-[#FB7E10] font-semibold transition-colors flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FB7E10]"></span>
+              Benefits in Emergency
+            </a>
+            <a href="#vs-recovery" className="text-sm text-slate-600 hover:text-[#FB7E10] font-semibold transition-colors flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FB7E10]"></span>
+              Fitting vs Recovery
+            </a>
+            <a href="#puncture-repair" className="text-sm text-slate-600 hover:text-[#FB7E10] font-semibold transition-colors flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FB7E10]"></span>
+              Puncture Repair
+            </a>
             <a href="#faq" className="text-sm text-slate-600 hover:text-[#FB7E10] font-semibold transition-colors flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#FB7E10]"></span>
               Common Questions
+            </a>
+            <a href="#useful-links" className="text-sm text-slate-600 hover:text-[#FB7E10] font-semibold transition-colors flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FB7E10]"></span>
+              Useful Links
             </a>
           </nav>
 
@@ -137,6 +163,18 @@ export default function BlogPostEmergency() {
           <p className="mb-8 text-slate-600 leading-relaxed text-base md:text-lg">
             In this guide, we’ll explain exactly what to do if you get a flat tyre, when to call an emergency mobile tyre fitting service, and how professional mobile tyre specialists can get you back on the road safely.
           </p>
+
+          {/* Image 1 — after intro */}
+          <figure className="my-10 rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+            <img
+              src="/blogs-images/emergency-mobile-tyre-fitting/roadside-emergency-tyre-fitting.webp"
+              alt="Roadside emergency tyre fitting service van replacing a flat tyre for a motorist stranded on the side of the road"
+              className="w-full h-72 object-cover"
+            />
+            <figcaption className="bg-slate-50 px-5 py-3 text-sm text-slate-500 text-center leading-relaxed">
+              When stranded with a flat tyre, professional roadside assistance comes directly to your location.
+            </figcaption>
+          </figure>
 
           {/* Section 1 */}
           <h2 id="why-deflate" className="text-2xl md:text-3xl font-black text-[#0B1528] mt-12 mb-6 scroll-mt-28">Why Do Tyres Deflate?</h2>
@@ -196,11 +234,22 @@ export default function BlogPostEmergency() {
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
             If the tyre looks structural or badly damaged, do not attempt to drive on it.
           </p>
-
           <h3 className="text-xl md:text-2xl font-bold text-[#0B1528] mt-8 mb-4">Step 4: Contact Emergency Mobile Tyre Fitting</h3>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
             Don't risk further vehicle damage or accident by driving to a garage. Call a professional <Link href="/services/emergency-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">emergency mobile tyre fitter</Link>. A technician can come to your home, workplace, or roadside right away. You can <Link href="/booking" className="text-[#FB7E10] font-bold hover:underline">book an appointment online</Link> or <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">contact us directly</Link> for immediate assistance.
           </p>
+
+          {/* Image 2 — after steps */}
+          <figure className="my-10 rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+            <img
+              src="/blogs-images/emergency-mobile-tyre-fitting/emergency-tyre-safety-guide.webp"
+              alt="Safety checklist guide for emergency mobile tyre fitting at home or roadside"
+              className="w-full h-72 object-cover"
+            />
+            <figcaption className="bg-slate-50 px-5 py-3 text-sm text-slate-500 text-center leading-relaxed">
+              By calling emergency mobile tyre fitting, you bypass the hazards of the roadside and remain safe while the replacement is done.
+            </figcaption>
+          </figure>
 
           {/* Section 3 */}
           <h2 id="why-choose-emergency" className="text-2xl md:text-3xl font-black text-[#0B1528] mt-12 mb-6 scroll-mt-28">Why Emergency Mobile Tyre Fitting is the Way to Go</h2>
@@ -258,8 +307,43 @@ export default function BlogPostEmergency() {
             <li><strong>Minimize Disruption:</strong> Same-day fitting helps keep your business meetings or family travel plans on track.</li>
           </ul>
 
+          {/* Section 6 — Benefits */}
+          <h2 id="benefits-emergency" className="text-2xl md:text-3xl font-black text-[#0B1528] mt-12 mb-6 scroll-mt-28">Benefits of Mobile Tyre Fitting in Emergency</h2>
+          
+          <h3 className="text-xl md:text-2xl font-bold text-[#0B1528] mt-8 mb-4">1. Faster Response Times</h3>
+          <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
+            Professional technicians are typically faster to reach your location. You get much less waiting time compared to traditional breakdown recovery options.
+          </p>
+
+          <h3 className="text-xl md:text-2xl font-bold text-[#0B1528] mt-8 mb-4">2. User-Friendly &amp; Safe</h3>
+          <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
+            There is no need to arrange towing or wait for hours in a cold tyre centre. Don't gamble with damaged or unsafe tyres by trying to drive them to a garage.
+          </p>
+
+          <h3 className="text-xl md:text-2xl font-bold text-[#0B1528] mt-8 mb-4">3. Professional Services</h3>
+          <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
+            Qualified technicians use industry-standard procedures and specialized mobile equipment to mount, fit, and balance tyres directly on-site.
+          </p>
+
+          <h3 className="text-xl md:text-2xl font-bold text-[#0B1528] mt-8 mb-4">4. Less Stress &amp; Peace of Mind</h3>
+          <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
+            Having expert help come straight to your location provides complete peace of mind, dramatically reducing stress during unexpected tyre emergencies.
+          </p>
+
+          {/* Image 3 — after benefits */}
+          <figure className="my-10 rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+            <img
+              src="/blogs-images/emergency-mobile-tyre-fitting/mobile-tyre-technician-action.webp"
+              alt="Professional mobile tyre fitting technician balancing and fitting a new tyre on-site in Surrey"
+              className="w-full h-72 object-cover"
+            />
+            <figcaption className="bg-slate-50 px-5 py-3 text-sm text-slate-500 text-center leading-relaxed">
+              Mobile technicians are equipped with advanced tools to balance and fit new tyres quickly and safely.
+            </figcaption>
+          </figure>
+
           {/* Breakdown Recovery vs Mobile Fitting Table */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#0B1528] mt-8 mb-4">Mobile Tyre Fitting vs. Breakdown Recovery</h3>
+          <h2 id="vs-recovery" className="text-2xl md:text-3xl font-black text-[#0B1528] mt-12 mb-6 scroll-mt-28">Emergency Mobile Tyre Fitting vs. Breakdown Recovery</h2>
           <div className="overflow-x-auto my-8 border border-slate-100 rounded-2xl shadow-sm">
             <table className="min-w-full divide-y divide-slate-200">
               <thead className="bg-slate-50">
@@ -290,7 +374,7 @@ export default function BlogPostEmergency() {
           </div>
 
           {/* Puncture Repair Section */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#0B1528] mt-8 mb-4">Can a Mobile Tyre Fitter Repair a Puncture?</h3>
+          <h2 id="puncture-repair" className="text-2xl md:text-3xl font-black text-[#0B1528] mt-12 mb-6 scroll-mt-28">Can a Mobile Tyre Fitter Repair a Puncture?</h2>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
             Yes. Our <Link href="/services/puncture-repair" className="text-[#FB7E10] font-bold hover:underline">professional puncture repair service</Link> can fix punctures located within the central three-quarters of the tyre tread using standard BS AU 159 plug-patches. However, if the puncture is in the sidewall or shoulder, or the tyre shows signs of excessive wear, a complete <Link href="/services/mobile-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">mobile tyre replacement</Link> is required for safety.
           </p>
@@ -333,6 +417,27 @@ export default function BlogPostEmergency() {
           <p className="mb-0 text-slate-600 leading-relaxed text-base md:text-lg">
             If you are unlucky enough to suffer a puncture or blowout, <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">contact Mobile Tyre Champions</Link> today or <Link href="/booking" className="text-[#FB7E10] font-bold hover:underline">book your appointment online</Link> to get back on the road safely and quickly.
           </p>
+
+          {/* Section 9 — Useful Links */}
+          <h2 id="useful-links" className="text-2xl md:text-3xl font-black text-[#0B1528] mt-16 mb-6 scroll-mt-28 border-t border-slate-100 pt-8">Useful Links</h2>
+          <ul className="list-none pl-0 space-y-3.5 my-6">
+            <li className="flex items-center gap-3 text-slate-600 text-base md:text-[17px]">
+              <CheckCircle2 className="text-[#FB7E10] flex-shrink-0" size={18} />
+              <span>Mobile Tyre Fitting Services: <Link href="/services/mobile-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">Book Mobile Tyre Fitting</Link></span>
+            </li>
+            <li className="flex items-center gap-3 text-slate-600 text-base md:text-[17px]">
+              <CheckCircle2 className="text-[#FB7E10] flex-shrink-0" size={18} />
+              <span>Emergency Tyre Help: <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">Contact Us for Urgent Roadside Assistance</Link></span>
+            </li>
+            <li className="flex items-center gap-3 text-slate-600 text-base md:text-[17px]">
+              <CheckCircle2 className="text-[#FB7E10] flex-shrink-0" size={18} />
+              <span>About Mobile Tyre Champions: <Link href="/about" className="text-[#FB7E10] font-bold hover:underline">Learn More About Us</Link></span>
+            </li>
+            <li className="flex items-center gap-3 text-slate-600 text-base md:text-[17px]">
+              <CheckCircle2 className="text-[#FB7E10] flex-shrink-0" size={18} />
+              <span>Locations: <Link href="/locations" className="text-[#FB7E10] font-bold hover:underline">Our Service Coverage Areas</Link></span>
+            </li>
+          </ul>
         </article>
       </div>
 

@@ -84,19 +84,32 @@ export default async function BlogPostPage({ params }) {
   return (
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* Article Header */}
-      <div className="bg-[#0B1528] pt-28 pb-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[url('/images/emergency.webp')] bg-cover bg-center"></div>
-        <div className="max-w-7xl mx-auto relative z-10">
-          <Link href="/blogs" className="inline-flex items-center gap-2 text-[#FB7E10] font-bold hover:text-white transition-colors mb-8">
-            <ArrowLeft size={20} />
+      <div className="bg-[#0B1528] pt-32 pb-24 px-4 relative overflow-hidden">
+        {/* Banner image with a sleek gradient overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay"
+          style={{ backgroundImage: `url('${blog.image || '/images/emergency.webp'}')` }}
+        ></div>
+        {/* Dark mask overlay to make text highly readable */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-[#0B1528]/80 to-[#0B1528]/45"></div>
+        {/* Glow accent */}
+        <div className="absolute -top-40 left-1/4 w-[500px] h-[300px] bg-[#FB7E10]/10 blur-[120px] rounded-full pointer-events-none" />
+        {/* Tech Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:32px_32px]"></div>
+
+        <div className="max-w-7xl mx-auto relative z-10 text-center lg:text-left">
+          <Link href="/blogs" className="inline-flex items-center gap-2 text-[#FB7E10] font-black text-sm uppercase tracking-wider hover:text-white transition-all mb-8 group bg-[#FB7E10]/10 hover:bg-[#FB7E10] border border-[#FB7E10]/20 hover:border-transparent px-5 py-2.5 rounded-full">
+            <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
             Back to Blog
           </Link>
-          <div className="flex items-center gap-4 text-sm font-semibold text-slate-300 mb-6">
-            <span className="bg-[#FB7E10] text-white px-3 py-1 rounded-full uppercase tracking-wider">{blog.category}</span>
-            <div className="flex items-center gap-1.5"><Calendar size={16} /> {blog.date}</div>
-            <div className="flex items-center gap-1.5"><Clock size={16} /> {blog.readTime}</div>
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-semibold text-slate-300 mb-6">
+            <span className="bg-gradient-to-r from-[#FB7E10] to-[#ff9838] text-white font-black text-[10px] uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg shadow-orange-500/20">{blog.category}</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-white/20 hidden sm:inline-block"></span>
+            <div className="flex items-center gap-1.5"><Calendar size={14} className="text-[#FB7E10]" /> {blog.date}</div>
+            <span className="w-1.5 h-1.5 rounded-full bg-white/20 hidden sm:inline-block"></span>
+            <div className="flex items-center gap-1.5"><Clock size={14} className="text-[#FB7E10]" /> {blog.readTime}</div>
           </div>
-          <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-0">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-0 tracking-tight drop-shadow-md">
             {blog.title}
           </h1>
         </div>

@@ -1,19 +1,68 @@
 import React from 'react';
+import Link from 'next/link';
 
 const RecentFittings = () => {
-  const images = [
-    "/recent fitings/1.webp",
-    "/recent fitings/2.webp",
-    "/recent fitings/3.webp",
-    "/recent fitings/4.webp",
-    "/recent fitings/5.webp",
-    "/recent fitings/6.webp",
-    "/recent fitings/7.webp",
-    "/recent fitings/8.webp",
-    "/recent fitings/9.webp",
-    "/recent fitings/10.webp",
-    "/recent fitings/11.webp",
-    "/recent fitings/12.webp",
+  const fittings = [
+    {
+      src: "/recent-fittings/mobile-tyre-fitting-recent-1.webp",
+      alt: "Mobile tyre fitting service van replacing a car tyre on-site",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/mobile-tyre-fitting-recent-2.webp",
+      alt: "Professional technician fitting a new tyre to a passenger vehicle",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/mobile-tyre-fitting-recent-3.webp",
+      alt: "Close-up of a new tyre mounted on an alloy wheel by Mobile Tyre Champions",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/mobile-tyre-fitting-recent-4.webp",
+      alt: "On-site tyre replacement process using state-of-the-art mobile tools",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/mobile-tyre-fitting-recent-5.webp",
+      alt: "Mobile tyre replacement for a vehicle parked in a residential driveway",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/mobile-tyre-fitting-recent-6.webp",
+      alt: "Emergency mobile tyre fitting roadside assistance vehicle in the UK",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/mobile-tyre-fitting-recent-7.webp",
+      alt: "Technician performing precision wheel balancing on a newly fitted tyre",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/mobile-tyre-fitting-recent-8.webp",
+      alt: "High-quality new tyres ready to be fitted to a customer car on-site",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/mobile-tyre-fitting-recent-9.webp",
+      alt: "Qualified mobile tyre specialist inspecting a car wheel before fitting",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/mobile-tyre-fitting-recent-10.webp",
+      alt: "Same-day mobile tyre replacement and valve check in action",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/mobile-tyre-fitting-recent-11.webp",
+      alt: "Alloy wheel with brand new tyre fitted and balanced by mobile service",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/mobile-tyre-fitting-recent-12.webp",
+      alt: "Mobile Tyre Champions service van responding to an emergency call",
+      url: "/booking"
+    }
   ];
 
   return (
@@ -29,17 +78,23 @@ const RecentFittings = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {images.map((src, index) => (
-            <div 
+          {fittings.map((item, index) => (
+            <Link 
               key={index} 
-              className="group aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 relative"
+              href={item.url}
+              className="group aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 relative block"
             >
               <img
-                src={src}
-                alt={`Recent Fitting ${index + 1}`}
+                src={item.src}
+                alt={item.alt}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-            </div>
+              <div className="absolute inset-0 bg-[#0B1528]/45 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
+                <span className="bg-[#FB7E10] text-white text-xs font-black uppercase tracking-wider px-4 py-2 rounded-xl shadow-md transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                  Book Fitting
+                </span>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
