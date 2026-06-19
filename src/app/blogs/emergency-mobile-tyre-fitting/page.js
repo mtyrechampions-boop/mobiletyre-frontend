@@ -22,7 +22,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Can you change the tires at home?",
+      "name": "Can you change the tyres at home?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, mobile tyre fitting services can be carried out at your home, at work, or at most safe locations."
@@ -98,7 +98,7 @@ export default function BlogPostEmergency() {
           <nav className="flex flex-col gap-3">
             <a href="#why-deflate" className="text-sm text-slate-600 hover:text-[#FB7E10] font-semibold transition-colors flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#FB7E10]"></span>
-              Why Do Tires Deflate?
+              Why Do Tyres Deflate?
             </a>
             <a href="#what-to-do" className="text-sm text-slate-600 hover:text-[#FB7E10] font-semibold transition-colors flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#FB7E10]"></span>
