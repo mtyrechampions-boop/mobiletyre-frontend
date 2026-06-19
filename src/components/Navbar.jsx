@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   Phone, Menu, X, ChevronDown,
-  Home, Info, Search, Truck, Settings, MapPin, MessageSquare
+  Home, Info, Search, Truck, Settings, MapPin, MessageSquare, BookOpen
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -32,6 +32,7 @@ const Navbar = () => {
     { label: 'Home', to: '/', icon: <Home size={20} /> },
     { label: 'About', to: '/about', icon: <Info size={20} /> },
     { label: 'Find Tyres', to: '/find-tyres', icon: <Search size={20} /> },
+    { label: 'Blog', to: '/blogs', icon: <BookOpen size={20} /> },
     {
       label: 'Commercial Tyres',
       to: '#',

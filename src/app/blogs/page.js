@@ -1,0 +1,109 @@
+import Link from 'next/link';
+import { Calendar, Clock, ChevronRight } from 'lucide-react';
+
+export const metadata = {
+  title: 'Blog | Mobile Tyre Champions',
+  description: 'Read the latest tips, guides, and news about mobile tyre fitting, puncture repairs, and roadside assistance from Mobile Tyre Champions.',
+};
+
+const blogs = [
+  {
+    title: 'The Importance of Mobile Tyre Fitting in Emergencies',
+    slug: 'importance-of-mobile-tyre-fitting',
+    excerpt: 'Discover why having a reliable mobile tyre fitting service on speed dial is crucial for unexpected roadside emergencies and how it can save you time and money.',
+    date: 'June 18, 2026',
+    readTime: '5 min read',
+    image: '/images/emergency.webp',
+    category: 'Guides'
+  },
+  {
+    title: 'What to Do When You Get a Tyre Puncture on the Highway',
+    slug: 'what-to-do-in-a-tyre-puncture-emergency',
+    excerpt: 'A step-by-step guide on how to safely handle a tyre blow-out or puncture while driving at high speeds on the motorway.',
+    date: 'June 15, 2026',
+    readTime: '4 min read',
+    image: '/images/flat-tyres.webp', 
+    category: 'Safety'
+  },
+  {
+    title: 'How to Check Your Tyre Tread Depth at Home',
+    slug: 'how-to-check-your-tyre-tread-depth',
+    excerpt: 'Learn the simple 20p coin test and other easy methods to ensure your tyres are road-legal and safe before your next journey.',
+    date: 'June 10, 2026',
+    readTime: '3 min read',
+    image: '/images/tyre-guide.webp',
+    category: 'Maintenance'
+  }
+];
+
+export default function BlogsPage() {
+  return (
+    <div className="bg-slate-50 min-h-screen pb-20">
+      {/* Header */}
+      <div className="bg-[#0B1528] py-20 px-4 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-[url('/images/emergency.webp')] bg-cover bg-center"></div>
+        <div className="max-w-7xl mx-auto relative z-10 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6">
+            Our <span className="text-[#FB7E10]">Blog</span>
+          </h1>
+          <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
+            Expert advice, safety tips, and the latest news from the mobile tyre fitting industry.
+          </p>
+        </div>
+      </div>
+
+      {/* Blog Grid */}
+      <div className="max-w-7xl mx-auto px-4 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogs.map((blog) => (
+            <Link key={blog.slug} href={`/blogs/${blog.slug}`} className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full hover:-translate-y-1">
+              {/* Image Container */}
+              <div className="relative h-60 w-full overflow-hidden bg-slate-200">
+                <div className="absolute inset-0 bg-[#0B1528]/20 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+                <img 
+                  src={blog.image} 
+                  alt={blog.title} 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute top-4 left-4 z-20">
+                  <span className="bg-[#FB7E10] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+                    {blog.category}
+                  </span>
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="flex items-center gap-4 text-xs font-semibold text-slate-400 mb-4">
+                  <div className="flex items-center gap-1.5">
+                    <Calendar size={14} className="text-[#FB7E10]" />
+                    {blog.date}
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <Clock size={14} className="text-[#FB7E10]" />
+                    {blog.readTime}
+                  </div>
+                </div>
+
+                <h2 className="text-xl font-black text-[#0B1528] mb-3 group-hover:text-[#FB7E10] transition-colors line-clamp-2">
+                  {blog.title}
+                </h2>
+                
+                <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                  {blog.excerpt}
+                </p>
+
+                <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between text-[#FB7E10] font-bold text-sm">
+                  <span>Read Article</span>
+                  <div className="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center group-hover:bg-[#FB7E10] group-hover:text-white transition-colors">
+                    <ChevronRight size={16} />
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
