@@ -77,7 +77,7 @@ export default function BlogsClientPage({ apiBlogs = [] }) {
           </span>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-5">
-            Our Expert <span className="text-[#FB7E10]">Blog</span>
+            Our <span className="text-[#FB7E10]">Blogs</span>
           </h1>
 
           <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
