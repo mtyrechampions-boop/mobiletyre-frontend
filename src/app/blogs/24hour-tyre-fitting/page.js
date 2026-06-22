@@ -160,7 +160,7 @@ export default function BlogPost24HourMobileTyre() {
             <li>Work site</li>
             <li>Home</li>
             <li>Parking lots</li>
-            <li><Link href="/services/roadside-assistance" className="text-[#FB7E10] font-bold hover:underline">Roadside / Roadside service station</Link></li>
+            <li>Roadside / Roadside service station</li>
             <li>Safe place to turn around</li>
           </ul>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
@@ -381,9 +381,7 @@ export default function BlogPost24HourMobileTyre() {
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
             A puncture, blowout or damaged tyre can leave you stranded, but by opting for a trusted mobile tyre fitting company you can be safely back on the road with minimum disruption.
           </p>
-          <p className="mb-0 text-slate-600 leading-relaxed text-base md:text-lg">
-            <strong>Useful Links:</strong> <Link href="/" className="text-[#FB7E10] font-bold hover:underline">Mobile Tyre Champions</Link> | <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">Contact Mobile Tyre Champions</Link> | <Link href="/about" className="text-[#FB7E10] font-bold hover:underline">About Mobile Tyre Champions</Link>
-          </p>
+
         </article>
       </div>
 

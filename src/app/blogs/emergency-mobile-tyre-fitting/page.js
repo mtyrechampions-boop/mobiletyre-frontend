@@ -132,10 +132,7 @@ export default function BlogPostEmergency() {
               <span className="w-1.5 h-1.5 rounded-full bg-[#FB7E10]"></span>
               Common Questions
             </a>
-            <a href="#useful-links" className="text-sm text-slate-600 hover:text-[#FB7E10] font-semibold transition-colors flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#FB7E10]"></span>
-              Useful Links
-            </a>
+
           </nav>
 
           {/* Author info */}
@@ -418,26 +415,7 @@ export default function BlogPostEmergency() {
             If you are unlucky enough to suffer a puncture or blowout, <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">contact Mobile Tyre Champions</Link> today or <Link href="/booking" className="text-[#FB7E10] font-bold hover:underline">book your appointment online</Link> to get back on the road safely and quickly.
           </p>
 
-          {/* Section 9 — Useful Links */}
-          <h2 id="useful-links" className="text-2xl md:text-3xl font-black text-[#0B1528] mt-16 mb-6 scroll-mt-28 border-t border-slate-100 pt-8">Useful Links</h2>
-          <ul className="list-none pl-0 space-y-3.5 my-6">
-            <li className="flex items-center gap-3 text-slate-600 text-base md:text-[17px]">
-              <CheckCircle2 className="text-[#FB7E10] flex-shrink-0" size={18} />
-              <span>Mobile Tyre Fitting Services: <Link href="/services/mobile-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">Book Mobile Tyre Fitting</Link></span>
-            </li>
-            <li className="flex items-center gap-3 text-slate-600 text-base md:text-[17px]">
-              <CheckCircle2 className="text-[#FB7E10] flex-shrink-0" size={18} />
-              <span>Emergency Tyre Help: <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">Contact Us for Urgent Roadside Assistance</Link></span>
-            </li>
-            <li className="flex items-center gap-3 text-slate-600 text-base md:text-[17px]">
-              <CheckCircle2 className="text-[#FB7E10] flex-shrink-0" size={18} />
-              <span>About Mobile Tyre Champions: <Link href="/about" className="text-[#FB7E10] font-bold hover:underline">Learn More About Us</Link></span>
-            </li>
-            <li className="flex items-center gap-3 text-slate-600 text-base md:text-[17px]">
-              <CheckCircle2 className="text-[#FB7E10] flex-shrink-0" size={18} />
-              <span>Locations: <Link href="/locations" className="text-[#FB7E10] font-bold hover:underline">Our Service Coverage Areas</Link></span>
-            </li>
-          </ul>
+
         </article>
       </div>
 

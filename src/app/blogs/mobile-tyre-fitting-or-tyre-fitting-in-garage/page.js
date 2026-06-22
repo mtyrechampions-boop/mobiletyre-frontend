@@ -191,7 +191,7 @@ export default function BlogPostMobileVsGarage() {
             </li>
             <li className="flex items-start gap-3 text-slate-600 text-base md:text-[17px]">
               <CheckCircle2 className="text-[#FB7E10] mt-1 flex-shrink-0" size={18} />
-              <span><Link href="/services/roadside-assistance" className="text-[#FB7E10] font-bold hover:underline">Tyre fitting by the side of the road</Link></span>
+              <span>Tyre fitting by the side of the road</span>
             </li>
           </ul>
 
@@ -250,7 +250,7 @@ export default function BlogPostMobileVsGarage() {
             One of the main reasons why drivers are opting for mobile tyre fitting UK is time. You might have to make a garage appointment for travel time, waiting for your car, and delays possible at a busy workshop.
           </p>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
-            Mobile tyre fitting eliminates this inconvenience to a large extent. You can continue working, relaxing or doing other jobs while your tyres are fitted. Many providers also offer <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">same day tyre fitting</Link> to help drivers to get urgent tyre issues sorted out quickly.
+            Mobile tyre fitting eliminates this inconvenience to a large extent. You can continue working, relaxing or doing other jobs while your tyres are fitted. Many providers also offer same day tyre fitting to help drivers to get urgent tyre issues sorted out quickly.
           </p>
 
           <h3 className="text-xl md:text-2xl font-bold text-[#0B1528] mt-8 mb-4">3. Urgent Support</h3>
@@ -375,9 +375,7 @@ export default function BlogPostMobileVsGarage() {
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
             Mobile tyre fitting is a hassle free and efficient way to look after your vehicle and will save you time and unnecessary journeys as well as providing emergency help if required. If you’re a UK driver that wants flexibility, speed and a professional service then choosing a reliable mobile tyre fitting company can make replacing your tyres easier than ever.
           </p>
-          <p className="mb-0 text-slate-600 leading-relaxed text-base md:text-lg">
-            <strong>Helpful Links:</strong> <Link href="/" className="text-[#FB7E10] font-bold hover:underline">Mobile Tyre Champions Website</Link> | <Link href="/contact" className="text-[#FB7E10] font-bold hover:underline">Contact Mobile Tyre Champions</Link> | <Link href="/about" className="text-[#FB7E10] font-bold hover:underline">About Mobile Tyre Champions</Link>
-          </p>
+
         </article>
       </div>
 
