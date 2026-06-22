@@ -9,7 +9,7 @@ export const metadata = {
 
 // FAQ Schema based on text
 const faqSchema = {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org",   
   "@type": "FAQPage",
   "mainEntity": [
     {
