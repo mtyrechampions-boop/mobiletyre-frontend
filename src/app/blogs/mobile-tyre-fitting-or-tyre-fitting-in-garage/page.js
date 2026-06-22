@@ -209,12 +209,12 @@ export default function BlogPostMobileVsGarage() {
 
           <figure className="my-10 rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
             <img
-              src="/blogs-images/mobile-tyre-fitting-vs-garage-images/mobile-tyre-fitting-convenience.png"
-              alt="Convenience of Mobile Tyre Fitting"
+              src="/blogs-images/mobile-tyre-fitting-vs-garage-images/mobile-tyre-fitting-convenience.webp"
+              alt="Mobile tyre fitting vs traditional garage tyre fitting convenience comparison in the UK"
               className="w-full h-auto"
             />
             <figcaption className="bg-slate-50 px-5 py-3 text-sm text-slate-500 text-center leading-relaxed">
-              Mobile tyre fitting brings the garage directly to you, providing maximum convenience.
+              Experience the ultimate convenience with mobile tyre fitting services that bring the garage directly to your home or workplace in the UK.
             </figcaption>
           </figure>
 
