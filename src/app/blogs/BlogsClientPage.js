@@ -7,6 +7,26 @@ import { Search, Calendar, Clock, ArrowRight, ChevronRight } from 'lucide-react'
 // Static blogs always present
 const staticBlogs = [
   {
+    title: '24 Hour Emergency Mobile Tyre Fitting UK | Emergency Tyre Replacement Anytime',
+    slug: '24hour-tyre-fitting',
+    excerpt:
+      'Urgent Tyres explains the 24 hour mobile tyre fitting service, the benefits of emergency tyre services and why drivers in UK choose mobile tyre specialists.',
+    date: 'June 22, 2026',
+    readTime: '5 min read',
+    image: '/blogs-images/24-hour-mobile-tyre-fitting.png',
+    category: 'Emergency',
+  },
+  {
+    title: 'Mobile Tyre Fitting vs Garage Tyre Fitting | Best Choice in UK?',
+    slug: 'mobile-tyre-fitting-or-tyre-fitting-in-garage',
+    excerpt:
+      'Discover which is more convenient, saves you more time and is the right choice for UK drivers: Mobile Tyre Fitting vs Traditional Garage Tyre Fitting.',
+    date: 'June 22, 2026',
+    readTime: '5 min read',
+    image: '/blogs-images/mobile-tyre-fitting-vs-garage.png',
+    category: 'Guides',
+  },
+  {
     title: 'Is Mobile Tyre Fitting Worth It? All UK Drivers Need to Know',
     slug: 'mobile-tyre-fitting-worth-it',
     excerpt:
