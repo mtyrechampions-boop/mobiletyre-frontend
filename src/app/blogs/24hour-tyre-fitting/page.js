@@ -219,7 +219,7 @@ export default function BlogPost24HourMobileTyre() {
           {/* Section 3 */}
           <h2 id="how-it-works" className="text-2xl md:text-3xl font-black text-[#0B1528] mt-12 mb-6 scroll-mt-28">How does 24-hour tire fitting work?</h2>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
-            It’s simple and will take all the stress out of it.
+            It’s simple and takes all the stress out of it we come directly to you anywhere across <Link href="/locations/berkshire" className="text-[#FB7E10] hover:underline">Berkshire</Link>, <Link href="/locations/hampshire" className="text-[#FB7E10] hover:underline">Hampshire</Link>, and <Link href="/locations/surrey" className="text-[#FB7E10] hover:underline">Surrey</Link>.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-8">
