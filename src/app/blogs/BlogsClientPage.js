@@ -7,6 +7,16 @@ import { Search, Calendar, Clock, ArrowRight, ChevronRight } from 'lucide-react'
 // Static blogs always present
 const staticBlogs = [
   {
+    title: 'Mobile Tyre Fitting – How Long Does It Take? 2026 UK Guide',
+    slug: 'how-long-does-tyre-fitting-take-mobile-service',
+    excerpt:
+      'How long does it take to fit tyres on a mobile basis? What makes the fitting process faster? Why are UK drivers opting for mobile tyre services to replace their tyres faster',
+    date: 'July 8, 2026',
+    readTime: '5 min read',
+    image: '/blogs-images/how-long-does-mobile-tyre-fitting-take-banner.png',
+    category: 'Guides',
+  },
+  {
     title: '24 Hour Emergency Mobile Tyre Fitting UK | Emergency Tyre Replacement Anytime',
     slug: '24hour-tyre-fitting',
     excerpt:
