@@ -8,6 +8,8 @@ import FloatingCallButton from '../components/FloatingCallButton';
 import ScrollToTop from '../components/ScrollToTop';
 import MobileActionBar from '../components/MobileActionBar';
 import Script from 'next/script';
+import CookieConsent from '../components/CookieConsent';
+
 
 export const metadata = {
   title: 'Mobile Tyre Fitting Near Me | Mobile Tyre Service UK',
@@ -71,6 +73,7 @@ export default function RootLayout({ children }) {
         <WhatsAppButton />
         <FloatingCallButton />
         <MobileActionBar />
+        <CookieConsent />
       </body>
     </html>
   );

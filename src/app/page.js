@@ -79,12 +79,12 @@ export default function Page() {
       <Hero />
       <Features />
       <RecentFittings />
+      <Reviews />
       <WhyChoose />
       <Process />
       <HowToReadTyre />
       <Services />
       <HowItWorks />
-      <Reviews />
       <FAQ />
       <CTA />
       <section className="bg-white py-12 px-4">
