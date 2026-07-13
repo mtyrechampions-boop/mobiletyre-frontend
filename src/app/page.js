@@ -6,7 +6,7 @@ import HowToReadTyre from '@/components/HowToReadTyre';
 import Services from '@/components/Services';
 import RecentFittings from '@/components/RecentFittings';
 import HowItWorks from '@/components/HowItWorks';
-import Reviews from '@/components/Reviews';
+import GoogleReviewsSection from '@/components/home/GoogleReviewsSection';
 import FAQ from '@/components/FAQ';
 import CTA from '@/components/CTA';
 
@@ -79,11 +79,11 @@ export default function Page() {
       <Hero />
       <Features />
       <RecentFittings />
-      <Reviews />
       <WhyChoose />
       <Process />
       <HowToReadTyre />
       <Services />
+      <GoogleReviewsSection />
       <HowItWorks />
       <FAQ />
       <CTA />
