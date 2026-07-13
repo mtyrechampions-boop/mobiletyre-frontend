@@ -77,13 +77,13 @@ export default function Page() {
   return (
     <>
       <Hero />
+      <GoogleReviewsSection />
       <Features />
       <RecentFittings />
       <WhyChoose />
       <Process />
       <HowToReadTyre />
       <Services />
-      <GoogleReviewsSection />
       <HowItWorks />
       <FAQ />
       <CTA />
