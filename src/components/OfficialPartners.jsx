@@ -60,20 +60,20 @@ const OfficialPartners = () => {
           </p>
         </div>
 
-        <div className="relative group max-w-[1400px] mx-auto">
+        <div className="relative group max-w-[1400px] mx-auto overflow-hidden">
           {/* Orange track container */}
           <div className="absolute inset-x-[-100vw] inset-y-0 bg-[#FB7E10] z-0"></div>
 
           {/* Scrolling edges fade */}
-          <div className="absolute inset-y-0 left-0 w-32 md:w-80 bg-gradient-to-r from-[#FB7E10] via-[#FB7E10]/80 to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute inset-y-0 right-0 w-32 md:w-80 bg-gradient-to-l from-[#FB7E10] via-[#FB7E10]/80 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute inset-y-0 left-0 w-16 md:w-80 bg-gradient-to-r from-[#FB7E10] via-[#FB7E10]/80 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute inset-y-0 right-0 w-16 md:w-80 bg-gradient-to-l from-[#FB7E10] via-[#FB7E10]/80 to-transparent z-10 pointer-events-none"></div>
 
           {/* Marquee Row */}
           <div className="flex w-max animate-marquee-slow items-center py-6 relative z-10">
             {logos.map((logo, i) => (
               <div
                 key={`partner-${i}`}
-                className="mx-4 md:mx-6 flex flex-col items-center justify-center bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)] transition-all duration-500 hover:-translate-y-1 w-28 h-24 md:w-40 md:h-36 flex-shrink-0"
+                className="mx-2 md:mx-6 flex flex-col items-center justify-center bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)] transition-all duration-500 hover:-translate-y-1 w-24 h-20 md:w-40 md:h-36 flex-shrink-0"
               >
                 <div className="h-10 md:h-14 flex items-center justify-center w-full px-4">
                   <img

@@ -99,9 +99,8 @@ export default function GoogleReviewsSection() {
         {/* SociableKIT Widget Container */}
         <div
           ref={containerRef}
-          className={`sk-ww-google-reviews transition-opacity duration-500 ${
-            isLoading ? "opacity-0 h-0 overflow-hidden" : "opacity-100"
-          }`}
+          className={`sk-ww-google-reviews transition-opacity duration-500 ${isLoading ? "opacity-0 h-0 overflow-hidden" : "opacity-100"
+            }`}
           data-embed-id="25696814"
         />
 
