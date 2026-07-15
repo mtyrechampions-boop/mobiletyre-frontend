@@ -4,6 +4,31 @@ import Link from 'next/link';
 const RecentFittings = () => {
   const fittings = [
     {
+      src: "/recent-fittings/porsche-mobile-tyre-champions.webp",
+      alt: "Porsche undergoing on-site tyre replacement by Mobile Tyre Champions",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/porsche-mtc.webp",
+      alt: "Porsche receiving professional mobile tyre fitting service",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/premium-car-service-mobile-tyre-champions.webp",
+      alt: "Premium car service by Mobile Tyre Champions on-site",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/premium-tyre-service-mobile-tyre-champions.webp",
+      alt: "Premium tyre replacement service in progress",
+      url: "/booking"
+    },
+    {
+      src: "/recent-fittings/range-rover-mobile-tyre-champions.webp",
+      alt: "Range Rover receiving specialized mobile tyre fitting",
+      url: "/booking"
+    },
+    {
       src: "/recent-fittings/mobile-tyre-fitting-recent-1.webp",
       alt: "Mobile tyre fitting service van replacing a car tyre on-site",
       url: "/booking"
