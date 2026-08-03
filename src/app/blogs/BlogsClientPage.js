@@ -7,6 +7,16 @@ import { Search, Calendar, Clock, ArrowRight, ChevronRight } from 'lucide-react'
 // Static blogs always present
 const staticBlogs = [
   {
+    title: 'When to Change Your Tyres on the Car? Complete UK Guide 2026',
+    slug: 'when-to-change-car-tyres',
+    excerpt:
+      'How often should you change your car tyres? Learn average tyre life, UK legal tread depth, the warning signs of worn tyres and when to book a replacement.',
+    date: 'August 3, 2026',
+    readTime: '7 min read',
+    image: '/blogs-images/when-to-change-car-tyres-banner.webp',
+    category: 'Guides',
+  },
+  {
     title: 'Mobile Tyre Fitting – How Long Does It Take? 2026 UK Guide',
     slug: 'how-long-does-tyre-fitting-take-mobile-service',
     excerpt:
