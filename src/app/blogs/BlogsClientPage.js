@@ -7,6 +7,16 @@ import { Search, Calendar, Clock, ArrowRight, ChevronRight } from 'lucide-react'
 // Static blogs always present
 const staticBlogs = [
   {
+    title: 'Can a Mobile Tyre Fitter Fix a Puncture? Guide 2026: What You Must Know As A Driver In The UK',
+    slug: 'can-a-mobile-tyre-fitter-fix-a-puncture',
+    excerpt:
+      'Can a mobile tyre fitter fix a puncture at your home or roadside? Discover British Standard BS AU 159 regulations, when tyres can be repaired vs replaced, and costs.',
+    date: 'August 17, 2026',
+    readTime: '6 min read',
+    image: '/blogs-images/can-a-mobile-tyre-fitter-fix-a-puncture-banner.webp',
+    category: 'Puncture Repair',
+  },
+  {
     title: 'When to Change Your Tyres on the Car? Complete UK Guide 2026',
     slug: 'when-to-change-car-tyres',
     excerpt:

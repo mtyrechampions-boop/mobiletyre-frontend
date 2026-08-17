@@ -373,7 +373,7 @@ export default function BlogPostEmergency() {
           {/* Puncture Repair Section */}
           <h2 id="puncture-repair" className="text-2xl md:text-3xl font-black text-[#0B1528] mt-12 mb-6 scroll-mt-28">Can a Mobile Tyre Fitter Repair a Puncture?</h2>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
-            Yes. Our <Link href="/services/puncture-repair" className="text-[#FB7E10] font-bold hover:underline">professional puncture repair service</Link> can fix punctures located within the central three-quarters of the tyre tread using standard BS AU 159 plug-patches. However, if the puncture is in the sidewall or shoulder, or the tyre shows signs of excessive wear, a complete <Link href="/services/mobile-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">mobile tyre replacement</Link> is required for safety.
+            Yes. Our <Link href="/services/puncture-repair" className="text-[#FB7E10] font-bold hover:underline">professional puncture repair service</Link> can fix punctures located within the central three-quarters of the tyre tread using standard BS AU 159 plug-patches. Read our comprehensive <Link href="/blogs/can-a-mobile-tyre-fitter-fix-a-puncture" className="text-[#FB7E10] font-bold hover:underline">guide on mobile puncture repairs</Link> to learn the exact criteria for when a tyre can be saved versus when a complete <Link href="/services/mobile-tyre-fitting" className="text-[#FB7E10] font-bold hover:underline">mobile tyre replacement</Link> is required for safety.
           </p>
 
           {/* FAQs Section */}

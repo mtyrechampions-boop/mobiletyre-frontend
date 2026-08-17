@@ -290,7 +290,7 @@ export default function BlogPostWhenToChangeTyres() {
             </li>
           </ul>
           <p className="mb-6 text-slate-600 leading-relaxed text-base md:text-lg">
-            Any of these signs should be professionally inspected as soon as possible. If you spot an object lodged in the tread, don&apos;t pull it out — book a <Link href="/services/puncture-repair" className="text-[#FB7E10] font-bold hover:underline">puncture repair</Link> and let a technician assess whether the tyre can be safely repaired or needs replacing.
+            Any of these signs should be professionally inspected as soon as possible. If you spot an object lodged in the tread, don&apos;t pull it out — book a <Link href="/services/puncture-repair" className="text-[#FB7E10] font-bold hover:underline">puncture repair</Link> and read our guide on <Link href="/blogs/can-a-mobile-tyre-fitter-fix-a-puncture" className="text-[#FB7E10] font-bold hover:underline">when a mobile tyre fitter can fix a puncture</Link> versus when a replacement is required.
           </p>
 
           {/* Section 5 */}
