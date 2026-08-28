@@ -57,6 +57,9 @@ export default function RootLayout({ children }) {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-DFKREJHWR3');
+            gtag('config', 'AW-18265866087/9nWkCI63q-kcEOf-64VE', {
+              'phone_conversion_number': '02071013856'
+            });
           `}
         </Script>
         {/* Meta Pixel Code */}
