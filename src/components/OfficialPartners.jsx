@@ -4,38 +4,22 @@ import React, { useEffect, useState } from 'react';
 
 const OfficialPartners = () => {
   const brandLogos = [
-    // Ford
-    { src: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Ford_logo_flat.svg", name: "Ford", alt: "Ford automotive brand logo" },
-    // Volkswagen
-    { src: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg", name: "Volkswagen", alt: "Volkswagen automotive brand logo" },
-    // Toyota
-    { src: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Toyota.svg", name: "Toyota", alt: "Toyota automotive brand logo" },
-    // Renault
-    { src: "https://upload.wikimedia.org/wikipedia/commons/4/49/Renault_2021.svg", name: "Renault", alt: "Renault automotive brand logo" },
-    // Peugeot
-    { src: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Peugeot_2021_Logo.svg", name: "Peugeot", alt: "Peugeot automotive brand logo" },
-    // Skoda
-    { src: "https://upload.wikimedia.org/wikipedia/commons/0/07/Skoda_Auto_logo_%282023%29.svg", name: "Skoda", alt: "Skoda automotive brand logo" },
-    // SEAT
-    { src: "https://upload.wikimedia.org/wikipedia/commons/f/f6/SEAT_Logo_2012.svg", name: "SEAT", alt: "SEAT automotive brand logo" },
-    // BMW
-    { src: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg", name: "BMW", alt: "BMW automotive brand logo" },
-    // Mercedes-Benz
-    { src: "https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg", name: "Mercedes-Benz", alt: "Mercedes-Benz logo" },
-    // Porsche
-    { src: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Porsche_logo.svg", name: "Porsche", alt: "Porsche automotive brand logo" },
-    // Lexus
-    { src: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Lexus_division_logo.svg", name: "Lexus", alt: "Lexus automotive brand logo" },
-    // Bentley
-    { src: "https://upload.wikimedia.org/wikipedia/commons/1/10/Bentley_logo.svg", name: "Bentley", alt: "Bentley automotive brand logo" },
-    // Rolls-Royce
-    { src: "https://upload.wikimedia.org/wikipedia/commons/1/14/Rolls-Royce_Motor_Cars_logo.svg", name: "Rolls-Royce", alt: "Rolls-Royce luxury automotive brand logo" },
-    // Jaguar
-    { src: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Jaguar_Cars_logo.svg", name: "Jaguar", alt: "Jaguar automotive brand logo" },
-    // Mini
-    { src: "https://upload.wikimedia.org/wikipedia/commons/e/e9/MINI_logo.svg", name: "Mini", alt: "Mini automotive brand logo" },
-    // Aston Martin
-    { src: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Aston_Martin_logo.svg", name: "Aston Martin", alt: "Aston Martin automotive brand logo" },
+    { src: "/images/partners/ford.svg", name: "Ford", alt: "Ford automotive brand logo" },
+    { src: "/images/partners/volkswagen.png", name: "Volkswagen", alt: "Volkswagen automotive brand logo" },
+    { src: "/images/partners/toyota.svg", name: "Toyota", alt: "Toyota automotive brand logo" },
+    { src: "/images/partners/renault.png", name: "Renault", alt: "Renault automotive brand logo" },
+    { src: "/images/partners/peugeot.png", name: "Peugeot", alt: "Peugeot automotive brand logo" },
+    { src: "/images/partners/skoda.png", name: "Skoda", alt: "Skoda automotive brand logo" },
+    { src: "/images/partners/seat.svg", name: "SEAT", alt: "SEAT automotive brand logo" },
+    { src: "/images/partners/bmw.svg", name: "BMW", alt: "BMW automotive brand logo" },
+    { src: "/images/partners/mercedes.svg", name: "Mercedes-Benz", alt: "Mercedes-Benz logo" },
+    { src: "/images/partners/porsche.webp", name: "Porsche", alt: "Porsche automotive brand logo" },
+    { src: "/images/partners/lexus.svg", name: "Lexus", alt: "Lexus automotive brand logo" },
+    { src: "/images/partners/bentley.svg", name: "Bentley", alt: "Bentley automotive brand logo" },
+    { src: "/images/partners/rolls-royce.svg", name: "Rolls-Royce", alt: "Rolls-Royce luxury automotive brand logo" },
+    { src: "/images/partners/jaguar.svg", name: "Jaguar", alt: "Jaguar automotive brand logo" },
+    { src: "/images/partners/mini.svg", name: "Mini", alt: "Mini automotive brand logo" },
+    { src: "/images/partners/aston-martin.svg", name: "Aston Martin", alt: "Aston Martin automotive brand logo" },
   ];
 
   const [logos, setLogos] = useState(brandLogos);
@@ -88,7 +72,6 @@ const OfficialPartners = () => {
                     alt={logo.alt || logo.name}
                     loading="lazy"
                     className="max-h-full max-w-full object-contain transition-all duration-500 hover:scale-110"
-                    onError={(e) => { e.currentTarget.style.opacity = '0.3'; }}
                   />
                 </div>
                 <span className="mt-2 text-[9px] md:text-[10px] font-black uppercase tracking-widest text-slate-400 font-sans whitespace-nowrap">{logo.name}</span>
