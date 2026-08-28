@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 350" width="100%" height="100%">
+  <g fill="#111827">
+    <path d="M 30 30 L 270 30 L 270 200 C 270 270 150 320 150 320 C 150 320 30 270 30 200 Z" fill="none" stroke="#111827" stroke-width="12"/>
+    <path d="M 110 90 C 130 75 170 75 190 90 C 210 110 200 140 180 160 C 200 170 210 190 190 220 C 170 240 130 240 110 220 C 100 200 120 180 130 160 C 110 150 90 120 110 90 Z"/>
+    <text x="150" y="65" font-family="Arial, sans-serif" font-size="20" font-weight="900" fill="#111827" text-anchor="middle" letter-spacing="4">PEUGEOT</text>
+  </g>
+</svg>

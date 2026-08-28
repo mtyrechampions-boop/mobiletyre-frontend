@@ -3,41 +3,39 @@ import React from 'react';
 const Features = () => {
   const brandLogos = [
     // Ford
-    { src: "https://www.carlogos.org/car-logos/ford-logo-2003-640.png", name: "Ford" },
+    { src: "/images/car-logos/ford.svg", name: "Ford" },
     // Volkswagen
-    { src: "https://uploads.vw-mms.de/system/production/images/vwn/030/145/images/7a0d84d3b718c9a621100e43e581278433114c82/DB2019AL01950_web_1600.jpg?1649155356", name: "Volkswagen" },
+    { src: "/images/car-logos/volkswagen.svg", name: "Volkswagen" },
     // Toyota
-    { src: "https://www.carlogos.org/car-logos/toyota-logo-2020-europe-640.png", name: "Toyota" },
-   // Renault
-    { src: "https://w7.pngwing.com/pngs/270/984/png-transparent-renault-5-renault-16-renault-4-car-renault-logo-angle-text-rectangle-thumbnail.png", name: "Renault" },
+    { src: "/images/car-logos/toyota.svg", name: "Toyota" },
+    // Renault
+    { src: "/images/car-logos/renault.svg", name: "Renault" },
     // Peugeot
-    { src: "https://www.stellantis.com/content/dam/stellantis-corporate/brands/peugeot/peugeot.png", name: "Peugeot" },
+    { src: "/images/car-logos/peugeot.svg", name: "Peugeot" },
     // Skoda
-    { src: "https://cdn.skoda-storyboard.com/2023/07/Skoda_Wordmark_RGB_Emerald_Green_e2c8d407-1440x473.png", name: "Skoda" },
+    { src: "/images/car-logos/skoda.svg", name: "Skoda" },
     // SEAT
-    { src: "https://www.seat.co.uk/content/dam/countries/gb/seat-website/global-header/global-navigation/seat-logo/seat-s-logo.svg", name: "SEAT" },
-    // --- Popular UK Models ---
-    // Kia Sportage
+    { src: "/images/car-logos/seat.svg", name: "SEAT" },
     // --- Premium Brands ---
     // BMW
-    { src: "https://www.carlogos.org/car-logos/bmw-logo.png", name: "BMW" },
+    { src: "/images/car-logos/bmw.svg", name: "BMW" },
     // Mercedes-Benz
-    { src: "https://www.carlogos.org/car-logos/mercedes-benz-logo.png", name: "Mercedes-Benz" },
+    { src: "/images/car-logos/mercedes.svg", name: "Mercedes-Benz" },
     // Porsche
-    { src: "https://www.carlogos.org/car-logos/porsche-logo.png", name: "Porsche" },
+    { src: "/images/porsche.png", name: "Porsche" },
     // Lexus
-    { src: "https://www.carlogos.org/car-logos/lexus-logo.png", name: "Lexus" },
+    { src: "/images/car-logos/lexus.svg", name: "Lexus" },
     // --- Luxury Brands ---
     // Bentley
-    { src: "https://www.carlogos.org/car-logos/bentley-logo-2002-640.png", name: "Bentley" },
+    { src: "/images/car-logos/bentley.svg", name: "Bentley" },
     // Rolls-Royce
-    { src: "https://www.carlogos.org/logo/Rolls-Royce-logo-640x550.jpg", name: "Rolls-Royce" },
+    { src: "/images/car-logos/rolls-royce.svg", name: "Rolls-Royce" },
     // Jaguar
-    { src: "https://www.carlogos.org/car-logos/jaguar-logo-2021-640.png", name: "Jaguar" },
+    { src: "/images/car-logos/jaguar.svg", name: "Jaguar" },
     // Mini
-    { src: "https://www.carlogos.org/logo/Mini-logo-2001-640x270.jpg", name: "Mini" },
+    { src: "/images/car-logos/mini.svg", name: "Mini" },
     // Aston Martin
-    { src: "https://www.carlogos.org/logo/Aston-Martin-logo-2003-640x286.jpg", name: "Aston Martin" },
+    { src: "/images/car-logos/aston-martin.svg", name: "Aston Martin" },
   ];
 
   return (

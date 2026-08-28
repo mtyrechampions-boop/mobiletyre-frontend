@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220" width="100%" height="100%">
+  <g fill="#111827">
+    <circle cx="250" cy="110" r="55" fill="#111827"/>
+    <circle cx="250" cy="110" r="46" fill="#ffffff"/>
+    <text x="250" y="121" font-family="'Arial Black', sans-serif" font-size="30" font-weight="900" fill="#111827" text-anchor="middle" letter-spacing="3">MINI</text>
+    <path d="M 190 90 L 40 80 L 50 105 L 186 112 Z"/>
+    <path d="M 188 116 L 60 115 L 70 135 L 191 128 Z"/>
+    <path d="M 310 90 L 460 80 L 450 105 L 314 112 Z"/>
+    <path d="M 312 116 L 440 115 L 430 135 L 309 128 Z"/>
+  </g>
+</svg>

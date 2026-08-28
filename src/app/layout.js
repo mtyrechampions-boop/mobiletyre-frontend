@@ -1,5 +1,4 @@
 import './globals.css';
-import 'leaflet/dist/leaflet.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import TyrePartners from '../components/TyrePartners';
@@ -20,6 +19,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossOrigin="" />
         <link rel="icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
       </head>
@@ -35,6 +35,9 @@ export default function RootLayout({ children }) {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-DFKREJHWR3');
+            gtag('config', 'AW-18265866087/9nWkCI63q-kcEOf-64VE', {
+              'phone_conversion_number': '02071013856'
+            });
           `}
         </Script>
         <ScrollToTop />
