@@ -1,42 +1,15 @@
-"use client";
+import React from "react";
+import { preconnect } from "react-dom";
+import GoogleReviewsWidget from "./GoogleReviewsWidget";
 
-import React, { useEffect, useState, useRef } from "react";
-import Script from "next/script";
+const LOADER_SRC = "https://widgets.sociablekit.com/google-reviews/widget.js";
 
 export default function GoogleReviewsSection() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [scriptKey, setScriptKey] = useState(0);
-
-  // Force script reload on mount/navigation to ensure new DOM elements are processed
-  useEffect(() => {
-    setScriptKey((prev) => prev + 1);
-  }, []);
-
-  // Monitor the container element to see when the widget injects child elements
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    // Check if the widget is already loaded (has children)
-    if (container.children.length > 0) {
-      setIsLoading(false);
-      return;
-    }
-
-    const observer = new MutationObserver(() => {
-      if (container.children.length > 0) {
-        setIsLoading(false);
-        observer.disconnect();
-      }
-    });
-
-    observer.observe(container, { childList: true, subtree: true });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, [scriptKey]);
+  // The widget loads in three hops: this loader, then a ~200KB widget bundle
+  // from the same host, then the review feed from data.accentapi.com. Warming
+  // both connections up front removes the DNS + TLS cost from the chain.
+  preconnect("https://widgets.sociablekit.com");
+  preconnect("https://data.accentapi.com");
 
   return (
     <section className="bg-slate-50 px-4 sm:px-10 lg:px-20 py-12 md:py-20 relative overflow-hidden border-y border-slate-100/50">
@@ -58,58 +31,21 @@ export default function GoogleReviewsSection() {
           </div>
 
           <h2 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 leading-[1.1] mb-4">
-            Trusted by Drivers Across Surrey & Hampshire
+            Trusted by Drivers Across Surrey &amp; Hampshire
           </h2>
 
           <p className="text-slate-500 text-sm md:text-base max-w-2xl">
-            See why customers rate Mobile Tyre Champions 5 stars for fast, reliable mobile tyre fitting services.
+            See why customers rate Mobile Tyre Champions 5 stars for fast,
+            reliable mobile tyre fitting services.
           </p>
         </div>
 
-        {/* Skeleton Loader Container (prevents layout shift) */}
-        {isLoading && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-pulse mb-8 min-h-[300px]">
-            {[1, 2, 3].map((n) => (
-              <div
-                key={n}
-                className="bg-white p-6 md:p-8 rounded-2xl border border-slate-100 shadow-sm"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[1, 2, 3, 4, 5].map((s) => (
-                    <div
-                      key={s}
-                      className="w-4 h-4 bg-slate-200 rounded-full"
-                    />
-                  ))}
-                </div>
-                <div className="h-4 bg-slate-200 rounded w-full mb-2" />
-                <div className="h-4 bg-slate-200 rounded w-5/6 mb-6" />
-                <div className="flex items-center gap-4 pt-4 border-t border-slate-100">
-                  <div className="w-10 h-10 rounded-full bg-slate-200" />
-                  <div className="flex-1">
-                    <div className="h-4 bg-slate-200 rounded w-24 mb-2" />
-                    <div className="h-3 bg-slate-200 rounded w-16" />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
+        <GoogleReviewsWidget />
 
-        {/* SociableKIT Widget Container */}
-        <div
-          ref={containerRef}
-          className={`sk-ww-google-reviews transition-opacity duration-500 ${isLoading ? "opacity-0 h-0 overflow-hidden" : "opacity-100"
-            }`}
-          data-embed-id="25696814"
-        />
-
-        {/* Load Widget Script */}
-        <Script
-          key={`sk-widget-script-${scriptKey}`}
-          src="https://widgets.sociablekit.com/google-reviews/widget.js"
-          strategy="afterInteractive"
-        />
+        {/* Rendered straight into the server HTML (not via next/script) so the
+            browser downloads it while parsing the page instead of waiting for
+            hydration. React 19 hoists and de-duplicates async scripts. */}
+        <script src={LOADER_SRC} async />
       </div>
     </section>
   );

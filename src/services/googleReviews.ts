@@ -1,4 +1,15 @@
-const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
+const FALLBACK_STRAPI_URL = 'https://enduring-morning-cf86e59201.strapiapp.com';
+
+// Accepts either a bare origin (NEXT_PUBLIC_STRAPI_URL) or an origin already
+// ending in /api (VITE_STRAPI_API_URL, kept from the previous Vite setup).
+function getStrapiOrigin(): string {
+  const configured =
+    process.env.NEXT_PUBLIC_STRAPI_URL ||
+    process.env.VITE_STRAPI_API_URL ||
+    FALLBACK_STRAPI_URL;
+
+  return configured.replace(/\/+$/, '').replace(/\/api$/, '');
+}
 
 export interface GoogleReview {
   authorName: string;
@@ -25,14 +36,15 @@ export interface ApiResponse {
 
 export async function getGoogleReviews(): Promise<ApiResponse> {
   try {
-    const res = await fetch(`${STRAPI_URL}/api/google-reviews`, {
+    const res = await fetch(`${getStrapiOrigin()}/api/google-reviews`, {
       next: { revalidate: 3600 }, // Cache on frontend for 1 hour
+      signal: AbortSignal.timeout(8000), // Never let a slow Strapi stall a render
     });
-    
+
     if (!res.ok) {
       throw new Error(`Failed to fetch reviews: ${res.statusText}`);
     }
-    
+
     const data = await res.json();
     return data;
   } catch (error: any) {

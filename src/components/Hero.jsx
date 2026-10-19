@@ -42,7 +42,7 @@ const Hero = () => {
               24/7 Tyre Help — {SERVICE_AREAS_TEXT}
             </h1>
             <h3 className="text-xl sm:text-2xl md:text-2xl lg:text-base xl:text-3xl font-semibold text-[#FB7E10]">
-              Typical arrival in 30–60 minutes depending on location and traffic.
+              Estimated arrival time is 30–60 minutes, subject to location and traffic
             </h3>
 
             <p className="max-w-md text-gray-300 text-sm sm:text-base lg:text-xs xl:text-lg leading-relaxed">
