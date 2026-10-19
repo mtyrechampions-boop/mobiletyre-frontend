@@ -1,6 +1,7 @@
 import React from "react";
 import { preconnect } from "react-dom";
 import GoogleReviewsWidget from "./GoogleReviewsWidget";
+import "./googleReviews.css";
 
 const LOADER_SRC = "https://widgets.sociablekit.com/google-reviews/widget.js";
 
@@ -12,7 +13,10 @@ export default function GoogleReviewsSection() {
   preconnect("https://data.accentapi.com");
 
   return (
-    <section className="bg-slate-50 px-4 sm:px-10 lg:px-20 py-12 md:py-20 relative overflow-hidden border-y border-slate-100/50">
+    <section
+      id="reviews"
+      className="bg-slate-50 px-4 sm:px-10 lg:px-20 py-12 md:py-20 relative overflow-hidden border-y border-slate-100/50"
+    >
       {/* Decorative background blurs to match the design system */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-orange-100 rounded-full blur-[100px] opacity-60 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-100 rounded-full blur-[120px] opacity-40 pointer-events-none" />

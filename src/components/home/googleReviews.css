@@ -1,0 +1,71 @@
+/*
+ * Theme for the SociableKIT Google Reviews widget.
+ *
+ * The widget renders into an open shadow root but writes its whole dashboard
+ * theme as inline custom properties on the host element. Custom properties
+ * inherit through the shadow boundary, so re-declaring them here re-themes the
+ * widget internals without touching its markup. `!important` is required to
+ * beat the widget's own inline declarations.
+ */
+
+.sk-ww-google-reviews {
+  /* Typography — fall in line with the site font instead of the widget's Inter */
+  --font-family: Outfit !important;
+  --details-font-size: 15px !important;
+
+  /* Outer panel: drop the white box, border and padding so the cards sit
+     directly on the section background like the rest of the page. */
+  --widget-bg-color: transparent !important;
+  --widget-padding: 0px !important;
+  --show-widget-border: none !important;
+  --show-widget-border-radius: 0px !important;
+
+  /* Cards */
+  --details-bg-color: #ffffff !important;
+  --item-border-radius: 16px !important;
+  --item-content-padding: 24px !important;
+  --item-border-color: #e2e8f0 !important;
+  --show-item-border: 1px solid #e2e8f0 !important;
+  --show-box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04),
+    0 12px 28px -14px rgba(15, 23, 42, 0.16) !important;
+
+  /* Cards are a fixed height. A single wide column wraps less text, so it
+     needs less of it — otherwise short reviews leave a big empty box. */
+  --post-height: 230px !important;
+
+  /* Text + links */
+  --details-font-color: #475569 !important;
+  --reviewer-name-color: #0f172a !important;
+  --profile-name-color: #0f172a !important;
+  --details-link-color: #fb7e10 !important;
+  --details-link-hover-color: #e06f08 !important;
+  --widget-link-color: #fb7e10 !important;
+
+  /* Google's own star yellow reads as more authentic than the brand orange */
+  --star-color: #fbbc04 !important;
+  --review-rating-star-color: #fbbc04 !important;
+
+  /* Carousel arrows in the brand orange */
+  --arrow-background-color: #fb7e10 !important;
+  --arrow-color: #ffffff !important;
+  --arrow-hover-color: #ffffff !important;
+
+  --show-circular-main-picture: 9999px !important;
+
+  /* One card per screen on phones, two on tablets, three on desktop */
+  --column-count: 1 !important;
+}
+
+@media (min-width: 640px) {
+  .sk-ww-google-reviews {
+    --column-count: 2 !important;
+    --post-height: 280px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sk-ww-google-reviews {
+    --column-count: 3 !important;
+    --post-height: 300px !important;
+  }
+}
