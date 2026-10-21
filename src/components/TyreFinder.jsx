@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { Car, Ruler, ChevronDown, AlertCircle } from 'lucide-react';
-import { useSearchParams } from 'next/navigation';;
+import { useSearchParams, useRouter } from 'next/navigation';
 
 const TyreFinder = () => {
     const [activeTab, setActiveTab] = useState('size');
@@ -13,6 +13,7 @@ const TyreFinder = () => {
     const [sortBy, setSortBy] = useState('relevance');
     const tyreResultsRef = useRef(null);
     const searchParams = useSearchParams();
+    const router = useRouter();
 
     // Form States
     const [width, setWidth] = useState('');
@@ -228,11 +229,8 @@ const TyreFinder = () => {
                 // ignore
             }
 
-            setArrangeStatus('Request submitted — our experts will call you shortly.');
             setArrangeDebug(null);
-            setArrangeMobile('');
-            setArrangePostcode('');
-            setTimeout(() => setArrangeStatus(''), 6000);
+            router.push('/thank-you');
         } catch (err) {
             setArrangeStatus(err.message || 'Submission failed. Please try again.');
         } finally {

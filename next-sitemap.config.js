@@ -4,8 +4,8 @@
 const config = {
   siteUrl: 'https://mobiletyrechampions.com',
   generateRobotsTxt: true,
-  // Exclude any URL that contains a query string
-  exclude: ['/**?*'],
+  // Exclude any URL that contains a query string, and the post-submission thank-you page
+  exclude: ['/**?*', '/thank-you'],
   // Strip query params from the generated loc values
   transform: async (config, url) => {
     const cleanUrl = url.split('?')[0];

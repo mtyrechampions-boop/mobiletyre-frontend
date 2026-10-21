@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { Phone, Calendar, MapPin, ChevronDown, CheckCircle, AlertCircle, Loader } from 'lucide-react';
+import { Phone, Calendar, MapPin, ChevronDown, AlertCircle, Loader } from 'lucide-react';
 import dynamic from 'next/dynamic';
 import { submitAppointment, validateUKPhoneNumber } from '../api/appointmentService';
 
@@ -30,7 +30,6 @@ const BookingPage = () => {
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [success, setSuccess] = useState(false);
   const [mapCenter, setMapCenter] = useState([51.5074, -0.1278]); // Default London [lat, lng]
   const [isGeocoding, setIsGeocoding] = useState(false);
 
@@ -101,11 +100,9 @@ const BookingPage = () => {
       // Removed latitude and longitude as requested
 
       await submitAppointment(appointmentData);
-      setSuccess(true);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      router.push('/thank-you');
     } catch (err) {
       setError(err.message || 'Failed to book appointment');
-    } finally {
       setLoading(false);
     }
   };
@@ -137,24 +134,7 @@ const BookingPage = () => {
 
           {/* Right: Form */}
           <div className="bg-slate-50 p-5 md:p-10 rounded-[2rem] md:rounded-[2.5rem] shadow-sm border border-gray-100 mb-8">
-            {success ? (
-              <div className="text-center py-8 md:py-12 space-y-6">
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle size={40} className="md:w-12 md:h-12" />
-                </div>
-                <h2 className="text-2xl md:text-3xl font-black text-gray-900 uppercase">Booking Confirmed!</h2>
-                <p className="text-gray-600 font-medium text-base md:text-lg">
-                  Thank you, {formData.fullName}. Our team will call you at {formData.phoneNumber} shortly to confirm your service.
-                </p>
-                <button
-                  onClick={() => router.push('/')}
-                  className="bg-[#0B1528] text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-slate-900 transition-all"
-                >
-                  Back to Homepage
-                </button>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
                 {error && (
                   <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-lg flex items-start gap-3">
                     <AlertCircle className="text-red-500 shrink-0 mt-0.5" size={20} />
@@ -350,8 +330,7 @@ const BookingPage = () => {
                     )}
                   </button>
                 </div>
-              </form>
-            )}
+            </form>
           </div>
         </div>
       </div>

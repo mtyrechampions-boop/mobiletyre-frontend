@@ -3,10 +3,9 @@
 import React, { useState, useEffect } from 'react';
 import { SERVICE_AREAS_TEXT } from '@/lib/siteText';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Zap, Shield, Award } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, Zap, Shield, Award } from 'lucide-react';
 
 const ContactPage = () => {
-    const [submitted, setSubmitted] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [statusMessage, setStatusMessage] = useState('');
     const [formData, setFormData] = useState({
@@ -75,19 +74,9 @@ const ContactPage = () => {
             }
 
 
-            setSubmitted(true);
-            setFormData({
-                fullName: '',
-                phoneNumber: '',
-                postcode: '',
-                serviceRequired: '',
-                message: '',
-            });
-            setStatusMessage('Your request has been sent. We will contact you shortly.');
-            setTimeout(() => setSubmitted(false), 5000);
+            router.push('/thank-you');
         } catch (error) {
             setStatusMessage(error.message || 'Failed to send request. Please try again.');
-        } finally {
             setIsSubmitting(false);
         }
     };
@@ -206,21 +195,6 @@ const ContactPage = () => {
                     {/* Right: Contact Form */}
                     <div className="lg:col-span-8">
                         <div className="bg-white rounded-[3rem] p-8 md:p-16 h-full border border-gray-100 shadow-2xl relative overflow-hidden">
-                            {submitted && (
-                                <div className="absolute inset-0 bg-white z-50 flex flex-col items-center justify-center p-10 text-center space-y-6 animate-in fade-in zoom-in duration-500">
-                                    <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center text-white scale-110 shadow-lg animate-bounce">
-                                        <CheckCircle size={56} />
-                                    </div>
-                                    <div className="space-y-2">
-                                        <h2 className="text-3xl font-black text-black uppercase">Deployment Scheduled!</h2>
-                                        <p className="text-gray-500 font-medium">Our dispatch center has received your request. A technician will contact you in less than 5 minutes.</p>
-                                    </div>
-                                    <button onClick={() => setSubmitted(false)} className="text-[#FB7E10] font-black uppercase text-xs tracking-widest border-b-2 border-[#FB7E10] pb-1 hover:text-black hover:border-black transition-colors">
-                                        Submit Another Request
-                                    </button>
-                                </div>
-                            )}
-
                             <div className="space-y-12">
                                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-gray-100">
                                     <div className="space-y-3 flex flex-col items-center lg:items-start text-center lg:text-left w-full">
