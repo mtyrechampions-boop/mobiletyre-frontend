@@ -5,6 +5,8 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { Phone, Calendar, MapPin, ChevronDown, AlertCircle, Loader } from 'lucide-react';
 import dynamic from 'next/dynamic';
 import { submitAppointment, validateUKPhoneNumber } from '../api/appointmentService';
+import { useAvailability } from '../lib/useAvailability';
+import CoverageResult from '../components/CoverageResult';
 
 // Dynamically import LeafletMap component with ssr disabled
 const LeafletMap = dynamic(() => import('../components/LeafletMap'), { ssr: false });
@@ -33,11 +35,20 @@ const BookingPage = () => {
   const [mapCenter, setMapCenter] = useState([51.5074, -0.1278]); // Default London [lat, lng]
   const [isGeocoding, setIsGeocoding] = useState(false);
 
+  // Deep links (/booking?postcode=...) must pass the same coverage check as the hero widget
+  const { state: coverage, check: checkCoverage } = useAvailability();
+
   useEffect(() => {
     if (initialPostcode) {
+      checkCoverage(initialPostcode);
+    }
+  }, [initialPostcode, checkCoverage]);
+
+  useEffect(() => {
+    if (initialPostcode && coverage.phase === 'supported') {
       geocodePostcode(initialPostcode);
     }
-  }, [initialPostcode]);
+  }, [initialPostcode, coverage.phase]);
 
   const geocodePostcode = async (pc) => {
     setIsGeocoding(true);
@@ -106,6 +117,34 @@ const BookingPage = () => {
       setLoading(false);
     }
   };
+
+  if (initialPostcode && coverage.phase !== 'supported') {
+    const blocked = ['unsupported', 'error', 'invalid', 'incomplete'].includes(coverage.phase);
+    return (
+      <div className="bg-white min-h-screen pt-24 md:pt-32 pb-12 font-['Outfit']">
+        <div className="container mx-auto px-4 max-w-xl">
+          {!blocked ? (
+            <div className="flex items-center justify-center gap-3 font-bold text-gray-700" role="status">
+              <Loader className="animate-spin text-[#FB7E10]" size={24} /> Checking availability for {initialPostcode.toUpperCase()}...
+            </div>
+          ) : coverage.phase === 'invalid' || coverage.phase === 'incomplete' ? (
+            <div role="alert" className="text-center">
+              <p className="font-bold text-gray-900 mb-4">{coverage.message}</p>
+              <a href="/" className="inline-block bg-[#FB7E10] hover:bg-orange-600 text-white py-3 px-6 rounded-full font-bold">
+                Enter a postcode
+              </a>
+            </div>
+          ) : (
+            <CoverageResult
+              kind={coverage.phase === 'error' ? 'error' : 'unsupported'}
+              postcode={coverage.postcode || initialPostcode.toUpperCase()}
+              onRetry={coverage.phase === 'error' ? () => checkCoverage(initialPostcode) : () => router.push('/')}
+            />
+          )}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-white min-h-screen pt-16 md:pt-20 pb-12 font-['Outfit']">

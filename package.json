@@ -11,7 +11,8 @@
     "build": "next build",
     "postbuild": "npx next-sitemap",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "node --test src/lib/coverage.test.js"
   },
   "dependencies": {
     "@react-google-maps/api": "^2.20.8",
